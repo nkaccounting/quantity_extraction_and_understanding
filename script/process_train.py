@@ -3,7 +3,7 @@ from collections import Counter, defaultdict
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering, QuestionAnsweringPipeline
 
-from script.quantity_extraction import extract_quantity
+from quantity_extraction import extract_quantity
 
 
 def cal_index(s: str, target: str):
@@ -15,9 +15,10 @@ def cal_index(s: str, target: str):
     return ans
 
 
-tokenizer = AutoTokenizer.from_pretrained('../../chinese_pretrain_mrc_roberta_wwm_ext_large')
+tokenizer = AutoTokenizer.from_pretrained('../../question_answering/chinese_pretrain_mrc_roberta_wwm_ext_large')
 
-model = AutoModelForQuestionAnswering.from_pretrained('../../chinese_pretrain_mrc_roberta_wwm_ext_large')
+model = AutoModelForQuestionAnswering.from_pretrained(
+    '../../question_answering/chinese_pretrain_mrc_roberta_wwm_ext_large')
 
 pipeline = QuestionAnsweringPipeline(model=model, tokenizer=tokenizer)
 
@@ -29,11 +30,22 @@ for column in df.columns[2:6]:
 
 f = open("out_no_reinit.txt", "w")
 
+out_c1 = []
+out_qlist = []
+
+out_c2 = []
+out_q2 = []
+out_a2 = []
+out_s2 = []
+
 for context in text:
     if len(context) > 3:
         print(context, file=f)
         quantities_obj = extract_quantity(context)
         quantities = [quantity.value for quantity in quantities_obj]
+
+        out_c1.append(context)
+        out_qlist.append(quantities)
 
         quantities_count = Counter(quantities)
         quantities_loc = defaultdict(int)
@@ -56,8 +68,8 @@ for context in text:
             else:
                 contexts.append(context)
 
-        print(questions)
-        print(contexts)
+        out_c2 += contexts
+        out_q2 += questions
         batch = 10
         epoches = len(questions) // batch + 1
         result = []
@@ -74,9 +86,25 @@ for context in text:
                     "MeasuredProperty": one_answer,
                     "Unit": quantities_obj[i + batch * epoch].unit,
                 }
+                out_a2.append(one_answer['answer'])
+                out_s2.append(one_answer['score'])
                 result.append(quantity)
 
         for re in result:
             print(re, file=f)
 
 f.close()
+
+df_extract = pd.DataFrame()
+df_extract['context'] = pd.Series(out_c1)
+df_extract['quantities'] = pd.Series(out_qlist)
+
+df_extract.to_csv('extract_answer.csv', index=0, encoding='utf-8')
+
+df_understanding = pd.DataFrame()
+df_understanding['context'] = pd.Series(out_c2)
+df_understanding['question'] = pd.Series(out_q2)
+df_understanding['answer'] = pd.Series(out_a2)
+df_understanding['score'] = pd.Series(out_s2)
+
+df_understanding.to_csv('understanding.csv', index=0, encoding='utf-8')

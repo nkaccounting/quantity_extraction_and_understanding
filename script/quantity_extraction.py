@@ -11,8 +11,9 @@ unit_list = list(dataframe[0])
 quantity_mode = [
     '[1-9]\d*-?\d*',  # 6-7次/分 mode
     '[1-9]\d*/?\d*',  # 159/87mmHg mode
-    '[1-9]\d*\.?\d*',  # normal digital mode
     '0\.\d*[1-9]',  # 0.35 mode
+    '[1-9]\d*\.?\d*',  # normal digital mode
+
 ]
 
 
