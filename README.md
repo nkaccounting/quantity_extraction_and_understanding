@@ -62,6 +62,8 @@ Roberta_base（较少mrc）--等效共指的效果
 
 roberta_wwm（最多的mrc
 ***** eval metrics *****
+  eval_P           = 71.4912
+  eval_R           = 80.3706
   eval_exact_match = 56.5957
   eval_f1          = 71.5788
   eval_samples     =     560
