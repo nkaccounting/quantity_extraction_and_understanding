@@ -14,19 +14,19 @@ def creat_json(df: pd.DataFrame, type: str):
         question = i[2]
         answers = i[3]
 
-        if answers == "##":
-            result = {
-                "id": str(id) + "-hasNoAns",
-                "title": str(id),
-                "context": context,
-                "question": question,
-                "answers": {
-                    "text": [],
-                    "answer_start": []
-                }
-            }
-            data.append(result)
-        else:
+        # if answers == "##":
+        #     result = {
+        #         "id": str(id) + "-hasNoAns",
+        #         "title": str(id),
+        #         "context": context,
+        #         "question": question,
+        #         "answers": {
+        #             "text": [],
+        #             "answer_start": []
+        #         }
+        #     }
+        #     data.append(result)
+        if answers != "##":
             try:
                 answer_start = context.index(answers)
                 right_answers = {
@@ -56,5 +56,5 @@ def creat_json(df: pd.DataFrame, type: str):
 
 
 if __name__ == '__main__':
-    dataframe = pd.read_csv('../data/eval.csv')
+    dataframe = pd.read_csv('../data/understanding.csv')
     creat_json(dataframe, 'eval')
