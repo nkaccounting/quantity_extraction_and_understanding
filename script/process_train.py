@@ -28,7 +28,7 @@ text = []
 for column in df.columns[2:6]:
     text += list(df[column])
 
-f = open("out_no_reinit.txt", "w")
+f = open("out_after_fine-tune.txt", "w")
 
 out_c1 = []
 out_qlist = []
