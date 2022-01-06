@@ -5,6 +5,9 @@ from transformers import AutoTokenizer, AutoModelForQuestionAnswering, QuestionA
 
 from quantity_extraction import extract_quantity
 
+fine_tune_dir = '../../question_answering/chinese_pretrain_mrc_roberta_wwm_ext_large'
+data_dir = '../data/medical_data.csv'
+
 
 def cal_index(s: str, target: str):
     n = s.find(target)
@@ -15,62 +18,86 @@ def cal_index(s: str, target: str):
     return ans
 
 
-tokenizer = AutoTokenizer.from_pretrained('../../question_answering/chinese_pretrain_mrc_roberta_wwm_ext_large')
+def prepareMTP(model_dir: str):
+    model = AutoModelForQuestionAnswering.from_pretrained(model_dir)
+    tokenizer = AutoTokenizer.from_pretrained(model_dir)
+    pipeline = QuestionAnsweringPipeline(model=model, tokenizer=tokenizer)
+    return pipeline
 
-model = AutoModelForQuestionAnswering.from_pretrained(
-    '../../question_answering/chinese_pretrain_mrc_roberta_wwm_ext_large')
 
-pipeline = QuestionAnsweringPipeline(model=model, tokenizer=tokenizer)
+def collect_text(data_dir: str):
+    df = pd.read_csv(data_dir)
+    text = []
+    for column in df.columns[2:6]:
+        text += list(df[column])
+    return text
 
-df = pd.read_csv('../data/medical_data.csv')
 
-text = []
-for column in df.columns[2:6]:
-    text += list(df[column])
+def extract_quantity_from_text_list(text: list, out_dir: str = 'extract_answer.csv'):
+    all_context = []
+    all_quantity = []
+    all_Quantity = []
+    for context in text:
+        if len(context) > 3:
+            quantities_obj = extract_quantity(context)
+            quantities = [quantity.value for quantity in quantities_obj]
+            all_context.append(context)
+            all_quantity.append(quantities)
+            all_Quantity.append(quantities_obj)
+    df_extract = pd.DataFrame()
+    df_extract['context'] = pd.Series(all_context)
+    df_extract['quantities'] = pd.Series(all_quantity)
+    df_extract.to_csv(out_dir, index=0, encoding='utf-8')
 
-f = open("out_after_fine-tune.txt", "w")
+    return all_context, all_Quantity
 
-out_c1 = []
-out_qlist = []
 
-out_c2 = []
-out_q2 = []
-out_a2 = []
-out_s2 = []
+def deal_context_question(context: str, quantities: list, prompt: str = '{quantity}指的是？', deal_DUP: bool = True):
+    quantities_count = Counter(quantities)
+    quantities_loc = defaultdict(int)
 
-for context in text:
-    if len(context) > 3:
-        print(context, file=f)
-        quantities_obj = extract_quantity(context)
-        quantities = [quantity.value for quantity in quantities_obj]
+    questions = []
+    contexts = []
 
-        out_c1.append(context)
-        out_qlist.append(quantities)
+    for quantity in quantities:
 
-        quantities_count = Counter(quantities)
-        quantities_loc = defaultdict(int)
+        questions.append(prompt.format(quantity=quantity))
 
-        questions = []
-        contexts = []
-
-        for quantity in quantities:
-            questions.append(quantity + '指的是？')
-            if quantities_count[quantity] > 1:
-                index_list = cal_index(context, quantity)
-                cur = quantities_loc[quantity]
-                if cur == 0:
-                    contexts.append(context[:index_list[cur + 1]])
-                elif cur == len(index_list) - 1:
-                    contexts.append(context[index_list[cur - 1] + len(quantity):])
-                else:
-                    contexts.append(context[index_list[cur - 1] + len(quantity):index_list[cur + 1]])
-                quantities_loc[quantity] += 1
+        if deal_DUP and quantities_count[quantity] > 1:
+            index_list = cal_index(context, quantity)
+            cur = quantities_loc[quantity]
+            if cur == 0:
+                contexts.append(context[:index_list[cur + 1]])
+            elif cur == len(index_list) - 1:
+                contexts.append(context[index_list[cur - 1] + len(quantity):])
             else:
-                contexts.append(context)
+                contexts.append(context[index_list[cur - 1] + len(quantity):index_list[cur + 1]])
+            quantities_loc[quantity] += 1
+        else:
+            contexts.append(context)
+    return contexts, questions
 
-        out_c2 += contexts
-        out_q2 += questions
-        batch = 10
+
+def process_medical_csv(data_dir: str, out_dir: str = 'understanding.csv', batch: int = 10):
+    pipeline = prepareMTP(fine_tune_dir)
+
+    text = collect_text(data_dir)
+    all_context, all_Quantity = extract_quantity_from_text_list(text)
+
+    f = open("out_after_fine-tune.txt", "w")
+    all_contexts = []
+    all_questions = []
+    all_answers = []
+    all_scores = []
+    for context, Quantities in zip(all_context, all_Quantity):
+        print(context, file=f)
+        quantities = [quantity.value for quantity in Quantities]
+
+        contexts, questions = deal_context_question(context, quantities)
+
+        all_contexts += contexts
+        all_questions += questions
+
         epoches = len(questions) // batch + 1
         result = []
         for epoch in range(epoches):
@@ -82,29 +109,25 @@ for context in text:
                 res = [res]
             for i, one_answer in enumerate(res):
                 quantity = {
-                    "Quantity": quantities_obj[i + batch * epoch].value,
+                    "Quantity": Quantities[i + batch * epoch].value,
                     "MeasuredProperty": one_answer,
-                    "Unit": quantities_obj[i + batch * epoch].unit,
+                    "Unit": Quantities[i + batch * epoch].unit,
                 }
-                out_a2.append(one_answer['answer'])
-                out_s2.append(one_answer['score'])
+                all_answers.append(one_answer['answer'])
+                all_scores.append(one_answer['score'])
                 result.append(quantity)
 
         for re in result:
             print(re, file=f)
 
-f.close()
+    f.close()
 
-df_extract = pd.DataFrame()
-df_extract['context'] = pd.Series(out_c1)
-df_extract['quantities'] = pd.Series(out_qlist)
+    df_understanding = pd.DataFrame()
+    df_understanding['context'] = pd.Series(all_context)
+    df_understanding['question'] = pd.Series(all_questions)
+    df_understanding['answer'] = pd.Series(all_answers)
+    df_understanding['score'] = pd.Series(all_scores)
+    df_understanding.to_csv(out_dir, index=0, encoding='utf-8')
 
-df_extract.to_csv('extract_answer.csv', index=0, encoding='utf-8')
 
-df_understanding = pd.DataFrame()
-df_understanding['context'] = pd.Series(out_c2)
-df_understanding['question'] = pd.Series(out_q2)
-df_understanding['answer'] = pd.Series(out_a2)
-df_understanding['score'] = pd.Series(out_s2)
-
-df_understanding.to_csv('understanding.csv', index=0, encoding='utf-8')
+process_medical_csv(data_dir)
