@@ -4,7 +4,7 @@ import os
 import pandas as pd
 
 
-def creat_json(df: pd.DataFrame, type: str):
+def creat_json(df: pd.DataFrame, type: str, prompt: str):
     data = []
     index = 0
     for i in df.itertuples():
@@ -37,7 +37,7 @@ def creat_json(df: pd.DataFrame, type: str):
                     "id": str(id) + "-hasAns",
                     "title": str(id),
                     "context": context,
-                    "question": question,
+                    "question": prompt.format(quantity=question),
                     "answers": right_answers
                 }
                 data.append(result)
@@ -57,4 +57,4 @@ def creat_json(df: pd.DataFrame, type: str):
 
 if __name__ == '__main__':
     dataframe = pd.read_csv('../data/understanding.csv')
-    creat_json(dataframe, 'eval')
+    creat_json(dataframe, 'eval', '{quantity}指的是？')

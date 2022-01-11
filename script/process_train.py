@@ -4,6 +4,7 @@ import pandas as pd
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering, QuestionAnsweringPipeline
 
 from quantity_extraction import extract_quantity
+from script.pre_process_for_text import pre_process
 
 fine_tune_dir = '../../question_answering/chinese_pretrain_mrc_roberta_wwm_ext_large'
 data_dir = '../data/medical_data.csv'
@@ -31,10 +32,11 @@ def collect_text(data_dir: str):
     text = []
     for column in df.columns[2:6]:
         text += list(df[column])
-    return text
+    # 对获取的文本进行预处理操作
+    return [pre_process(t) for t in text]
 
 
-def extract_quantity_from_text_list(text: list, out_dir: str = 'extract_answer.csv'):
+def extract_quantity_from_text_list(text: list, out_dir: str = '../result/extract_answer.csv'):
     all_context = []
     all_quantity = []
     all_Quantity = []
@@ -79,13 +81,11 @@ def deal_context_question(context: str, quantities: list, prompt: str = '{quanti
     return contexts, questions
 
 
-def process_medical_csv(data_dir: str, out_dir: str = 'understanding.csv', batch: int = 10):
-
-
+def process_medical_csv(data_dir: str, out_dir: str = '../result/understanding.csv', batch: int = 10):
     text = collect_text(data_dir)
     all_context, all_Quantity = extract_quantity_from_text_list(text)
 
-    f = open("out_after_fine-tune.txt", "w")
+    f = open("../result/out_after_fine-tune.txt", "w")
     all_contexts = []
     all_questions = []
     all_answers = []
@@ -97,7 +97,7 @@ def process_medical_csv(data_dir: str, out_dir: str = 'understanding.csv', batch
         contexts, questions = deal_context_question(context, quantities)
 
         all_contexts += contexts
-        all_questions += questions
+        all_questions += quantities
 
         epoches = len(questions) // batch + 1
         result = []
