@@ -5,7 +5,7 @@ dataframe = pd.read_csv('../data/unit.csv', header=None)
 
 unit_list = list(dataframe[0])
 
-new_unit = input('Add a new unit:')
+new_unit = input('Add a new unit (hint for *^? ect:')
 
 if new_unit in unit_list:
     print('The unit already exists！')
