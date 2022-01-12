@@ -82,6 +82,7 @@ def deal_context_question(context: str, quantities: list, prompt: str = '{quanti
 
 
 def process_medical_csv(data_dir: str, out_dir: str = '../result/understanding.csv', batch: int = 10):
+    pipeline = prepareMTP(fine_tune_dir)
     text = collect_text(data_dir)
     all_context, all_Quantity = extract_quantity_from_text_list(text)
 
@@ -102,8 +103,6 @@ def process_medical_csv(data_dir: str, out_dir: str = '../result/understanding.c
         epoches = len(questions) // batch + 1
         result = []
         for epoch in range(epoches):
-            pipeline = prepareMTP(fine_tune_dir)
-            # 每次进来的时候重新初始化pipeline效果会不会不同？
             res = pipeline(
                 question=questions[epoch * batch:epoch * batch + batch],
                 context=contexts[epoch * batch:epoch * batch + batch]
