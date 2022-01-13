@@ -25,7 +25,9 @@ test_str = [
     '患者徐妹仙，女，63岁。因 确诊直肠癌11月余 门诊拟直肠癌收入院。入院查体：T：36.8℃，P 67次/分，R 19次/分，BP 126/64 mmHg',
     '谷草转氨酶(AST) 16.6 IU/L,钾(K+) 3.64 mmol/L,钠(Na+) 142.6 mmol/L,磷(PHOS) 1.24 mmol/L,剂量为30mg每天my baby,hello bathgate',
     'T30mg',
-    'T 30 mg'
+    'T 30 mg',
+    '68250.0μg/L',
+    '68250.0 μg/L'
 ]
 
 for text in test_str:

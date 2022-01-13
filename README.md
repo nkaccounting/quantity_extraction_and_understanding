@@ -366,3 +366,65 @@ start_point还是一样的
     eval_samples     =      50
 
 分析就是解决了之前token分词不对的问题
+
+###现阶段得到三个模型：
+
+    fine_tune_mrc_quantity 最初基于原来的分词方法+train样本训练得到的
+    fine_tune_mrc_squad_b4e1 利用新的分词方法+train样本训练得到的
+    fine_tune_mrc_squad_b4e1_all 利用新的分词方法+train+eval训练样本得到的
+
+由于新的分词方法理论上是更好的，因此在这一轮做eval的时候不考虑旧的分词策略
+
+将新的分词策略直接eval
+
+三个结果：
+
+    fine_tune_mrc_quantity{
+        "eval_P": 98.35958005249344,
+        "eval_R": 97.3612673415823,
+        "eval_exact_match": 94.09448818897638,
+        "eval_f1": 97.5561828167201,
+        "eval_samples": 625
+    }
+
+    fine_tune_mrc_squad_b4e1{
+        "eval_P": 94.68789227433527,
+        "eval_R": 93.4911190078513,
+        "eval_exact_match": 88.58267716535433,
+        "eval_f1": 93.15098263317955,
+        "eval_samples": 625
+    }
+
+    fine_tune_mrc_squad_b4e1_all{
+        "eval_P": 96.46137982752157,
+        "eval_R": 96.73228346456693,
+        "eval_exact_match": 94.48818897637796,
+        "eval_f1": 96.47234770787341,
+        "eval_samples": 625
+    }
+
+![](pic/关于模型是否过拟合的实验结果.jpg)
+
+理论上用了新的方法，对应原来相同体量的数据进行fine-tune，其结果应该更好
+
+但实际上没有
+
+1~2之间，下滑；从token的角度来看，之前分词错误的情况下，部分数据没有参与到fine-tune的过程中
+
+也就是说，实际有效的训练数据比喂进去的更小
+
+而从2~3之间，正常上升，说明是过拟合导致的；但是它自己都不能对应自己达到100%，说明在训练过程中产生在训练到某个局部时过拟合/欠拟合的问题
+
+分析eval_predictions.json
+
+确实后两个的输出也并不如第一个好
+
+###说明的确还是需要用主动学习的范式
+
+首先基于最开始的预训练
+
+然后，inference出低score和回答错误的样本
+
+然后把这些拿进去fine-tune
+
+而不是一股脑都扔进去训练
