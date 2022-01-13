@@ -11,6 +11,7 @@ def better_tokenizer_pre_process(text: str):
             ans += ' '
         else:
             ans += text[i]
+    ans += text[-1] if text else ''
     return ans
 
 
