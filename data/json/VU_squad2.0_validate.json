@@ -260,7 +260,7 @@
       "question": "1.5 cm指的是？",
       "answers": {
         "text": [
-          "直肠癌"
+          "肿瘤大小"
         ],
         "answer_start": [
           35
@@ -274,7 +274,7 @@
       "question": "3颗指的是？",
       "answers": {
         "text": [
-          "肿瘤大小"
+          "肠系膜淋巴结"
         ],
         "answer_start": [
           586
