@@ -25,9 +25,12 @@ test_str = [
     '患者徐妹仙，女，63岁。因 确诊直肠癌11月余 门诊拟直肠癌收入院。入院查体：T：36.8℃，P 67次/分，R 19次/分，BP 126/64 mmHg',
     '谷草转氨酶(AST) 16.6 IU/L,钾(K+) 3.64 mmol/L,钠(Na+) 142.6 mmol/L,磷(PHOS) 1.24 mmol/L,剂量为30mg每天my baby,hello bathgate',
     'T30mg',
-    'T 30 mg',
+    '3 mg',
     '68250.0μg/L',
-    '68250.0 μg/L'
+    '68250.0 μg/L',
+    'T 37°C',
+    '148/85mmHg',
+    '3 mm'
 ]
 
 for text in test_str:
@@ -40,13 +43,13 @@ tokenizer=BertTokenizer.from_pretrained('../../chinese-roberta-wwm-ext-large')
 # t3
 # ##0m
 # ##g
-print(tokenizer.decode([11291]))
-print(tokenizer.decode([13079]))
-print(tokenizer.decode([8181]))
+print(tokenizer.decode([162]))
+print(tokenizer.decode([8234]))
+print(tokenizer.decode([9953]))
 
 # t
 # 30
 # mg
-print(tokenizer.decode([162]))
-print(tokenizer.decode([8114]))
+print(tokenizer.decode([9192]))
+print(tokenizer.decode([8181]))
 print(tokenizer.decode([9404]))
