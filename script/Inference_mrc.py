@@ -33,7 +33,10 @@ res = pipeline(
     context=context,
 )
 t2 = time.time()
+
+res = [res] if isinstance(res, dict) else res
+
 for i, r in enumerate(res):
-    print(questions[i], r)
+    print(quantities[i], r['answer'], r['score'])
 
 print(t2 - t1)
