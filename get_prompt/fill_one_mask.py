@@ -31,4 +31,4 @@ for r in result:
         print(cur_prompt)
         dataframe = pd.read_csv('../data/understanding.csv')
         creat_json(dataframe, cur_prompt, '{quantity}' + cur_prompt)
-        # os.system('./test_shell_2_para.sh ' + arg0 + ' ' + arg1)
+        os.system('./bert_train.sh ' + cur_prompt)
