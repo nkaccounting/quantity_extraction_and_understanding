@@ -4,10 +4,10 @@ from collections import defaultdict
 import pandas as pd
 from transformers import pipeline
 
-from script.check_understanding import creat_json
+from check_understanding import creat_json
 
 dataframe = pd.read_csv('../data/understanding.csv')
-unmasker = pipeline('fill-mask', model='../../bert-base-chinese')
+unmasker = pipeline('fill-mask', model='../../question_answering/bert-base-chinese')
 
 prompt = '是[MASK]？'
 # prompt = '[MASK]是？'
@@ -31,4 +31,6 @@ for r in result:
         print(cur_prompt)
         dataframe = pd.read_csv('../data/understanding.csv')
         creat_json(dataframe, cur_prompt, '{quantity}' + cur_prompt)
-        os.system('./bert_train.sh ' + cur_prompt)
+        os.chdir("../../question_answering/")  # 修改当前工作目录
+        os.system('./bert_evaluate.sh ' + cur_prompt)
+        os.chdir("../quantity_extraction_and_understanding/get_prompt/")  # 修改当前工作目录
