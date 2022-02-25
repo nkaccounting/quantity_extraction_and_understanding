@@ -713,3 +713,41 @@ EM具有一定的不可控性，不一定刚好和标注人员标注的gold resu
     都是？
 
 设计有监督方案，共同进行比较。
+
+
+###supervise部分的实验结果
+
+实验结果更新到get_prompt/supervise_result下
+
+其中有一个结果几乎都很不错
+
+prompt为：是什事？
+
+结果为：
+
+    {
+        "epoch": 1.0,
+        "eval_P": 89.22413793103448,
+        "eval_R": 89.22413793103448,
+        "eval_exact_match": 86.20689655172414,
+        "eval_f1": 89.22413793103448,
+        "eval_samples": 50
+    }
+
+之前的我自己的SOTA：
+
+    ***** eval metrics *****
+    epoch            =     1.0
+    eval_P           = 83.5617
+    eval_R           = 91.2931
+    eval_exact_match = 72.4138
+    eval_f1          = 84.7048
+    eval_samples     =      50
+
+EM和F值均有大幅度的提升
+
+但是这个是什事的可解释性略差，猜测其无限接近于最优的prompt
+
+例如，是什么度量，是指什么，是……
+
+结果还有待进一步分析
