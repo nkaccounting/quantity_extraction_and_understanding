@@ -4,10 +4,12 @@ import pandas as pd
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering, QuestionAnsweringPipeline
 
 from quantity_extraction import extract_quantity
-from script.pre_process_for_text import pre_process
+from pre_process_for_text import pre_process
 
-fine_tune_dir = '../../question_answering/chinese_pretrain_mrc_roberta_wwm_ext_large'
-data_dir = '../data/medical_data.csv'
+# fine_tune_dir = '../../question_answering/chinese_pretrain_mrc_roberta_wwm_ext_large'
+# data_dir = '../data/medical_data.csv'
+fine_tune_dir = '../是什事？'
+data_dir = '../data/unseen.csv'
 
 
 def cal_index(s: str, target: str):
@@ -36,7 +38,7 @@ def collect_text(data_dir: str):
     return [pre_process(t) for t in text]
 
 
-def extract_quantity_from_text_list(text: list, out_dir: str = '../result/extract_answer.csv'):
+def extract_quantity_from_text_list(text: list, out_dir: str = '../unseen_result/extract_answer.csv'):
     all_context = []
     all_quantity = []
     all_Quantity = []
@@ -55,7 +57,7 @@ def extract_quantity_from_text_list(text: list, out_dir: str = '../result/extrac
     return all_context, all_Quantity
 
 
-def deal_context_question(context: str, quantities: list, prompt: str = '{quantity}指的是？', deal_DUP: bool = True):
+def deal_context_question(context: str, quantities: list, prompt: str = '{quantity}是什事？', deal_DUP: bool = True):
     quantities_count = Counter(quantities)
     quantities_loc = defaultdict(int)
 
@@ -81,12 +83,12 @@ def deal_context_question(context: str, quantities: list, prompt: str = '{quanti
     return contexts, questions
 
 
-def process_medical_csv(data_dir: str, out_dir: str = '../result/understanding.csv', batch: int = 10):
+def process_medical_csv(data_dir: str, out_dir: str = '../unseen_result/understanding.csv', batch: int = 10):
     pipeline = prepareMTP(fine_tune_dir)
     text = collect_text(data_dir)
     all_context, all_Quantity = extract_quantity_from_text_list(text)
 
-    f = open("../result/out_after_fine-tune.txt", "w")
+    f = open("../unseen_result/out_after_fine-tune.txt", "w")
     all_contexts = []
     all_questions = []
     all_answers = []

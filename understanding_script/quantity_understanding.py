@@ -1,5 +1,5 @@
 # encoding=utf-8
-from script.quantity_extraction import extract_quantity
+from quantity_extraction import extract_quantity
 
 if __name__ == '__main__':
     from transformers import AutoTokenizer, AutoModelForQuestionAnswering, QuestionAnsweringPipeline

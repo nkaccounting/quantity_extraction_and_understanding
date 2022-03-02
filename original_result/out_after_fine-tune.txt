@@ -1,0 +1,558 @@
+1.患者，男性，86岁；2.因“反复便血11月，再发伴乏力3月，腹胀4天。”入院，11月前无明显诱因下出现粘液血便，呈鲜红色，非喷射性出血，在本院治疗，行肠镜：“直肠占位”。病理提示“粘膜部分腺体高级别上皮内瘤变，局部考虑癌变。”根据患者家属意见行保守治疗。之后症状反复。曾多次在我院内科住院。末两次住院时间：末次住院时间：2017.12.30-2018.2.9（住院号：90073）。出院诊断：“1.直肠癌；2.椎-基底动脉供血不足；3.2型糖尿病；4.原发性高血压3级 很高危；5.胆囊切除术后；6.脑梗塞；7.帕金森病；8.肝硬化失代偿期 脾肿大伴脾功能亢进 9.老年性脑改变。”近4天因停服利尿剂。3.患者有“高血压病”7年，有“糖尿病”病史4年，有“肝硬化、脾肿大、脾功能亢进、血三系减少”近1年。4.查体：神清，精神软，T：36.5℃；P：83次/分；R：20次/分；BP：159/87 mmHg。贫血貌，全身浅表淋巴结未及肿大，颈软，两肺呼吸音清，未闻及干湿性啰音，心率83次/分，律齐，未闻及病理性杂音，腹膨隆, 肝脾肋下未及，移动性浊音+，双下肢无浮肿，四肢肌力V级。5.辅助检查：2017-7-31头颅CT检查：1.双侧基底节区、侧脑室旁多发缺血、梗塞灶；2.老年性脑改变；DR：主动脉型心脏。心电图：窦性心律；房性传导延缓。10-12腹部彩超：1、肝硬化声像图 2、胆囊切除术后 3、脾肿大 4、双肾小结石，右肾囊肿可能，建议随访 。11-14头颅CT复查：1、双侧基底节区、侧脑室旁多发缺血、梗塞灶。2、老年性脑改变。与##比较CT无明显变化
+{'Quantity': '86岁', 'MeasuredProperty': {'score': 0.9340570569038391, 'start': 2, 'end': 7, 'answer': '患者，男性'}, 'Unit': '岁'}
+{'Quantity': '11月', 'MeasuredProperty': {'score': 0.8662019968032837, 'start': 16, 'end': 20, 'answer': '反复便血'}, 'Unit': '月'}
+{'Quantity': '3月', 'MeasuredProperty': {'score': 0.9661241769790649, 'start': 27, 'end': 29, 'answer': '乏力'}, 'Unit': '月'}
+{'Quantity': '4天', 'MeasuredProperty': {'score': 0.9890440702438354, 'start': 32, 'end': 34, 'answer': '腹胀'}, 'Unit': '天'}
+{'Quantity': '11月前', 'MeasuredProperty': {'score': 0.08652670681476593, 'start': 45, 'end': 57, 'answer': '无明显诱因下出现粘液血便'}, 'Unit': '月前'}
+{'Quantity': '3级', 'MeasuredProperty': {'score': 0.9558319449424744, 'start': 228, 'end': 234, 'answer': '原发性高血压'}, 'Unit': '级'}
+{'Quantity': '4天', 'MeasuredProperty': {'score': 0.896913468837738, 'start': 261, 'end': 266, 'answer': '停服利尿剂'}, 'Unit': '天'}
+{'Quantity': '7年', 'MeasuredProperty': {'score': 0.7746278643608093, 'start': 307, 'end': 314, 'answer': '有“高血压病”'}, 'Unit': '年'}
+{'Quantity': '4年', 'MeasuredProperty': {'score': 0.9790458679199219, 'start': 317, 'end': 325, 'answer': '有“糖尿病”病史'}, 'Unit': '年'}
+{'Quantity': '1年', 'MeasuredProperty': {'score': 0.005570157431066036, 'start': 328, 'end': 329, 'answer': '有'}, 'Unit': '年'}
+{'Quantity': '36.5℃', 'MeasuredProperty': {'score': 0.999913215637207, 'start': 366, 'end': 367, 'answer': 'T'}, 'Unit': '℃'}
+{'Quantity': '83次/分', 'MeasuredProperty': {'score': 0.9998717308044434, 'start': 374, 'end': 375, 'answer': 'P'}, 'Unit': '次/分'}
+{'Quantity': '20次/分', 'MeasuredProperty': {'score': 0.9996557235717773, 'start': 382, 'end': 383, 'answer': 'R'}, 'Unit': '次/分'}
+{'Quantity': '159/87 mmHg', 'MeasuredProperty': {'score': 0.9997873306274414, 'start': 390, 'end': 392, 'answer': 'BP'}, 'Unit': 'mmHg'}
+{'Quantity': '83次/分', 'MeasuredProperty': {'score': 0.9950141906738281, 'start': 59, 'end': 61, 'answer': '心率'}, 'Unit': '次/分'}
+1.患者，男，86岁。2.因“确诊结肠癌1周”入院。3.患者1年前因“胃肠炎”在我院感染科住院期间行肠镜检查提示“结肠肿瘤，结肠多发息肉”，病理示“(结肠活检）绒毛状腺瘤伴腺上皮中度异型增生”，建议定期复查。10余天前患者因“排便困难2天”来我院住院，再次行肠镜检查示“1、结肠Ca？2、直肠增殖性病变”，病理示“（结肠活检）绒毛状腺瘤伴癌变”，因农历过年先回家休养。现患者无明显腹痛腹胀，排便尚通畅，胃纳可，无腹泻，无恶心呕吐，无呕血便血，无畏寒发热，无咳嗽咳痰，无头晕乏力，无胸闷，无心慌等不适，今来我院要求进一步诊疗，故拟“结肠癌”收住入院。查体：T：37.2℃，R：20次/分，P：76次/分，BP：147/58 mmHg，神志清，精神一般，皮肤巩膜无黄染，全身浅表淋巴结未及异常肿大，心肺听诊无明显异常，腹软，无压痛及反跳痛，肝脾肋下未及，双下肢无浮肿。直肠指检：指检可及一肿块，退指指套无血染。4.辅助检查：2018.02.09本院肠镜：1、结肠Ca？2、直肠增殖性病变。02.14病理：（结肠活检）绒毛状腺瘤伴癌变。5.患者有高血压、糖尿病病史
+{'Quantity': '86岁', 'MeasuredProperty': {'score': 0.9532907605171204, 'start': 2, 'end': 6, 'answer': '患者，男'}, 'Unit': '岁'}
+{'Quantity': '1周', 'MeasuredProperty': {'score': 0.510995090007782, 'start': 17, 'end': 20, 'answer': '结肠癌'}, 'Unit': '周'}
+{'Quantity': '1年前', 'MeasuredProperty': {'score': 0.08490607887506485, 'start': 33, 'end': 38, 'answer': '因“胃肠炎'}, 'Unit': '年前'}
+{'Quantity': '10余天前', 'MeasuredProperty': {'score': 0.6805089116096497, 'start': 113, 'end': 119, 'answer': '排便困难2天'}, 'Unit': '余天前'}
+{'Quantity': '2天', 'MeasuredProperty': {'score': 0.9820690751075745, 'start': 113, 'end': 117, 'answer': '排便困难'}, 'Unit': '天'}
+{'Quantity': '37.2℃', 'MeasuredProperty': {'score': 0.9999570846557617, 'start': 277, 'end': 278, 'answer': 'T'}, 'Unit': '℃'}
+{'Quantity': '20次/分', 'MeasuredProperty': {'score': 0.999903678894043, 'start': 285, 'end': 286, 'answer': 'R'}, 'Unit': '次/分'}
+{'Quantity': '76次/分', 'MeasuredProperty': {'score': 0.9999055862426758, 'start': 293, 'end': 294, 'answer': 'P'}, 'Unit': '次/分'}
+{'Quantity': '147/58 mmHg', 'MeasuredProperty': {'score': 0.9999227523803711, 'start': 301, 'end': 303, 'answer': 'BP'}, 'Unit': 'mmHg'}
+1.患者，男，62岁，因“发现直肠占位1月余”入院。2. 患者于1月前因解血便，来我院门诊就诊，门诊查结肠镜提示结肠占位，病理报告：（距肛门10 CM直肠）中分化腺癌，建议住院治疗，当时拒绝住院，门诊予以芬太尼止血治疗。今再次来我院，自诉大便次数增多，量少，无腹痛腹胀，无腹泻，无畏寒发热，无恶心呕吐，无明显解黑便血便，要求住院治疗。患者有1.肝炎肝硬化（乙型）失代偿期 脾大伴脾亢 血小板低下 白细胞低下2.门脉高压、消化道出血病史。3.查体：T：37.0℃，P：92次/分，R：20次/分，BP：168/88 mmHg，患者神清，精神软，口唇无紫绀，全身浅表淋巴结未触及肿大，心肺查体无明显异常。腹平软，无压痛及反跳痛，肝脾肋下未及，腹部包块未及，肝肾区叩击痛阴性，移动性浊音阴性，肠鸣音4次/分。双下肢无水肿。肛周未见明显肿块脱出，肛门指检：6点钟方向指尖可及一质中肿块，无触痛，退指指套无血染。4.辅助检查：暂缺
+{'Quantity': '62岁', 'MeasuredProperty': {'score': 0.9680521488189697, 'start': 2, 'end': 6, 'answer': '患者，男'}, 'Unit': '岁'}
+{'Quantity': '1月余', 'MeasuredProperty': {'score': 0.9899330139160156, 'start': 15, 'end': 19, 'answer': '直肠占位'}, 'Unit': '月余'}
+{'Quantity': '1月前', 'MeasuredProperty': {'score': 0.43314725160598755, 'start': 36, 'end': 39, 'answer': '解血便'}, 'Unit': '月前'}
+{'Quantity': '10 CM', 'MeasuredProperty': {'score': 0.9860026240348816, 'start': 67, 'end': 70, 'answer': '距肛门'}, 'Unit': 'CM'}
+{'Quantity': '37.0℃', 'MeasuredProperty': {'score': 0.999880313873291, 'start': 223, 'end': 224, 'answer': 'T'}, 'Unit': '℃'}
+{'Quantity': '92次/分', 'MeasuredProperty': {'score': 0.9998760223388672, 'start': 231, 'end': 232, 'answer': 'P'}, 'Unit': '次/分'}
+{'Quantity': '20次/分', 'MeasuredProperty': {'score': 0.9995623230934143, 'start': 239, 'end': 240, 'answer': 'R'}, 'Unit': '次/分'}
+{'Quantity': '168/88 mmHg', 'MeasuredProperty': {'score': 0.9998831748962402, 'start': 247, 'end': 249, 'answer': 'BP'}, 'Unit': 'mmHg'}
+{'Quantity': '4次/分', 'MeasuredProperty': {'score': 0.9997329711914062, 'start': 343, 'end': 346, 'answer': '肠鸣音'}, 'Unit': '次/分'}
+{'Quantity': '6点', 'MeasuredProperty': {'score': 0.34312155842781067, 'start': 369, 'end': 373, 'answer': '肛门指检'}, 'Unit': '点'}
+患者因便血约3月门急诊拟 直肠癌入院。入院查体:T 36.4℃,P 82次/分,R 20次/分,BP 152/55 mmHg，精神稍软，巩膜未见明显黄染，浅表淋巴结未及肿大，腹平，未见胃肠型及蠕动波，全腹软，腹部无明显压痛及反跳痛，肝区叩痛阴性，移动性浊音阴性，肠鸣音正常，墨菲氏征阳性，双肾区无明显叩痛；肛门指检：距肛缘约3 cm处直肠后壁可及一约3 cm*4 cm肿块，表面欠光滑，质中偏硬，占据肠腔2/3，指套少许染血。辅助检查：B超（峡口中心卫生院，2018-02-23）提示：胆囊多发结石，右肾结石；肠镜（本院，2018-02-26）提示直肠肿瘤；肠镜病理（本院，2018-02-26）提示（直肠）腺癌
+{'Quantity': '3月', 'MeasuredProperty': {'score': 0.9858620762825012, 'start': 3, 'end': 5, 'answer': '便血'}, 'Unit': '月'}
+{'Quantity': '36.4℃', 'MeasuredProperty': {'score': 0.9997348785400391, 'start': 24, 'end': 25, 'answer': 'T'}, 'Unit': '℃'}
+{'Quantity': '82次/分', 'MeasuredProperty': {'score': 0.9995961785316467, 'start': 32, 'end': 33, 'answer': 'P'}, 'Unit': '次/分'}
+{'Quantity': '20次/分', 'MeasuredProperty': {'score': 0.9994003772735596, 'start': 40, 'end': 41, 'answer': 'R'}, 'Unit': '次/分'}
+{'Quantity': '152/55 mmHg', 'MeasuredProperty': {'score': 0.9997949600219727, 'start': 48, 'end': 50, 'answer': 'BP'}, 'Unit': 'mmHg'}
+{'Quantity': '3 cm', 'MeasuredProperty': {'score': 0.9913974404335022, 'start': 158, 'end': 161, 'answer': '距肛缘'}, 'Unit': 'cm'}
+{'Quantity': '3 cm', 'MeasuredProperty': {'score': 0.9350443482398987, 'start': 18, 'end': 20, 'answer': '肿块'}, 'Unit': 'cm'}
+{'Quantity': '4 cm', 'MeasuredProperty': {'score': 0.9329001903533936, 'start': 184, 'end': 186, 'answer': '肿块'}, 'Unit': 'cm'}
+患者因腹痛、腹胀1周入住消化内科。入院查体：T 37.2℃，R 20次/分，P 60次/分，Bp 136/96 mmHg。神志清，精神软，皮肤巩膜无黄染，呼吸平稳，双肺呼吸清，未及明显干湿罗音，心律齐，心瓣膜区未及病理性杂音，腹软，无压痛及反跳痛，肝脾肋下未及，未及包块，双下肢无水肿。辅助检查：本院（2018-03-06）腹部平片：腹部见积气征象，右下腹见气液平面
+{'Quantity': '1周', 'MeasuredProperty': {'score': 0.9777954816818237, 'start': 3, 'end': 8, 'answer': '腹痛、腹胀'}, 'Unit': '周'}
+{'Quantity': '37.2℃', 'MeasuredProperty': {'score': 0.9996943473815918, 'start': 22, 'end': 23, 'answer': 'T'}, 'Unit': '℃'}
+{'Quantity': '20次/分', 'MeasuredProperty': {'score': 0.9994708299636841, 'start': 30, 'end': 31, 'answer': 'R'}, 'Unit': '次/分'}
+{'Quantity': '60次/分', 'MeasuredProperty': {'score': 0.9994332194328308, 'start': 38, 'end': 39, 'answer': 'P'}, 'Unit': '次/分'}
+{'Quantity': '136/96 mmHg', 'MeasuredProperty': {'score': 0.9998102188110352, 'start': 46, 'end': 48, 'answer': 'Bp'}, 'Unit': 'mmHg'}
+患者徐妹仙，女，63岁。因 确诊直肠癌11月余 门诊拟直肠癌收入院。入院查体：T 36.8℃，P 67次/分，R 19次/分，BP 126/64 mmHg，神志清，精神软，浅表淋巴结未及明显肿大，双肺未闻及明显干湿罗音，心律齐，未闻及病理性杂音，全腹无明显压痛，无反跳痛，肝脾肋下未及，移动性浊音阴性，肠鸣音6-7次/分，双下肢无浮肿，脊柱四肢无畸形，四肢肌力5级，病理反射未引出；肛门指检：距肛门约2 cm处可及一环形肿物，质偏硬，食指不能通过。辅助检查：2017.3.6 九江市第一医院肠镜检查提示：距肛门5 cm延至齿状线可见环管腔新生物，病理提示直肠中分化腺癌。2017.3.14上海长海医院PET-CT提示直肠癌伴周围淋巴结转移，肝脏转移。右下肺门淋巴结转移
+{'Quantity': '63岁', 'MeasuredProperty': {'score': 0.33547404408454895, 'start': 0, 'end': 7, 'answer': '患者徐妹仙，女'}, 'Unit': '岁'}
+{'Quantity': '11月余', 'MeasuredProperty': {'score': 0.3996139466762543, 'start': 16, 'end': 19, 'answer': '直肠癌'}, 'Unit': '月余'}
+{'Quantity': '36.8℃', 'MeasuredProperty': {'score': 0.9997162818908691, 'start': 39, 'end': 40, 'answer': 'T'}, 'Unit': '℃'}
+{'Quantity': '67次/分', 'MeasuredProperty': {'score': 0.9996405243873596, 'start': 47, 'end': 48, 'answer': 'P'}, 'Unit': '次/分'}
+{'Quantity': '19次/分', 'MeasuredProperty': {'score': 0.9995775818824768, 'start': 55, 'end': 56, 'answer': 'R'}, 'Unit': '次/分'}
+{'Quantity': '126/64 mmHg', 'MeasuredProperty': {'score': 0.999730110168457, 'start': 63, 'end': 65, 'answer': 'BP'}, 'Unit': 'mmHg'}
+{'Quantity': '6-7次/分', 'MeasuredProperty': {'score': 0.9994388818740845, 'start': 151, 'end': 154, 'answer': '肠鸣音'}, 'Unit': '次/分'}
+{'Quantity': '5级', 'MeasuredProperty': {'score': 0.9948581457138062, 'start': 176, 'end': 180, 'answer': '四肢肌力'}, 'Unit': '级'}
+{'Quantity': '2 cm', 'MeasuredProperty': {'score': 0.41347482800483704, 'start': 196, 'end': 212, 'answer': '距肛门约2 cm处可及一环形肿物'}, 'Unit': 'cm'}
+{'Quantity': '5 cm', 'MeasuredProperty': {'score': 0.1859738677740097, 'start': 259, 'end': 272, 'answer': '延至齿状线可见环管腔新生物'}, 'Unit': 'cm'}
+实验室检查：(2020-12-13 14:08，本院)急诊D-二聚体(血浆)：D-二聚体定量 * 68250.0μg/L↑；(2020-12-13 10:19，本院)茶碱(血清)：茶碱 2.52 mg/L↓；(2020-12-13 09:24，本院)生化(血清)：总蛋白 59.5 g/L↓，白蛋白 30.1 g/L↓，白球比例 1.02↓，谷草转氨酶 122 U/L↑，AST:ALT 2.71↑，钾 3.37 mmol/L↓，钠 139.9 mmol/L；(2020-12-13 09:22，本院)血常规+超敏CRP(全血)：白细胞计数 6.71 x 10^9/L，中性粒细胞分类 75.3%↑，中性粒细胞计数 5.1 x 10^9/L，血红蛋白 76 g/L↓，超敏C反应蛋白 49.8 mg/L↑；(2020-12-11 20:43，本院)大便常规+OB(住院)(大便)：隐血试验 ++↑；(2020-12-11 09:27，本院)肿瘤标志物（男）(血清)：神经烯醇化酶 30.2 ng/ml↑，癌胚抗原 7.2μg/L↑；(2020-09-30 09:21，本院)糖化血红蛋白(全血)：糖化血红蛋白-A 1  8.8%↑，糖化血红蛋白-A 1 c 5.9%；特殊检查：(2020-12-12 15:53，本院)行CT[上腹部平扫(腹盆);下腹部平扫(腹盆);盆腔平扫(腹盆)]检查提示：双肾囊样灶。 前列腺钙化灶。 右侧腹股沟区淋巴结可能，请结合临床及其它检查。 附见：两侧少量胸腔积液伴左侧邻近肺组织膨胀不全。(2020-12-11 09:24，本院)行CT[头颅平扫(头颈)]检查提示：左侧额颞顶部术后，脑内多发低密度灶，脑积水引流中，对比2020.11.18老片大致相仿，请结合临床。 附见：鼻窦炎症；两侧中耳乳突炎症。(2020-12-10 10:52，本院)行CT[胸部平扫(心胸)]检查提示：两肺散在少量炎症，较前2020-11-17大致相仿。 两侧少量胸腔积液伴邻近肺局部膨胀不全，两侧胸腔积液较前略增多。 心包少量积液。 主动脉壁、主动脉瓣、冠脉壁钙化。 附：左肾囊性灶。(2020-11-24 10:16，本院)行浅表超声[双上肢肱、肘静脉(浅表超声);双腋静脉(浅表超声)]检查提示：双侧腋静脉显示段血流通畅,双侧肱、肘静脉显示段血流通畅。(2020-10-24 15:57，本院)行常规心电图[床边常规心电图]检查提示：1.窦性心律；2.完全性右束支传导阻滞；3.左前分支传导阻滞；4.一度房室传导阻滞（建议24小时动态心电图检查）；5.T波改变。(2020-10-26 18:11，本院)行其他超声[床边肝胆(其他超声);床边膀胱、肾、肾输尿管(其他超声)]检查提示：胆囊餐后,左肾囊肿。(2020-09-07 14:23，本院)行动态心电图[床边24小时动态心电图]检查提示：1、窦性心律；2、间歇性一度房室传导阻滞；3、完全性右束支传导阻滞；4、房性早搏3215次,成对52次,短阵房性心动过速36次,时呈三联律；5、室性早搏590次,成对5次,时呈二联律； "入院后完善各项检查：(2020-12-15 09:39，本院)血常规+超敏CRP(全血)：白细胞计数 6.79 x 10^9/L，单核细胞分类 16.9%↑，单核细胞计数 1.1 x 10^9/L↑，红细胞分布宽度 20.9%↑，超敏C反应蛋白 16.7 mg/L↑；(2020-12-15 09:19，本院)凝血功能(血浆)：正常对照PT值 10.9秒，凝血酶原时间 13.1秒↑，国际标准化比率 1.21↑，D-二聚体定量 * 15010.0μg/L↑；(2020-12-15 09:42，本院)生化(血清)：总蛋白 61.5 g/L↓，白蛋白 30.9 g/L↓，白球比例 1.01↓，谷草转氨酶 47 U/L↑，肌酐 46.7μmol/L，尿酸 72μmol/L↓；(2020-12-15 09:57，本院)肿瘤标志物（男）(血清)：癌胚抗原 6.5μg/L↑，糖类抗原15-3  29.5 U/ml↑；(2020-12-16 14:57，本院)大便常规+OB(住院)(大便)：隐血试验 弱阳性↑；(2020-12-18 13:47，本院)胃液常规+OB(胃液)：隐血试验 阴性(-)，透明度 微浑；(2020-12-31 14:26，本院)行动态心电图[床边24小时动态心电图]检查提示：1、窦性心律(约90次/分)；2、房性早搏18627次,部分未下传,其中成对834次,短阵房性心动过速668次,时呈二、；三联律；3、室性早搏9079次,其中成对85次,短阵室性心动过速3次,时呈二、三联律；4、加速性室性逸搏366次,房室交界性逸搏3次,发生于房早未下传及房速后；5、一度房室传导阻滞；6、完全性右束支传导阻滞；7、全程T波改变；(2021-01-02 21:33，本院)行加急：浅表超声[双侧髂静脉(浅表超声);单侧小腿肌间静
+{'Quantity': '68250.0μg/L', 'MeasuredProperty': {'score': 0.8409669995307922, 'start': 452, 'end': 456, 'answer': '癌胚抗原'}, 'Unit': 'μg/L'}
+{'Quantity': '2.52 mg/L', 'MeasuredProperty': {'score': 0.9241611361503601, 'start': 83, 'end': 85, 'answer': '茶碱'}, 'Unit': 'mg/L'}
+{'Quantity': '59.5 g/L', 'MeasuredProperty': {'score': 0.9991058111190796, 'start': 132, 'end': 135, 'answer': '总蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '30.1 g/L', 'MeasuredProperty': {'score': 0.9991482496261597, 'start': 1571, 'end': 1574, 'answer': '白蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '1.02↓', 'MeasuredProperty': {'score': 0.9991944432258606, 'start': 160, 'end': 164, 'answer': '白球比例'}, 'Unit': '↓'}
+{'Quantity': '122 U/L', 'MeasuredProperty': {'score': 0.9991001486778259, 'start': 171, 'end': 176, 'answer': '谷草转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '2.71↑', 'MeasuredProperty': {'score': 0.9992983341217041, 'start': 186, 'end': 193, 'answer': 'AST:ALT'}, 'Unit': '↑'}
+{'Quantity': '3.37 mmol/L', 'MeasuredProperty': {'score': 0.9996004700660706, 'start': 200, 'end': 201, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '139.9 mmol/L', 'MeasuredProperty': {'score': 0.9998130798339844, 'start': 215, 'end': 216, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '6.71 x', 'MeasuredProperty': {'score': 0.9732290506362915, 'start': 265, 'end': 270, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '75.3%', 'MeasuredProperty': {'score': 0.9975211024284363, 'start': 285, 'end': 292, 'answer': '中性粒细胞分类'}, 'Unit': '%'}
+{'Quantity': '5.1 x', 'MeasuredProperty': {'score': 0.9950265884399414, 'start': 300, 'end': 307, 'answer': '中性粒细胞计数'}, 'Unit': 'x'}
+{'Quantity': '76 g/L', 'MeasuredProperty': {'score': 0.9995027780532837, 'start': 321, 'end': 325, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '49.8 mg/L', 'MeasuredProperty': {'score': 0.9985719323158264, 'start': 334, 'end': 341, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '30.2 ng/ml', 'MeasuredProperty': {'score': 0.995169460773468, 'start': 433, 'end': 439, 'answer': '神经烯醇化酶'}, 'Unit': 'ng/ml'}
+{'Quantity': '7.2μg/L', 'MeasuredProperty': {'score': 0.9993135929107666, 'start': 452, 'end': 456, 'answer': '癌胚抗原'}, 'Unit': 'μg/L'}
+{'Quantity': '8.8%', 'MeasuredProperty': {'score': 0.9678102731704712, 'start': 498, 'end': 508, 'answer': '糖化血红蛋白-A 1'}, 'Unit': '%'}
+{'Quantity': '5.9%', 'MeasuredProperty': {'score': 0.9807162284851074, 'start': 516, 'end': 528, 'answer': '糖化血红蛋白-A 1 c'}, 'Unit': '%'}
+{'Quantity': '24小时', 'MeasuredProperty': {'score': 0.70875483751297, 'start': 1074, 'end': 1081, 'answer': '动态心电图检查'}, 'Unit': '小时'}
+{'Quantity': '24小时', 'MeasuredProperty': {'score': 0.6387493014335632, 'start': 0, 'end': 5, 'answer': '动态心电图'}, 'Unit': '小时'}
+{'Quantity': '3215次', 'MeasuredProperty': {'score': 0.9867191910743713, 'start': 1242, 'end': 1246, 'answer': '房性早搏'}, 'Unit': '次'}
+{'Quantity': '52次', 'MeasuredProperty': {'score': 0.9989081621170044, 'start': 1252, 'end': 1254, 'answer': '成对'}, 'Unit': '次'}
+{'Quantity': '36次', 'MeasuredProperty': {'score': 0.9740855693817139, 'start': 1258, 'end': 1266, 'answer': '短阵房性心动过速'}, 'Unit': '次'}
+{'Quantity': '590次', 'MeasuredProperty': {'score': 0.3227001428604126, 'start': 1242, 'end': 1246, 'answer': '房性早搏'}, 'Unit': '次'}
+{'Quantity': '5次', 'MeasuredProperty': {'score': 0.732371985912323, 'start': 1252, 'end': 1254, 'answer': '成对'}, 'Unit': '次'}
+{'Quantity': '6.79 x', 'MeasuredProperty': {'score': 0.9931334257125854, 'start': 1345, 'end': 1350, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '16.9%', 'MeasuredProperty': {'score': 0.9987338185310364, 'start': 1365, 'end': 1371, 'answer': '单核细胞分类'}, 'Unit': '%'}
+{'Quantity': '1.1 x', 'MeasuredProperty': {'score': 0.9954417943954468, 'start': 1379, 'end': 1385, 'answer': '单核细胞计数'}, 'Unit': 'x'}
+{'Quantity': '20.9%', 'MeasuredProperty': {'score': 0.9979474544525146, 'start': 1400, 'end': 1407, 'answer': '红细胞分布宽度'}, 'Unit': '%'}
+{'Quantity': '16.7 mg/L', 'MeasuredProperty': {'score': 0.9964073300361633, 'start': 1415, 'end': 1422, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '10.9秒', 'MeasuredProperty': {'score': 0.9940506219863892, 'start': 1464, 'end': 1471, 'answer': '正常对照PT值'}, 'Unit': '秒'}
+{'Quantity': '13.1秒', 'MeasuredProperty': {'score': 0.997649610042572, 'start': 1478, 'end': 1484, 'answer': '凝血酶原时间'}, 'Unit': '秒'}
+{'Quantity': '1.21↑', 'MeasuredProperty': {'score': 0.9988357424736023, 'start': 1492, 'end': 1499, 'answer': '国际标准化比率'}, 'Unit': '↑'}
+{'Quantity': '15010.0μg/L', 'MeasuredProperty': {'score': 0.9897173047065735, 'start': 1506, 'end': 1513, 'answer': 'D-二聚体定量'}, 'Unit': 'μg/L'}
+{'Quantity': '61.5 g/L', 'MeasuredProperty': {'score': 0.9993111491203308, 'start': 1557, 'end': 1560, 'answer': '总蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '30.9 g/L', 'MeasuredProperty': {'score': 0.9994760751724243, 'start': 1571, 'end': 1574, 'answer': '白蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '1.01↓', 'MeasuredProperty': {'score': 0.999456524848938, 'start': 1585, 'end': 1589, 'answer': '白球比例'}, 'Unit': '↓'}
+{'Quantity': '47 U/L', 'MeasuredProperty': {'score': 0.9995108842849731, 'start': 1596, 'end': 1601, 'answer': '谷草转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '46.7μmol/L', 'MeasuredProperty': {'score': 0.9994326829910278, 'start': 1610, 'end': 1612, 'answer': '肌酐'}, 'Unit': 'μmol/L'}
+{'Quantity': '72μmol/L', 'MeasuredProperty': {'score': 0.9990391731262207, 'start': 1624, 'end': 1626, 'answer': '尿酸'}, 'Unit': 'μmol/L'}
+{'Quantity': '6.5μg/L', 'MeasuredProperty': {'score': 0.9892634153366089, 'start': 1671, 'end': 1675, 'answer': '癌胚抗原'}, 'Unit': 'μg/L'}
+{'Quantity': '29.5 U/ml', 'MeasuredProperty': {'score': 0.9796662330627441, 'start': 1685, 'end': 1689, 'answer': '糖类抗原'}, 'Unit': 'U/ml'}
+{'Quantity': '24小时', 'MeasuredProperty': {'score': 0.7157292366027832, 'start': 637, 'end': 639, 'answer': '床边'}, 'Unit': '小时'}
+{'Quantity': '90次/分', 'MeasuredProperty': {'score': 0.2877906262874603, 'start': 1885, 'end': 1887, 'answer': '成对'}, 'Unit': '次/分'}
+{'Quantity': '18627次', 'MeasuredProperty': {'score': 0.9634099006652832, 'start': 1866, 'end': 1870, 'answer': '房性早搏'}, 'Unit': '次'}
+{'Quantity': '834次', 'MeasuredProperty': {'score': 0.9836013317108154, 'start': 1885, 'end': 1887, 'answer': '成对'}, 'Unit': '次'}
+{'Quantity': '668次', 'MeasuredProperty': {'score': 0.951252818107605, 'start': 1892, 'end': 1900, 'answer': '短阵房性心动过速'}, 'Unit': '次'}
+{'Quantity': '9079次', 'MeasuredProperty': {'score': 0.8307784199714661, 'start': 1916, 'end': 1920, 'answer': '室性早搏'}, 'Unit': '次'}
+{'Quantity': '85次', 'MeasuredProperty': {'score': 0.4889121651649475, 'start': 1252, 'end': 1254, 'answer': '成对'}, 'Unit': '次'}
+{'Quantity': '3次', 'MeasuredProperty': {'score': 0.45583218336105347, 'start': 1892, 'end': 1900, 'answer': '短阵房性心动过速'}, 'Unit': '次'}
+{'Quantity': '366次', 'MeasuredProperty': {'score': 0.995802640914917, 'start': 1955, 'end': 1962, 'answer': '加速性室性逸搏'}, 'Unit': '次'}
+{'Quantity': '3次', 'MeasuredProperty': {'score': 0.9085522294044495, 'start': 23, 'end': 30, 'answer': '房室交界性逸搏'}, 'Unit': '次'}
+1.患者因“头部摔伤后意识不清，四肢活动不利2年余”入院 。2.体检：耳温：36.8℃，呼吸：20次/分，脉搏：87次/分，血压：148/85 mmHg，神清，精神一般，双侧瞳孔等大等圆，直径3 mm，对光反射可，右侧鼻唇沟稍浅，口角向左歪斜，伸舌不能配合，咽反射不能配合。肺部听诊呼吸音稍粗，双肺可闻及湿性罗音，心腹查体无殊。患者双侧肩关节被动活动轻度受限，被动活动肩关节患者有痛苦表情，四肢轻度水肿。双上肢伸肌、屈肌肌张力1+级，余肢体肌张力均为0级，四肢腱反射正常，右侧巴氏征阳性，左侧巴氏征阴性。认知功能：高级脑功能障碍，MMSE检查无法完成。运动功能：右侧Brunstrom分期（上肢-手-下肢）II期 -III期 -III期；左侧肢体Brunstrom分期（上肢-手-下肢）III期 -IV期 -III期。言语功能：偶有发声，听理解、复述、阅读、命名、书写不能配合。吞咽功能、感觉功能均不能配合检查。坐位平衡1级，立位平衡不能配合。ADL评定：Barthel指数0分。社会参与重度受限。
+{'Quantity': '2年余', 'MeasuredProperty': {'score': 0.9606364369392395, 'start': 16, 'end': 22, 'answer': '四肢活动不利'}, 'Unit': '年余'}
+{'Quantity': '36.8℃', 'MeasuredProperty': {'score': 0.9988343715667725, 'start': 35, 'end': 37, 'answer': '耳温'}, 'Unit': '℃'}
+{'Quantity': '20次/分', 'MeasuredProperty': {'score': 0.9994302988052368, 'start': 44, 'end': 46, 'answer': '呼吸'}, 'Unit': '次/分'}
+{'Quantity': '87次/分', 'MeasuredProperty': {'score': 0.9993937015533447, 'start': 53, 'end': 55, 'answer': '脉搏'}, 'Unit': '次/分'}
+{'Quantity': '148/85 mmHg', 'MeasuredProperty': {'score': 0.998044490814209, 'start': 62, 'end': 64, 'answer': '血压'}, 'Unit': 'mmHg'}
+{'Quantity': '3 mm', 'MeasuredProperty': {'score': 0.9940662980079651, 'start': 94, 'end': 96, 'answer': '直径'}, 'Unit': 'mm'}
+{'Quantity': '1级', 'MeasuredProperty': {'score': 0.9989110827445984, 'start': 406, 'end': 410, 'answer': '坐位平衡'}, 'Unit': '级'}
+1）继续康复治疗；
+2）定期复查生化、血常规、凝血功能、肿瘤标志物、大便OB、胃液OB，头颅CT、胸部CT；
+3）必要时支气管镜检查明确病因，康复科、呼吸科、消化内科随诊；
+4) 合理膳食，均衡营养；如有任何营养相关问题，可到营养科就诊。地点：2号楼门诊331诊室。时间：周一、周二、周四及周五的上午。2、复诊时间及随访计划：每2周一次，不适随诊（康复科专家门诊：每周二上午；联系电话：0571-85893616）3、康复训练指导：继续运动疗法及有氧训练改善关节活动范围及肢体运动功能，吞咽功能障碍训练改善吞咽进食能力等综合康复治疗。预防肺部感染等并发症。4、VTE评估及处置计划:VTE评分1分；  ；，其他：                       。5、出院带药：无带药。
+{'Quantity': '2周', 'MeasuredProperty': {'score': 0.8160967826843262, 'start': 163, 'end': 168, 'answer': '每2周一次'}, 'Unit': '周'}
+{'Quantity': '1分', 'MeasuredProperty': {'score': 0.335008442401886, 'start': 280, 'end': 296, 'answer': 'VTE评估及处置计划:VTE评分'}, 'Unit': '分'}
+3.辅助检查：实验室检查：(2020-12-19 01:19，本院)急诊脑钠肽前体(全血)：脑利钠肽前体 652 pg/ml↑；(2020-12-19 01:49，本院)急诊生化(血浆)：钾 3.85 mmol/L，钠 136.5 mmol/L↓，氯 102.9 mmol/L，谷丙转氨酶 100 U/L↑，葡萄糖 10.43 mmol/L↑；(2020-12-19 01:49，本院)急诊心肌损伤标志物(血浆)：心肌肌钙蛋白I 0.239μg/L↑；(2020-12-19 01:51，本院)ABO+Rh血型(全血)：白细胞计数 11.29 x 10^9/L↑，淋巴细胞计数 1.8 x 10^9/L，中性粒细胞计数 8.9 x 10^9/L↑，血红蛋白 147 g/L，血小板计数 233 x 10^9/L；。 
+特殊检查：(2020-12-19 01:51，本院)行加急：CT[胸部平扫(心胸)]检查提示：两肺水肿可能。 心脏增大，心包积液。 附见：脂肪肝。 
+病理检查：暂缺。 "	"入院后完善相关检查：
+(2020-12-20 08:41，本院)糖化血红蛋白(全血)：糖化血红蛋白-A 1  9.2%↑，糖化血红蛋白-A 1 c 7.1%↑；血常规+超敏CRP(全血)：白细胞计
+数 12.66 x 10^9/L↑，中性粒细胞计数 9.4 x 10^9/L↑，血红蛋白 144 g/L，血小板计数 289 x 10^9/L，超敏C反应蛋白 3.0 mg/L；
+生化(血清)：总蛋白 69.0 g/L，谷丙转氨酶 77 U/L↑，总胆红素 24.1μmol/L↑，葡萄糖 6.92 mmol/L↑，尿酸 589μmol/L↑，总胆固醇 7.35 mmol/L↑，甘油三酯 2.94 mmol/L↑，*低密度脂蛋白胆固醇 4.61 mmol/L↑，乳酸脱氢酶 252 U/L↑，同型半胱氨酸 16.1μmol/L↑；(2020-12-20 10:06，本院)心肌酶谱(血清)：乳酸脱氢酶 261 U/L↑；
+尿常规(尿液)：尿糖 弱阳性↑，尿酮体 阴性(-)，尿蛋白 弱阳性↑，尿白细胞 阴性(-)；
+TORCH(血清)：巨细胞病毒-IgG抗体 2056.56 U/ml↑，单纯疱疹病毒1型-IgG抗体 338.35 U/ml↑；
+肌钙蛋白I+B型钠尿肽(全血)：心肌肌钙蛋白I 0.191μg/L↑，B型钠尿肽 38.8 pg/mL；
+餐后2小时血糖(血清)：餐后二小时血糖 13.67 mmol/L↑；
+EB病毒抗体(血清)：EB病毒VCA-IgA 1.4 COI↑，EB病毒VCA-IgG 99.0 U/ml↑，EB病毒核心抗原IgG 160.0 U/ml↑，EB病毒核心抗原IgA 1.2 COI↑；
+肾素-血管紧张素(血浆(卧位))：肾素活性 20.000 ng/ml/h↑；
+醛固酮（ALD）(血浆(卧位))：醛固酮 265.0 pg/ml↑；
+醛固酮（ALD）(血浆(立位))：醛固酮 325.0 pg/ml↑；
+尿敏感肾功能(尿液)：微量白蛋白 192.40 mg/L↑，尿免疫球蛋白G 15.16 mg/L↑，尿转铁蛋白 8.19 mg/L↑，尿微量白蛋白/肌酐 9.94 mg/mmol↑；
+2020-12-27复查：急诊血常规+超敏CRP(全血)：白细胞计数 11.50 x 10^9/L↑，单核细胞计数 0.8 x 10^9/L↑，中性粒细胞计数 7.7 x 10^9/L↑，超敏C反应蛋白 31.7 mg/L↑；复查：急诊心肌损伤标志物(血浆)：心肌肌钙蛋白I 0.130μg/L↑；甲状腺功能+TPO(血清)、肿瘤标志物（男）、柯萨奇病毒-IgM抗体(血清)、餐后2 h胰岛素+C肽(血清)、心肌酶谱(血清)、皮质醇(血清(8 am)未见明显异常
+{'Quantity': '652 pg/ml', 'MeasuredProperty': {'score': 0.8354318737983704, 'start': 46, 'end': 52, 'answer': '脑利钠肽前体'}, 'Unit': 'pg/ml'}
+{'Quantity': '3.85 mmol/L', 'MeasuredProperty': {'score': 0.9992230534553528, 'start': 94, 'end': 95, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '136.5 mmol/L', 'MeasuredProperty': {'score': 0.999657154083252, 'start': 108, 'end': 109, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '102.9 mmol/L', 'MeasuredProperty': {'score': 0.9997134208679199, 'start': 124, 'end': 125, 'answer': '氯'}, 'Unit': 'mmol/L'}
+{'Quantity': '100 U/L', 'MeasuredProperty': {'score': 0.9986871480941772, 'start': 139, 'end': 144, 'answer': '谷丙转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '10.43 mmol/L', 'MeasuredProperty': {'score': 0.9947974681854248, 'start': 154, 'end': 157, 'answer': '葡萄糖'}, 'Unit': 'mmol/L'}
+{'Quantity': '0.239μg/L', 'MeasuredProperty': {'score': 0.9404510855674744, 'start': 207, 'end': 214, 'answer': '心肌肌钙蛋白I'}, 'Unit': 'μg/L'}
+{'Quantity': '11.29 x', 'MeasuredProperty': {'score': 0.9816168546676636, 'start': 260, 'end': 265, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '1.8 x', 'MeasuredProperty': {'score': 0.9983325004577637, 'start': 282, 'end': 288, 'answer': '淋巴细胞计数'}, 'Unit': 'x'}
+{'Quantity': '8.9 x', 'MeasuredProperty': {'score': 0.9965802431106567, 'start': 302, 'end': 309, 'answer': '中性粒细胞计数'}, 'Unit': 'x'}
+{'Quantity': '147 g/L', 'MeasuredProperty': {'score': 0.9994217157363892, 'start': 324, 'end': 328, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '233 x', 'MeasuredProperty': {'score': 0.9985315203666687, 'start': 337, 'end': 342, 'answer': '血小板计数'}, 'Unit': 'x'}
+{'Quantity': '9.2%', 'MeasuredProperty': {'score': 0.9641785621643066, 'start': 489, 'end': 499, 'answer': '糖化血红蛋白-A 1'}, 'Unit': '%'}
+{'Quantity': '7.1%', 'MeasuredProperty': {'score': 0.9875040650367737, 'start': 507, 'end': 519, 'answer': '糖化血红蛋白-A 1 c'}, 'Unit': '%'}
+{'Quantity': '12.66 x', 'MeasuredProperty': {'score': 0.9976981282234192, 'start': 540, 'end': 546, 'answer': '白细胞计\n数'}, 'Unit': 'x'}
+{'Quantity': '9.4 x', 'MeasuredProperty': {'score': 0.9963042140007019, 'start': 563, 'end': 570, 'answer': '中性粒细胞计数'}, 'Unit': 'x'}
+{'Quantity': '144 g/L', 'MeasuredProperty': {'score': 0.9943645000457764, 'start': 585, 'end': 589, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '289 x', 'MeasuredProperty': {'score': 0.45519891381263733, 'start': 598, 'end': 603, 'answer': '血小板计数'}, 'Unit': 'x'}
+{'Quantity': '3.0 mg/L', 'MeasuredProperty': {'score': 0.9974288940429688, 'start': 617, 'end': 624, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '69.0 g/L', 'MeasuredProperty': {'score': 0.9986656904220581, 'start': 642, 'end': 645, 'answer': '总蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '77 U/L', 'MeasuredProperty': {'score': 0.9994808435440063, 'start': 655, 'end': 660, 'answer': '谷丙转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '24.1μmol/L', 'MeasuredProperty': {'score': 0.9994908571243286, 'start': 669, 'end': 673, 'answer': '总胆红素'}, 'Unit': 'μmol/L'}
+{'Quantity': '6.92 mmol/L', 'MeasuredProperty': {'score': 0.9995418190956116, 'start': 686, 'end': 689, 'answer': '葡萄糖'}, 'Unit': 'mmol/L'}
+{'Quantity': '589μmol/L', 'MeasuredProperty': {'score': 0.9993793368339539, 'start': 703, 'end': 705, 'answer': '尿酸'}, 'Unit': 'μmol/L'}
+{'Quantity': '7.35 mmol/L', 'MeasuredProperty': {'score': 0.9995108842849731, 'start': 717, 'end': 721, 'answer': '总胆固醇'}, 'Unit': 'mmol/L'}
+{'Quantity': '2.94 mmol/L', 'MeasuredProperty': {'score': 0.9996338486671448, 'start': 735, 'end': 739, 'answer': '甘油三酯'}, 'Unit': 'mmol/L'}
+{'Quantity': '4.61 mmol/L', 'MeasuredProperty': {'score': 0.9815302491188049, 'start': 753, 'end': 763, 'answer': '*低密度脂蛋白胆固醇'}, 'Unit': 'mmol/L'}
+{'Quantity': '252 U/L', 'MeasuredProperty': {'score': 0.9995208978652954, 'start': 777, 'end': 782, 'answer': '乳酸脱氢酶'}, 'Unit': 'U/L'}
+{'Quantity': '16.1μmol/L', 'MeasuredProperty': {'score': 0.998321533203125, 'start': 792, 'end': 798, 'answer': '同型半胱氨酸'}, 'Unit': 'μmol/L'}
+{'Quantity': '261 U/L', 'MeasuredProperty': {'score': 0.7738968729972839, 'start': 832, 'end': 836, 'answer': '心肌酶谱'}, 'Unit': 'U/L'}
+{'Quantity': '2056.56 U/ml', 'MeasuredProperty': {'score': 0.9134082198143005, 'start': 914, 'end': 925, 'answer': '巨细胞病毒-IgG抗体'}, 'Unit': 'U/ml'}
+{'Quantity': '338.35 U/ml', 'MeasuredProperty': {'score': 0.995447039604187, 'start': 940, 'end': 954, 'answer': '单纯疱疹病毒1型-IgG抗体'}, 'Unit': 'U/ml'}
+{'Quantity': '0.191μg/L', 'MeasuredProperty': {'score': 0.8719585537910461, 'start': 985, 'end': 992, 'answer': '心肌肌钙蛋白I'}, 'Unit': 'μg/L'}
+{'Quantity': '38.8 pg', 'MeasuredProperty': {'score': 0.8811341524124146, 'start': 1004, 'end': 1009, 'answer': 'B型钠尿肽'}, 'Unit': 'pg'}
+{'Quantity': '2小时', 'MeasuredProperty': {'score': 0.6329997181892395, 'start': 1027, 'end': 1029, 'answer': '血糖'}, 'Unit': '小时'}
+{'Quantity': '13.67 mmol/L', 'MeasuredProperty': {'score': 0.8873998522758484, 'start': 1034, 'end': 1041, 'answer': '餐后二小时血糖'}, 'Unit': 'mmol/L'}
+{'Quantity': '99.0 U/ml', 'MeasuredProperty': {'score': 0.7081996202468872, 'start': 1089, 'end': 1100, 'answer': 'EB病毒VCA-IgG'}, 'Unit': 'U/ml'}
+{'Quantity': '160.0 U/ml', 'MeasuredProperty': {'score': 0.9833526015281677, 'start': 1112, 'end': 1123, 'answer': 'EB病毒核心抗原IgG'}, 'Unit': 'U/ml'}
+{'Quantity': '20.000 ng/ml', 'MeasuredProperty': {'score': 0.7653812766075134, 'start': 1175, 'end': 1179, 'answer': '肾素活性'}, 'Unit': 'ng/ml'}
+{'Quantity': '265.0 pg/ml', 'MeasuredProperty': {'score': 0.7219509482383728, 'start': 1197, 'end': 1200, 'answer': '醛固酮'}, 'Unit': 'pg/ml'}
+{'Quantity': '325.0 pg/ml', 'MeasuredProperty': {'score': 0.7371273636817932, 'start': 1249, 'end': 1252, 'answer': '醛固酮'}, 'Unit': 'pg/ml'}
+{'Quantity': '192.40 mg/L', 'MeasuredProperty': {'score': 0.9978560209274292, 'start': 1278, 'end': 1283, 'answer': '微量白蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '15.16 mg/L', 'MeasuredProperty': {'score': 0.9665286540985107, 'start': 1297, 'end': 1304, 'answer': '尿免疫球蛋白G'}, 'Unit': 'mg/L'}
+{'Quantity': '8.19 mg/L', 'MeasuredProperty': {'score': 0.9979750514030457, 'start': 1317, 'end': 1322, 'answer': '尿转铁蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '9.94 mg', 'MeasuredProperty': {'score': 0.9901227951049805, 'start': 1334, 'end': 1343, 'answer': '尿微量白蛋白/肌酐'}, 'Unit': 'mg'}
+{'Quantity': '11.50 x', 'MeasuredProperty': {'score': 0.9967342019081116, 'start': 1388, 'end': 1393, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '0.8 x', 'MeasuredProperty': {'score': 0.9987614750862122, 'start': 1410, 'end': 1416, 'answer': '单核细胞计数'}, 'Unit': 'x'}
+{'Quantity': '7.7 x', 'MeasuredProperty': {'score': 0.9981158971786499, 'start': 1431, 'end': 1438, 'answer': '中性粒细胞计数'}, 'Unit': 'x'}
+{'Quantity': '31.7 mg/L', 'MeasuredProperty': {'score': 0.9979097843170166, 'start': 1453, 'end': 1460, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '130μg/L', 'MeasuredProperty': {'score': 0.9165216088294983, 'start': 1489, 'end': 1496, 'answer': '心肌肌钙蛋白I'}, 'Unit': 'μg/L'}
+1.患者因“确诊右肺腺癌10天”入院 。2.体检：神清，口唇无紫绀，皮肤巩膜无黄染，双锁骨上淋巴结未及肿大，颈静脉无怒张，气管居中，双肺呼吸音清，未闻及干湿性罗音，心律齐，未闻及病理性杂音，腹软，无压痛，肝脾肋下未及，双下肢无水肿，NS(-)。 。3.辅助检查：实验室检查：(2020-12-11 ，本院涂片找抗酸杆菌(支纤镜刷出物)：抗酸杆菌(++) 。 特殊检查：2020-12-10本院行ECT检查提示：1、右侧第6-9肋骨折，建议随访。2020-12-09本院行MR头颅平扫提示：颅脑MRI平扫未见明显异常。2020-12-14本院行冠脉CTA检查提示：冠状动脉CTA未见明显异常。病理检查：(2020-12-14本院行加急：常规组织病理检查与诊断【右肺下叶新生物】检查提示：“右肺下叶新生物活检”腺癌(2020-12-22本院行支气管镜检查提示：支气管镜所见范围未见明显新生物。(2020-12-22本)结核感染T细胞：结核感染T细胞检测 1.55 pg/ml(-)；(2020-12-23本院涂片找抗酸杆菌(支纤镜刷出物)：3次未找到抗酸杆菌 ；。 	入院后完善各项检查，完善术前评估排除手术禁忌后，于2020-12-29行胸腔镜下右下肺叶切除+肺门纵隔淋巴结清扫术。手术过程顺利，留置右胸管1根。术后予明可欣针[头孢呋辛钠] 1.5 g 静脉滴注 bid抗感染、沐舒坦针祛痰等对症支持治疗，患者术后恢复良好，生命体征稳定，一般活动无不适，体温正常，复查血常规基本正常，经医疗组长查房后予今日出院。	患者一般情况良好，体温正常，无胸闷气促，咳嗽咳痰不多，双肺呼吸音清，无啰音，手术切口II/甲愈合，复查胸片见右肺复张良好，无明显胸腔积液
+{'Quantity': '10天', 'MeasuredProperty': {'score': 0.7469866275787354, 'start': 6, 'end': 12, 'answer': '确诊右肺腺癌'}, 'Unit': '天'}
+{'Quantity': '1.55 pg/ml', 'MeasuredProperty': {'score': 0.5878644585609436, 'start': 415, 'end': 424, 'answer': '结核感染T细胞检测'}, 'Unit': 'pg/ml'}
+{'Quantity': '3次', 'MeasuredProperty': {'score': 0.20510929822921753, 'start': 452, 'end': 459, 'answer': '涂片找抗酸杆菌'}, 'Unit': '次'}
+{'Quantity': '1.5 g', 'MeasuredProperty': {'score': 0.5572275519371033, 'start': 558, 'end': 568, 'answer': '明可欣针[头孢呋辛钠'}, 'Unit': 'g'}
+18-02-18红细胞 3.17 10^12/L  偏低, 血红蛋白 92 g/L  偏低, 白细胞 2.60 10^9/L  偏低, 中性粒细胞百分比 64.3 % , 血小板 71 10^9/L  偏低。18-02-18凝血酶原时间 14.50 S , PT活动度 73.00 % , 国际标准化比值 1.26   偏高, 纤维蛋白原-C 2.06 g/L , D-二聚体测定 1.80 mg/L  偏高。18-02-18总胆红素 8.9 μmol/L , 直接胆红素 4.8 μmol/L , 间接胆红素 4.1 μmol/L , 总蛋白 58.7 g/L  偏低, 白蛋白 25.9 g/L  偏低, 谷丙转氨酶 13 U/L , 谷草转氨酶 25 U/L , 碱性磷酸酶 167 U/L  偏高, 胆碱酯酶 2431 U/L  偏低, 总胆汁酸 18.94 μmol/L  偏高, 葡萄糖 8.15 mmol/L  偏高, 羟丁酸脱氢酶 219 U/L , 尿素 5.58 mmol/L , 肌酐 72 umol/L , 尿酸 211 μmol/L , 钾 4.32 mmol/L , 钠 147 mmol/L , 氯 116 mmol/L  偏高, 钙 2.03 mmol/L  偏低, 超敏C反应蛋白 14.25 mg/L  偏高。18-02-18甲胎蛋白 2.1 ng/ml , 总前列腺特异性抗原测 2.140 ng/ml , 糖类抗原CA-125 50.8 U/ml  偏高, 游离甲状腺素 12.34 pmol/L , 铁蛋白 8.80 ng/ml  偏低, 癌胚抗原 17.86 ng/ml  偏高, 复合前列腺特异性抗原 1.040 ng/ml 。予以参麦针益气健脾,二甲双胍缓释片控制血糖、血压，利尿消肿，利可君片升高白细胞，补充白蛋白,补充铁剂等造血原料纠正贫血,止痛及对症治疗。并予以抗炎治疗
+{'Quantity': '92 g/L', 'MeasuredProperty': {'score': 0.9995356798171997, 'start': 30, 'end': 34, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '64.3 %', 'MeasuredProperty': {'score': 0.9979883432388306, 'start': 68, 'end': 76, 'answer': '中性粒细胞百分比'}, 'Unit': '%'}
+{'Quantity': '14.50 S', 'MeasuredProperty': {'score': 0.9989281296730042, 'start': 112, 'end': 118, 'answer': '凝血酶原时间'}, 'Unit': 'S'}
+{'Quantity': '73.00 %', 'MeasuredProperty': {'score': 0.9838624000549316, 'start': 129, 'end': 134, 'answer': 'PT活动度'}, 'Unit': '%'}
+{'Quantity': '2.06 g/L', 'MeasuredProperty': {'score': 0.948656439781189, 'start': 164, 'end': 171, 'answer': '纤维蛋白原-C'}, 'Unit': 'g/L'}
+{'Quantity': '1.80 mg/L', 'MeasuredProperty': {'score': 0.9985122084617615, 'start': 671, 'end': 674, 'answer': '铁蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '8.9 μmol/L', 'MeasuredProperty': {'score': 0.9991629719734192, 'start': 213, 'end': 217, 'answer': '总胆红素'}, 'Unit': 'μmol/L'}
+{'Quantity': '4.8 μmol/L', 'MeasuredProperty': {'score': 0.9991282224655151, 'start': 231, 'end': 236, 'answer': '直接胆红素'}, 'Unit': 'μmol/L'}
+{'Quantity': '4.1 μmol/L', 'MeasuredProperty': {'score': 0.9995256662368774, 'start': 250, 'end': 255, 'answer': '间接胆红素'}, 'Unit': 'μmol/L'}
+{'Quantity': '58.7 g/L', 'MeasuredProperty': {'score': 0.9996700286865234, 'start': 269, 'end': 272, 'answer': '总蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '25.9 g/L', 'MeasuredProperty': {'score': 0.6877033114433289, 'start': 287, 'end': 290, 'answer': '白蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '13 U/L', 'MeasuredProperty': {'score': 0.9997234344482422, 'start': 305, 'end': 310, 'answer': '谷丙转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '25 U/L', 'MeasuredProperty': {'score': 0.9305885434150696, 'start': 320, 'end': 325, 'answer': '谷草转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '167 U/L', 'MeasuredProperty': {'score': 0.999228298664093, 'start': 335, 'end': 340, 'answer': '碱性磷酸酶'}, 'Unit': 'U/L'}
+{'Quantity': '2431 U/L', 'MeasuredProperty': {'score': 0.9992197155952454, 'start': 354, 'end': 358, 'answer': '胆碱酯酶'}, 'Unit': 'U/L'}
+{'Quantity': '18.94 μmol/L', 'MeasuredProperty': {'score': 0.9995613694190979, 'start': 373, 'end': 377, 'answer': '总胆汁酸'}, 'Unit': 'μmol/L'}
+{'Quantity': '8.15 mmol/L', 'MeasuredProperty': {'score': 0.9989824891090393, 'start': 396, 'end': 399, 'answer': '葡萄糖'}, 'Unit': 'mmol/L'}
+{'Quantity': '219 U/L', 'MeasuredProperty': {'score': 0.9993798136711121, 'start': 417, 'end': 423, 'answer': '羟丁酸脱氢酶'}, 'Unit': 'U/L'}
+{'Quantity': '5.58 mmol/L', 'MeasuredProperty': {'score': 0.9993550777435303, 'start': 434, 'end': 436, 'answer': '尿素'}, 'Unit': 'mmol/L'}
+{'Quantity': '211 μmol/L', 'MeasuredProperty': {'score': 0.9996429085731506, 'start': 466, 'end': 468, 'answer': '尿酸'}, 'Unit': 'μmol/L'}
+{'Quantity': '4.32 mmol/L', 'MeasuredProperty': {'score': 0.9999098777770996, 'start': 482, 'end': 483, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '147 mmol/L', 'MeasuredProperty': {'score': 0.9999418258666992, 'start': 498, 'end': 499, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '116 mmol/L', 'MeasuredProperty': {'score': 0.9998812675476074, 'start': 513, 'end': 514, 'answer': '氯'}, 'Unit': 'mmol/L'}
+{'Quantity': '2.03 mmol/L', 'MeasuredProperty': {'score': 0.9999327659606934, 'start': 531, 'end': 532, 'answer': '钙'}, 'Unit': 'mmol/L'}
+{'Quantity': '14.25 mg/L', 'MeasuredProperty': {'score': 0.9981212019920349, 'start': 550, 'end': 557, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '2.1 ng/ml', 'MeasuredProperty': {'score': 0.9993298053741455, 'start': 581, 'end': 585, 'answer': '甲胎蛋白'}, 'Unit': 'ng/ml'}
+{'Quantity': '2.140 ng/ml', 'MeasuredProperty': {'score': 0.9935758113861084, 'start': 598, 'end': 607, 'answer': '总前列腺特异性抗原'}, 'Unit': 'ng/ml'}
+{'Quantity': '50.8 U/ml', 'MeasuredProperty': {'score': 0.9180174469947815, 'start': 623, 'end': 633, 'answer': '糖类抗原CA-125'}, 'Unit': 'U/ml'}
+{'Quantity': '12.34 pmol/L', 'MeasuredProperty': {'score': 0.9996243119239807, 'start': 649, 'end': 655, 'answer': '游离甲状腺素'}, 'Unit': 'pmol/L'}
+{'Quantity': '8.80 ng/ml', 'MeasuredProperty': {'score': 0.9997463226318359, 'start': 671, 'end': 674, 'answer': '铁蛋白'}, 'Unit': 'ng/ml'}
+{'Quantity': '17.86 ng/ml', 'MeasuredProperty': {'score': 0.9997067451477051, 'start': 691, 'end': 695, 'answer': '癌胚抗原'}, 'Unit': 'ng/ml'}
+{'Quantity': '1.040 ng/ml', 'MeasuredProperty': {'score': 0.998467206954956, 'start': 713, 'end': 723, 'answer': '复合前列腺特异性抗原'}, 'Unit': 'ng/ml'}
+绒毛状腺瘤伴癌变。排除手术禁忌，于2018.02.25在全麻下行乙状结肠癌根治+横结肠肿瘤切除术，术后予予头孢噻肟 2.0 g q 12 h + 奥肖唑 0.5 g q 12 h 抗感染，护胃，止血，补充白蛋白促进吻合口愈合，补液营养支持等对症治疗，术后腹腔情况恢复可，术后出现切口感染，后予切口每天换药处理等对症治疗，现切口恢复可。术后病理：乙状结肠隆起型浸润性中分化腺癌，侵及浆膜，未见脉管神经累及。肿瘤大小5*4 cm，手术上、下切缘阴性，肠系膜淋巴结9颗未见癌转移。横结肠隆起型浸润性中分化腺癌，侵及深肌层，未见脉管神经累及。肿瘤大小3*2 cm，手术上、下切缘阴性，肠系膜淋巴结2颗未见癌转移
+{'Quantity': '2.0 g', 'MeasuredProperty': {'score': 0.9596685767173767, 'start': 53, 'end': 57, 'answer': '头孢噻肟'}, 'Unit': 'g'}
+{'Quantity': '0.5 g', 'MeasuredProperty': {'score': 0.9974051117897034, 'start': 73, 'end': 76, 'answer': '奥肖唑'}, 'Unit': 'g'}
+{'Quantity': '5*4 cm', 'MeasuredProperty': {'score': 0.9988477230072021, 'start': 202, 'end': 206, 'answer': '肿瘤大小'}, 'Unit': 'cm'}
+{'Quantity': '9颗', 'MeasuredProperty': {'score': 0.9673037528991699, 'start': 223, 'end': 229, 'answer': '肠系膜淋巴结'}, 'Unit': '颗'}
+{'Quantity': '3*2 cm', 'MeasuredProperty': {'score': 0.4704870581626892, 'start': 267, 'end': 271, 'answer': '肿瘤大小'}, 'Unit': 'cm'}
+{'Quantity': '2颗', 'MeasuredProperty': {'score': 0.9357002377510071, 'start': 223, 'end': 229, 'answer': '肠系膜淋巴结'}, 'Unit': '颗'}
+患者入院后，完善各项检查，以明确诊断。全腹部增强CT：肝硬化，脾肿大。直肠癌考虑。附见：右肾结石、双肾囊肿N端前脑钠肽(BNP),男性肿瘤标志物,甲状腺功能7项：(2018-03-04),B型钠尿肽53 pg/ml,铁蛋白8.00 ng/ml,甲胎蛋白0.5 ng/ml,癌胚抗原1.93 ng/ml,糖类抗原12513.4 U/ml,糖类抗原1999.80 U/mL,总PSA 0.660 ng/ml,复合前列腺特异性抗原0.530 ng/ml,三碘甲状原氨酸1.53 nmol/L,甲状腺素68.2 nmol/L,游离三碘甲状原氨酸4.73 pmol/L,游离甲状腺素11.56 pmol/L,促甲状腺激素9.72 uIU/ml,甲状腺球蛋白抗体&lt;15.0 IU/ml,甲状腺过氧化物酶抗体&lt;28.0 U/ml血常规（五分类），超敏C反应蛋白(全血)，ABO+Rh血型鉴定：(2018-03-04),白细胞2.57*10^9/L,中性粒细胞计数1.81*10^9/L,中性粒细胞百分比70.4%,红细胞4.09*10^12/L,血红蛋白96 g/L,红细胞压积31.4%,血小板36*10^9/L并于2018-3-14在全麻下行腹腔镜脾切除、腹腔镜中转开放直肠癌根治术(milse)，手术顺利，术后予抗炎营养支持治疗。术后病理：直肠溃疡型浸润性中分化腺癌，肿瘤大小3*2.5*1.5 cm，侵及外膜，未见脉管、神经累犯，手术上、下切缘阴性，肠系膜淋巴结0/3颗未见癌转移。慢性淤血性脾肿大
+{'Quantity': '7项', 'MeasuredProperty': {'score': 0.9934990406036377, 'start': 73, 'end': 78, 'answer': '甲状腺功能'}, 'Unit': '项'}
+{'Quantity': '53 pg/ml', 'MeasuredProperty': {'score': 0.9987767338752747, 'start': 94, 'end': 99, 'answer': 'B型钠尿肽'}, 'Unit': 'pg/ml'}
+{'Quantity': '8.00 ng/ml', 'MeasuredProperty': {'score': 0.9994303584098816, 'start': 108, 'end': 111, 'answer': '铁蛋白'}, 'Unit': 'ng/ml'}
+{'Quantity': '0.5 ng/ml', 'MeasuredProperty': {'score': 0.999517560005188, 'start': 122, 'end': 126, 'answer': '甲胎蛋白'}, 'Unit': 'ng/ml'}
+{'Quantity': '1.93 ng/ml', 'MeasuredProperty': {'score': 0.9995318651199341, 'start': 136, 'end': 140, 'answer': '癌胚抗原'}, 'Unit': 'ng/ml'}
+{'Quantity': '12513.4 U/ml', 'MeasuredProperty': {'score': 0.9992687702178955, 'start': 151, 'end': 155, 'answer': '糖类抗原'}, 'Unit': 'U/ml'}
+{'Quantity': '660 ng/ml', 'MeasuredProperty': {'score': 0.9852131009101868, 'start': 185, 'end': 189, 'answer': '总PSA'}, 'Unit': 'ng/ml'}
+{'Quantity': '530 ng/ml', 'MeasuredProperty': {'score': 0.9976904988288879, 'start': 202, 'end': 212, 'answer': '复合前列腺特异性抗原'}, 'Unit': 'ng/ml'}
+{'Quantity': '1.53 nmol/L', 'MeasuredProperty': {'score': 0.9978513121604919, 'start': 224, 'end': 231, 'answer': '三碘甲状原氨酸'}, 'Unit': 'nmol/L'}
+{'Quantity': '68.2 nmol/L', 'MeasuredProperty': {'score': 0.9997076988220215, 'start': 243, 'end': 247, 'answer': '甲状腺素'}, 'Unit': 'nmol/L'}
+{'Quantity': '4.73 pmol/L', 'MeasuredProperty': {'score': 0.8820114731788635, 'start': 259, 'end': 268, 'answer': '游离三碘甲状原氨酸'}, 'Unit': 'pmol/L'}
+{'Quantity': '11.56 pmol/L', 'MeasuredProperty': {'score': 0.9993078708648682, 'start': 280, 'end': 286, 'answer': '游离甲状腺素'}, 'Unit': 'pmol/L'}
+{'Quantity': '28.0 U/ml', 'MeasuredProperty': {'score': 0.99445641040802, 'start': 340, 'end': 350, 'answer': '甲状腺过氧化物酶抗体'}, 'Unit': 'U/ml'}
+{'Quantity': '70.4%', 'MeasuredProperty': {'score': 0.9972923398017883, 'start': 442, 'end': 450, 'answer': '中性粒细胞百分比'}, 'Unit': '%'}
+{'Quantity': '96 g/L', 'MeasuredProperty': {'score': 0.9996266961097717, 'start': 472, 'end': 476, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '31.4%', 'MeasuredProperty': {'score': 0.9987152814865112, 'start': 483, 'end': 488, 'answer': '红细胞压积'}, 'Unit': '%'}
+{'Quantity': '1.5 cm', 'MeasuredProperty': {'score': 0.9943355321884155, 'start': 586, 'end': 590, 'answer': '肿瘤大小'}, 'Unit': 'cm'}
+{'Quantity': '3颗', 'MeasuredProperty': {'score': 0.977993905544281, 'start': 628, 'end': 634, 'answer': '肠系膜淋巴结'}, 'Unit': '颗'}
+入院后完善相关检查，血常规提示白细胞计数 5.7*10^9/L,中性粒细胞(%) 65.0%,血红蛋白 107 g/L,血小板计数 202*10^9/L；凝血全套D-二聚体 1.52 mg/L；生化全套总胆红素(TBIL) 10.1 umol/L,直接胆红素(DBIL) 1.4 umol/L,白蛋白(ALB) 37.2 g/L,谷丙转氨酶(ALT) 8.4 IU/L,谷草转氨酶(AST) 13.0 IU/L,钾(K+) 3.48 mmol/L,钠(Na+) 140.1 mmol/L,尿素氮(BUN) 4.4 mmol/L,肌酐(CR) 63.0 umol/L,葡萄糖（GLU） 5.37 mmol/L,超敏C反应蛋白(CRP) 4.6 mg/L；肿瘤套餐全套(女)CA-199 4.3 U/ml,CA-153 4.2 U/ml,癌胚抗原(CEA) 3.1 ng/ml,甲胎蛋白(AFP) 2.6 ng/ml；糖化血红蛋白(HbA 1 c) 5.6%；血气分析提示pH 7.48,pO 2 104.4 mmHg,pCO 2 32.6 mmHg,HCO 3 24 mmol/L,BE 1 mmol/L；心电图提示:窦性心律， P波增宽提示房内传导阻滞，左室高电压；腹部增强CT提示直肠占位灶，CA考虑，请结合肠镜及临床相关检查。盆腔少量积液。头颅MR提示1.两侧额颞顶叶皮层下腔隙缺血灶。2.老年性脑改变；脑白质脱髓鞘改变。3.颅骨异常增厚，请结合临床。4.两侧上颌窦、筛窦、蝶窦及右侧额窦炎性病变。B超提示:胆囊多发结石，子宫萎缩，宫腔积液；超声心动图提示三尖瓣轻度反流；肺CT提示两下肺支气管病变，右肺下叶磨玻璃结节，建议复查观察；两肺少许纤维增殖灶。排除禁忌后于2018-03-12行腹腔镜直肠癌根治术（DIXON)+回肠末端保护性造口+肠粘连松解术，术中见腹腔无明显腹水，盆腔见多个粘连束带，肿瘤位于齿状线上方约1.5 cm，约4*5 CM大小，隆起型，侵出浆肌层，直肠系膜见多个肿大淋巴结。手术过程顺利，术后予以抗感染、止血、营养支持对症处理，患者术后有头晕、呕吐等情况，予以对症处理后好转，术后病理提示（直肠癌根治标本）隆起型中-低分化腺癌伴淋巴结转移性癌（瘤体：3.5×3.0×2.0 cm），浸润至深肌层。送检上切缘及自检下切缘阴性，自检肠周淋巴结：2/6枚见癌转移。肿瘤内科会诊后建议术后辅助化疗，目前病情恢复可，今予出院
+{'Quantity': '65.0%', 'MeasuredProperty': {'score': 0.9989553093910217, 'start': 32, 'end': 37, 'answer': '中性粒细胞'}, 'Unit': '%'}
+{'Quantity': '107 g/L', 'MeasuredProperty': {'score': 0.9995275139808655, 'start': 47, 'end': 51, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '1.52 mg/L', 'MeasuredProperty': {'score': 0.9974707365036011, 'start': 77, 'end': 86, 'answer': '凝血全套D-二聚体'}, 'Unit': 'mg/L'}
+{'Quantity': '37.2 g/L', 'MeasuredProperty': {'score': 0.997381329536438, 'start': 147, 'end': 150, 'answer': '白蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '8.4 IU/L', 'MeasuredProperty': {'score': 0.9976352453231812, 'start': 165, 'end': 170, 'answer': '谷丙转氨酶'}, 'Unit': 'IU/L'}
+{'Quantity': '13.0 IU/L', 'MeasuredProperty': {'score': 0.9653744101524353, 'start': 185, 'end': 190, 'answer': '谷草转氨酶'}, 'Unit': 'IU/L'}
+{'Quantity': '3.48 mmol/L', 'MeasuredProperty': {'score': 0.9994060397148132, 'start': 206, 'end': 207, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '140.1 mmol/L', 'MeasuredProperty': {'score': 0.9996104836463928, 'start': 224, 'end': 225, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '4.4 mmol/L', 'MeasuredProperty': {'score': 0.9910376667976379, 'start': 244, 'end': 247, 'answer': '尿素氮'}, 'Unit': 'mmol/L'}
+{'Quantity': '5.37 mmol/L', 'MeasuredProperty': {'score': 0.9873303174972534, 'start': 283, 'end': 286, 'answer': '葡萄糖'}, 'Unit': 'mmol/L'}
+{'Quantity': '4.6 mg/L', 'MeasuredProperty': {'score': 0.9927972555160522, 'start': 312, 'end': 315, 'answer': 'CRP'}, 'Unit': 'mg/L'}
+{'Quantity': '4.3 U/ml', 'MeasuredProperty': {'score': 0.9982701539993286, 'start': 335, 'end': 341, 'answer': 'CA-199'}, 'Unit': 'U/ml'}
+{'Quantity': '4.2 U/ml', 'MeasuredProperty': {'score': 0.9977161884307861, 'start': 351, 'end': 357, 'answer': 'CA-153'}, 'Unit': 'U/ml'}
+{'Quantity': '3.1 ng/ml', 'MeasuredProperty': {'score': 0.9845072031021118, 'start': 367, 'end': 371, 'answer': '癌胚抗原'}, 'Unit': 'ng/ml'}
+{'Quantity': '2.6 ng/ml', 'MeasuredProperty': {'score': 0.9961602687835693, 'start': 387, 'end': 391, 'answer': '甲胎蛋白'}, 'Unit': 'ng/ml'}
+{'Quantity': '5.6%', 'MeasuredProperty': {'score': 0.9657667279243469, 'start': 407, 'end': 413, 'answer': '糖化血红蛋白'}, 'Unit': '%'}
+{'Quantity': '104.4 mmHg', 'MeasuredProperty': {'score': 0.9816411733627319, 'start': 442, 'end': 444, 'answer': 'pO'}, 'Unit': 'mmHg'}
+{'Quantity': '32.6 mmHg', 'MeasuredProperty': {'score': 0.9804885387420654, 'start': 458, 'end': 461, 'answer': 'pCO'}, 'Unit': 'mmHg'}
+{'Quantity': '24 mmol/L', 'MeasuredProperty': {'score': 0.9966368079185486, 'start': 474, 'end': 477, 'answer': 'HCO'}, 'Unit': 'mmol/L'}
+{'Quantity': '1 mmol/L', 'MeasuredProperty': {'score': 0.9997777938842773, 'start': 490, 'end': 492, 'answer': 'BE'}, 'Unit': 'mmol/L'}
+{'Quantity': '1.5 cm', 'MeasuredProperty': {'score': 0.878376305103302, 'start': 936, 'end': 938, 'answer': '瘤体'}, 'Unit': 'cm'}
+{'Quantity': '4*5 CM', 'MeasuredProperty': {'score': 0.655176043510437, 'start': 936, 'end': 938, 'answer': '瘤体'}, 'Unit': 'CM'}
+{'Quantity': '2.0 cm', 'MeasuredProperty': {'score': 0.9983953237533569, 'start': 936, 'end': 938, 'answer': '瘤体'}, 'Unit': 'cm'}
+入院后完善相关检查：甲状腺功能全套总三碘甲状腺原氨酸 1.27 nmol/L,游离甲状腺素 16.25 pmol/L；生化：总蛋白(TP) 56.7 g/L,白蛋白(ALB) 31.8 g/L,谷丙转氨酶(ALT) 8.7 IU/L,谷草转氨酶(AST) 16.6 IU/L,钾(K+) 3.64 mmol/L,钠(Na+) 142.6 mmol/L,磷(PHOS) 1.24 mmol/L,肌酐(CR) 50.0 umol/L,尿酸(UA) 394.0 umol/L；肿瘤套餐全套(女)癌胚抗原(CEA) 12.1 ng/ml；胃镜提示:慢性萎缩性胃炎伴糜烂，ECG提示:窦性心律，房性早搏，T波改变；US:双侧甲状腺多发结节，其中右侧较大结节伴钙化，建议随访，超声心动图示：主动脉瓣退行性变伴少量反流，主动脉瓣，三尖瓣少白细胞计数 4.1*10^9/L,血红蛋白 107 g/L,红细胞计数 3.57*10^12/L,血小板计数 193*10^9/L；总钙(CA) 2.04 mmol/L,磷(PHOS) 0.82 mmol/L；D-二聚体 3.51 mg/L；胃镜提示：慢性萎缩性胃炎伴糜烂；肠镜提示:结肠肝曲肿瘤，结肠多发腺瘤；胸部CT 本院: 两肺肺散在纤维增殖灶；右肺上叶尖段微结节，增殖灶可能，建议随访复查；主动脉及部分冠脉钙化。腹部CT提示：左肝微小囊肿可能；右肾小结石考虑；回盲部及升结肠管壁可疑增厚，慢性炎症？建议结肠镜进一步检查；两侧臀部软组织结节状钙化灶。入院后内科予以通便、适量补液、维持电解质平衡等治疗，行肠镜病理结果提示:结肠肝曲肿瘤（活检），结肠多发腺瘤（未摘除）；病理报告提示：（结肠肝曲）腺癌。外科会诊后转外科治疗，接科后完善术前检查，肺功能提示通气功能基本正常；动态心电图提示：最小心率49次/分，最大心率195次/分，单发房早1616次，单发室早23次。心内科会诊，不需特别处理。3-20行结肠镜下治疗，结肠镜提示:结肠肝曲肿瘤；结肠多发息肉（结肠脾曲、降结肠、降乙交界、乙状结肠、直肠分别1.5、0.8、0.8、0.8、0.5 CM大小有蒂息肉）。于3-21在全麻下行腹腔镜结肠癌根治（右半结肠）+腹腔粘连松解术，术中见腹腔内少许淡黄色清亮腹水，大网膜与下腹部有粘连束带，肝脾无殊，盆腔无结节，升结肠近肝曲处一约4.0×4.0 cm肿块，浸及浆膜下；右侧结肠系膜内有肿大淋巴结，肠系膜上动脉旁有肿大淋巴结；术毕剖视见升结肠近肝曲处肿瘤占据肠壁全周，已致肠梗阻。手术顺利，术后抗感染、支持对症等治疗。术后病理报告提示:（右半结肠癌根治标本）溃疡型中-低分化腺癌（瘤体：3.5×2.5×1.0 cm），浸润至深肌层，脉管内见癌栓。自检上、下切缘阴性，阑尾阴性。自检肠周淋巴结：19枚均阴性；送检（肠系膜上动脉旁淋巴结）6枚阴性。迪安病理会诊：（右半结肠）中分化腺癌；免疫组化MLH（++80%）、MSH 2（++ - +++80%）、MSH 6（++80%）。PMS及Ki-67结果未到
+{'Quantity': '1.27 nmol/L', 'MeasuredProperty': {'score': 0.5384714603424072, 'start': 23, 'end': 26, 'answer': '原氨酸'}, 'Unit': 'nmol/L'}
+{'Quantity': '16.25 pmol/L', 'MeasuredProperty': {'score': 0.9989200830459595, 'start': 39, 'end': 45, 'answer': '游离甲状腺素'}, 'Unit': 'pmol/L'}
+{'Quantity': '56.7 g/L', 'MeasuredProperty': {'score': 0.9973717927932739, 'start': 62, 'end': 65, 'answer': '总蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '31.8 g/L', 'MeasuredProperty': {'score': 0.9973846077919006, 'start': 79, 'end': 82, 'answer': '白蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '8.7 IU/L', 'MeasuredProperty': {'score': 0.9990725517272949, 'start': 97, 'end': 102, 'answer': '谷丙转氨酶'}, 'Unit': 'IU/L'}
+{'Quantity': '16.6 IU/L', 'MeasuredProperty': {'score': 0.9669896960258484, 'start': 117, 'end': 122, 'answer': '谷草转氨酶'}, 'Unit': 'IU/L'}
+{'Quantity': '3.64 mmol/L', 'MeasuredProperty': {'score': 0.9990277290344238, 'start': 138, 'end': 139, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '142.6 mmol/L', 'MeasuredProperty': {'score': 0.9991520047187805, 'start': 156, 'end': 157, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '1.24 mmol/L', 'MeasuredProperty': {'score': 0.9988338947296143, 'start': 176, 'end': 177, 'answer': '磷'}, 'Unit': 'mmol/L'}
+{'Quantity': '12.1 ng/ml', 'MeasuredProperty': {'score': 0.984264075756073, 'start': 244, 'end': 248, 'answer': '癌胚抗原'}, 'Unit': 'ng/ml'}
+{'Quantity': '107 g/L', 'MeasuredProperty': {'score': 0.9996581673622131, 'start': 379, 'end': 383, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '2.04 mmol/L', 'MeasuredProperty': {'score': 0.9937885403633118, 'start': 428, 'end': 430, 'answer': '总钙'}, 'Unit': 'mmol/L'}
+{'Quantity': '0.82 mmol/L', 'MeasuredProperty': {'score': 0.9992969036102295, 'start': 447, 'end': 448, 'answer': '磷'}, 'Unit': 'mmol/L'}
+{'Quantity': '3.51 mg/L', 'MeasuredProperty': {'score': 0.9993364810943604, 'start': 467, 'end': 472, 'answer': 'D-二聚体'}, 'Unit': 'mg/L'}
+{'Quantity': '49次/分', 'MeasuredProperty': {'score': 0.9989843368530273, 'start': 758, 'end': 762, 'answer': '最小心率'}, 'Unit': '次/分'}
+{'Quantity': '195次/分', 'MeasuredProperty': {'score': 0.9983105659484863, 'start': 768, 'end': 772, 'answer': '最大心率'}, 'Unit': '次/分'}
+{'Quantity': '1616次', 'MeasuredProperty': {'score': 0.9985581636428833, 'start': 779, 'end': 783, 'answer': '单发房早'}, 'Unit': '次'}
+{'Quantity': '23次', 'MeasuredProperty': {'score': 0.9860951900482178, 'start': 789, 'end': 793, 'answer': '单发室早'}, 'Unit': '次'}
+{'Quantity': '0.5 CM', 'MeasuredProperty': {'score': 0.9683505892753601, 'start': 1101, 'end': 1103, 'answer': '瘤体'}, 'Unit': 'CM'}
+{'Quantity': '4.0 cm', 'MeasuredProperty': {'score': 0.8307530283927917, 'start': 1101, 'end': 1103, 'answer': '瘤体'}, 'Unit': 'cm'}
+{'Quantity': '1.0 cm', 'MeasuredProperty': {'score': 0.994478702545166, 'start': 1101, 'end': 1103, 'answer': '瘤体'}, 'Unit': 'cm'}
+{'Quantity': '80%', 'MeasuredProperty': {'score': 0.8114241361618042, 'start': 1206, 'end': 1209, 'answer': 'MLH'}, 'Unit': '%'}
+{'Quantity': '80%', 'MeasuredProperty': {'score': 0.997941255569458, 'start': 2, 'end': 7, 'answer': 'MSH 2'}, 'Unit': '%'}
+{'Quantity': '80%', 'MeasuredProperty': {'score': 0.9841453433036804, 'start': 2, 'end': 7, 'answer': 'MSH 6'}, 'Unit': '%'}
+入院后完善检查，除外禁忌后于3.13在全麻下行结肠造瘘术，术后予以抗肿瘤对症治疗，患者病情稳定，造瘘口通畅，转内科继续治疗。术后常有原肛门处流血流液，考虑肿瘤相关。予以止血治疗。于4.3予以mFOLFOX 6（奥沙利铂125 mgd 1+亚叶酸钙600 mgd 1+5-FU 600 ivd 1+5-fu 3500 mgciv 46 h）（身高156 cm、体重54 kg，体表面积1.5平方米）方案化疗，过程顺利
+{'Quantity': '125 mg', 'MeasuredProperty': {'score': 0.9988138675689697, 'start': 105, 'end': 109, 'answer': '奥沙利铂'}, 'Unit': 'mg'}
+{'Quantity': '600 mg', 'MeasuredProperty': {'score': 0.9971216917037964, 'start': 119, 'end': 123, 'answer': '亚叶酸钙'}, 'Unit': 'mg'}
+{'Quantity': '3500 mg', 'MeasuredProperty': {'score': 0.1971910148859024, 'start': 158, 'end': 168, 'answer': 'mgciv 46 h'}, 'Unit': 'mg'}
+{'Quantity': '156 cm', 'MeasuredProperty': {'score': 0.9991658926010132, 'start': 170, 'end': 172, 'answer': '身高'}, 'Unit': 'cm'}
+{'Quantity': '54 kg', 'MeasuredProperty': {'score': 0.998674750328064, 'start': 179, 'end': 181, 'answer': '体重'}, 'Unit': 'kg'}
+{'Quantity': '1.5平方米', 'MeasuredProperty': {'score': 0.9966487288475037, 'start': 187, 'end': 191, 'answer': '体表面积'}, 'Unit': '平方米'}
+ "1.患者因“头痛4天，右侧肢体麻木疼痛2天”入院 。2.体检：BP 151/91 mmHg，双侧鼻唇沟对称，双肺呼吸音清，未及啰音，HR 74次/分，律齐，腹软，无压痛，无反跳痛。四肢肌力5级，肌张力正常。双侧巴氏征阴性。双侧肢体针刺痛觉对称。掌颏反射阳性。。3.辅助检查：实验室检查：(2020-11-06 14:04，本院)急诊血常规+超敏CRP(全血)：白细胞计数 10.76 x 10^9/L↑，中性粒细胞分类 73.4%，血红蛋白 123 g/L，血小板计数 241 x 10^9/L，超敏C反应蛋白 3.4 mg/L；(2020-11-06 14:20，本院)急诊生化(血浆)：钾 3.88 mmol/L，钠 136.5 mmol/L↓，葡萄糖 7.83 mmol/L↑，肌酐 52.4μmol/L；(2020-11-06 14:20，本院)急诊D-二聚体(血浆)：D-二聚体定量 * 2230.0μg/L↑；(2020-11-06 14:27，本院)急诊心肌损伤标志物(血浆)：心肌肌钙蛋白I 0.002μg/L；(2020-11-06 15:07，本院)新型冠状病毒-19抗体(非发热门诊)(血清)：新型冠状病毒总抗体 阴性(-)；。 
+特殊检查：(2020-11-06 14:52，本院)行加急：CT[头颅平扫(头颈);胸部平扫(心胸)]检查提示：右侧基底节区脑梗塞，请结合临床及MR检查。,右肺上叶小结节，炎性灶可能，请随诊。 右肺中叶少许炎性纤维化。 主动脉壁、主动脉瓣、冠脉钙化。 附：肝内低密度灶。 未见确切新冠肺炎征象。。 "1.患者因“头痛4天，右侧肢体麻木疼痛2天”入院 。2.体检：BP 151/91 mmHg，双侧鼻唇沟对称，双肺呼吸音清，未及啰音，HR 74次/分，律齐，腹软，无压痛，无反跳痛。四肢肌力5级，肌张力正常。双侧巴氏征阴性。双侧肢体针刺痛觉对称。掌颏反射阳性。。3.辅助检查：实验室检查：(2020-11-06 14:04，本院)急诊血常规+超敏CRP(全血)：白细胞计数 10.76 x 10^9/L↑，中性粒细胞分类 73.4%，血红蛋白 123 g/L，血小板计数 241 x 10^9/L，超敏C反应蛋白 3.4 mg/L；(2020-11-06 14:20，本院)急诊生化(血浆)：钾 3.88 mmol/L，钠 136.5 mmol/L↓，葡萄糖 7.83 mmol/L↑，肌酐 52.4μmol/L；(2020-11-06 14:20，本院)急诊D-二聚体(血浆)：D-二聚体定量 * 2230.0μg/L↑；(2020-11-06 14:27，本院)急诊心肌损伤标志物(血浆)：心肌肌钙蛋白I 0.002μg/L；(2020-11-06 15:07，本院)新型冠状病毒-19抗体(非发热门诊)(血清)：新型冠状病毒总抗体 阴性(-)；。 
+特殊检查：(2020-11-06 14:52，本院)行加急：CT[头颅平扫(头颈);胸部平扫(心胸)]检查提示：右侧基底节区脑梗塞，请结合临床及MR检查。,右肺上叶小结节，炎性灶可能，请随诊。 右肺中叶少许炎性纤维化。 主动脉壁、主动脉瓣、冠脉钙化。 附：肝内低密度灶。 未见确切新冠肺炎征象。。
+{'Quantity': '4天', 'MeasuredProperty': {'score': 0.9971278309822083, 'start': 8, 'end': 10, 'answer': '头痛'}, 'Unit': '天'}
+{'Quantity': '2天', 'MeasuredProperty': {'score': 0.9788973927497864, 'start': 13, 'end': 21, 'answer': '右侧肢体麻木疼痛'}, 'Unit': '天'}
+{'Quantity': '151/91 mmHg', 'MeasuredProperty': {'score': 0.9998302459716797, 'start': 33, 'end': 35, 'answer': 'BP'}, 'Unit': 'mmHg'}
+{'Quantity': '74次/分', 'MeasuredProperty': {'score': 0.9997715950012207, 'start': 68, 'end': 70, 'answer': 'HR'}, 'Unit': '次/分'}
+{'Quantity': '5级', 'MeasuredProperty': {'score': 0.9872512817382812, 'start': 92, 'end': 96, 'answer': '四肢肌力'}, 'Unit': '级'}
+{'Quantity': '10.76 x', 'MeasuredProperty': {'score': 0.9934232831001282, 'start': 182, 'end': 187, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '73.4%', 'MeasuredProperty': {'score': 0.9990172386169434, 'start': 204, 'end': 211, 'answer': '中性粒细胞分类'}, 'Unit': '%'}
+{'Quantity': '123 g/L', 'MeasuredProperty': {'score': 0.99952232837677, 'start': 218, 'end': 222, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '241 x', 'MeasuredProperty': {'score': 0.9956821203231812, 'start': 231, 'end': 236, 'answer': '血小板计数'}, 'Unit': 'x'}
+{'Quantity': '3.4 mg/L', 'MeasuredProperty': {'score': 0.997165858745575, 'start': 250, 'end': 257, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '3.88 mmol/L', 'MeasuredProperty': {'score': 0.9998264312744141, 'start': 297, 'end': 298, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '136.5 mmol/L', 'MeasuredProperty': {'score': 0.9999074935913086, 'start': 311, 'end': 312, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '7.83 mmol/L', 'MeasuredProperty': {'score': 0.9992644786834717, 'start': 327, 'end': 330, 'answer': '葡萄糖'}, 'Unit': 'mmol/L'}
+{'Quantity': '52.4μmol/L', 'MeasuredProperty': {'score': 0.9992787837982178, 'start': 344, 'end': 346, 'answer': '肌酐'}, 'Unit': 'μmol/L'}
+{'Quantity': '2230.0μg/L', 'MeasuredProperty': {'score': 0.8912150859832764, 'start': 391, 'end': 398, 'answer': 'D-二聚体定量'}, 'Unit': 'μg/L'}
+{'Quantity': '0.002μg/L', 'MeasuredProperty': {'score': 0.936679482460022, 'start': 448, 'end': 455, 'answer': '心肌肌钙蛋白I'}, 'Unit': 'μg/L'}
+{'Quantity': '4天', 'MeasuredProperty': {'score': 0.9979574084281921, 'start': 673, 'end': 675, 'answer': '头痛'}, 'Unit': '天'}
+{'Quantity': '2天', 'MeasuredProperty': {'score': 0.9739829897880554, 'start': 667, 'end': 675, 'answer': '右侧肢体麻木疼痛'}, 'Unit': '天'}
+{'Quantity': '151/91 mmHg', 'MeasuredProperty': {'score': 0.9999346733093262, 'start': 663, 'end': 665, 'answer': 'BP'}, 'Unit': 'mmHg'}
+{'Quantity': '74次/分', 'MeasuredProperty': {'score': 0.9998512268066406, 'start': 669, 'end': 671, 'answer': 'HR'}, 'Unit': '次/分'}
+{'Quantity': '5级', 'MeasuredProperty': {'score': 0.9941080212593079, 'start': 671, 'end': 675, 'answer': '四肢肌力'}, 'Unit': '级'}
+{'Quantity': '10.76 x', 'MeasuredProperty': {'score': 0.9959118962287903, 'start': 664, 'end': 669, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '73.4%', 'MeasuredProperty': {'score': 0.998762845993042, 'start': 664, 'end': 671, 'answer': '中性粒细胞分类'}, 'Unit': '%'}
+{'Quantity': '123 g/L', 'MeasuredProperty': {'score': 0.9995742440223694, 'start': 665, 'end': 669, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '241 x', 'MeasuredProperty': {'score': 0.9979198575019836, 'start': 666, 'end': 671, 'answer': '血小板计数'}, 'Unit': 'x'}
+{'Quantity': '3.4 mg/L', 'MeasuredProperty': {'score': 0.9968140721321106, 'start': 661, 'end': 668, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '3.88 mmol/L', 'MeasuredProperty': {'score': 0.9997930526733398, 'start': 664, 'end': 665, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '136.5 mmol/L', 'MeasuredProperty': {'score': 0.999852180480957, 'start': 663, 'end': 664, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '7.83 mmol/L', 'MeasuredProperty': {'score': 0.9987095594406128, 'start': 662, 'end': 665, 'answer': '葡萄糖'}, 'Unit': 'mmol/L'}
+{'Quantity': '52.4μmol/L', 'MeasuredProperty': {'score': 0.999228298664093, 'start': 664, 'end': 666, 'answer': '肌酐'}, 'Unit': 'μmol/L'}
+{'Quantity': '2230.0μg/L', 'MeasuredProperty': {'score': 0.9848272204399109, 'start': 657, 'end': 664, 'answer': 'D-二聚体定量'}, 'Unit': 'μg/L'}
+{'Quantity': '0.002μg/L', 'MeasuredProperty': {'score': 0.9115808010101318, 'start': 660, 'end': 667, 'answer': '心肌肌钙蛋白I'}, 'Unit': 'μg/L'}
+3.辅助检查：实验室检查：(2020-12-13 14:08，本院)急诊D-二聚体(血浆)：D-二聚体定量 * 68250.0μg/L↑；(2020-12-13 10:19，本院)茶碱(血清)：茶碱 2.52 mg/L↓；(2020-12-13 09:24，本院)生化(血清)：总蛋白 59.5 g/L↓，白蛋白 30.1 g/L↓，白球比例 1.02↓，谷草转氨酶 122 U/L↑，AST:ALT 2.71↑，钾 3.37 mmol/L↓，钠 139.9 mmol/L；(2020-12-13 09:22，本院)血常规+超敏CRP(全血)：白细胞计数 6.71 x 10^9/L，中性粒细胞分类 75.3%↑，中性粒细胞计数 5.1 x 10^9/L，血红蛋白 76 g/L↓，超敏C反应蛋白 49.8 mg/L↑；(2020-12-11 20:43，本院)大便常规+OB(住院)(大便)：隐血试验 ++↑；(2020-12-11 09:27，本院)肿瘤标志物（男）(血清)：神经烯醇化酶 30.2 ng/ml↑，癌胚抗原 7.2μg/L↑；(2020-09-30 09:21，本院)糖化血红蛋白(全血)：糖化血红蛋白-A 1  8.8%↑，糖化血红蛋白-A 1 c 5.9%；特殊检查：(2020-12-12 15:53，本院)行CT[上腹部平扫(腹盆);下腹部平扫(腹盆);盆腔平扫(腹盆)]检查提示：双肾囊样灶。 前列腺钙化灶。 右侧腹股沟区淋巴结可能，请结合临床及其它检查。 附见：两侧少量胸腔积液伴左侧邻近肺组织膨胀不全。(2020-12-11 09:24，本院)行CT[头颅平扫(头颈)]检查提示：左侧额颞顶部术后，脑内多发低密度灶，脑积水引流中，对比2020.11.18老片大致相仿，请结合临床。 附见：鼻窦炎症；两侧中耳乳突炎症。(2020-12-10 10:52，本院)行CT[胸部平扫(心胸)]检查提示：两肺散在少量炎症，较前2020-11-17大致相仿。 两侧少量胸腔积液伴邻近肺局部膨胀不全，两侧胸腔积液较前略增多。 心包少量积液。 主动脉壁、主动脉瓣、冠脉壁钙化。 附：左肾囊性灶。(2020-11-24 10:16，本院)行浅表超声[双上肢肱、肘静脉(浅表超声);双腋静脉(浅表超声)]检查提示：双侧腋静脉显示段血流通畅,双侧肱、肘静脉显示段血流通畅。(2020-10-24 15:57，本院)行常规心电图[床边常规心电图]检查提示：1.窦性心律；2.完全性右束支传导阻滞；3.左前分支传导阻滞；4.一度房室传导阻滞（建议24小时动态心电图检查）；5.T波改变。(2020-10-26 18:11，本院)行其他超声[床边肝胆(其他超声);床边膀胱、肾、肾输尿管(其他超声)]检查提示：胆囊餐后,左肾囊肿。(2020-09-07 14:23，本院)行动态心电图[床边24小时动态心电图]检查提示：1、窦性心律；2、间歇性一度房室传导阻滞；3、完全性右束支传导阻滞；4、房性早搏3215次,成对52次,短阵房性心动过速36次,时呈三联律；5、室性早搏590次,成对5次,时呈二联律；	"入院后完善各项检查：(2020-12-15 09:39，本院)血常规+超敏CRP(全血)：白细胞计数 6.79 x 10^9/L，单核细胞分类 16.9%↑，单核细胞计数 1.1 x 10^9/L↑，红细胞分布宽度 20.9%↑，超敏C反应蛋白 16.7 mg/L↑；(2020-12-15 09:19，本院)凝血功能(血浆)：正常对照PT值 10.9秒，凝血酶原时间 13.1秒↑，国际标准化比率 1.21↑，D-二聚体定量 * 15010.0μg/L↑；(2020-12-15 09:42，本院)生化(血清)：总蛋白 61.5 g/L↓，白蛋白 30.9 g/L↓，白球比例 1.01↓，谷草转氨酶 47 U/L↑，肌酐 46.7μmol/L，尿酸 72μmol/L↓；(2020-12-15 09:57，本院)肿瘤标志物（男）(血清)：癌胚抗原 6.5μg/L↑，糖类抗原15-3  29.5 U/ml↑；(2020-12-16 14:57，本院)大便常规+OB(住院)(大便)：隐血试验 弱阳性↑；(2020-12-18 13:47，本院)胃液常规+OB(胃液)：隐血试验 阴性(-)，透明度 微浑；(2020-12-31 14:26，本院)行动态心电图[床边24小时动态心电图]检查提示：1、窦性心律(约90次/分)；2、房性早搏18627次,部分未下传,其中成对834次,短阵房性心动过速668次,时呈二、；三联律；3、室性早搏9079次,其中成对85次,短阵室性心动过速3次,时呈二、三联律；4、加速性室性逸搏366次,房室交界性逸搏3次,发生于房早未下传及房速后；5、一度房室传导阻滞；6、完全性右束支传导阻滞；7、全程T波改变；(2021-01-02 21:33，本院)行加急：浅表超声[双侧髂静脉(浅表超声);单侧小腿肌间静脉超声(浅表超声)]检查提示：双侧髂外静脉超声检查未见明显异常,左侧小腿肌间静脉显示部分超声检查未见明显异常
+{'Quantity': '68250.0μg/L', 'MeasuredProperty': {'score': 0.8382687568664551, 'start': 459, 'end': 463, 'answer': '癌胚抗原'}, 'Unit': 'μg/L'}
+{'Quantity': '2.52 mg/L', 'MeasuredProperty': {'score': 0.8972199559211731, 'start': 90, 'end': 92, 'answer': '茶碱'}, 'Unit': 'mg/L'}
+{'Quantity': '59.5 g/L', 'MeasuredProperty': {'score': 0.9992992877960205, 'start': 139, 'end': 142, 'answer': '总蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '30.1 g/L', 'MeasuredProperty': {'score': 0.9993473887443542, 'start': 1578, 'end': 1581, 'answer': '白蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '1.02↓', 'MeasuredProperty': {'score': 0.9991330504417419, 'start': 167, 'end': 171, 'answer': '白球比例'}, 'Unit': '↓'}
+{'Quantity': '122 U/L', 'MeasuredProperty': {'score': 0.9992702007293701, 'start': 178, 'end': 183, 'answer': '谷草转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '2.71↑', 'MeasuredProperty': {'score': 0.9987662434577942, 'start': 193, 'end': 200, 'answer': 'AST:ALT'}, 'Unit': '↑'}
+{'Quantity': '3.37 mmol/L', 'MeasuredProperty': {'score': 0.9995675683021545, 'start': 207, 'end': 208, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '139.9 mmol/L', 'MeasuredProperty': {'score': 0.9998369216918945, 'start': 222, 'end': 223, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '6.71 x', 'MeasuredProperty': {'score': 0.9257427453994751, 'start': 272, 'end': 277, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '75.3%', 'MeasuredProperty': {'score': 0.9976814389228821, 'start': 292, 'end': 299, 'answer': '中性粒细胞分类'}, 'Unit': '%'}
+{'Quantity': '5.1 x', 'MeasuredProperty': {'score': 0.9915836453437805, 'start': 307, 'end': 314, 'answer': '中性粒细胞计数'}, 'Unit': 'x'}
+{'Quantity': '76 g/L', 'MeasuredProperty': {'score': 0.999430775642395, 'start': 328, 'end': 332, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '49.8 mg/L', 'MeasuredProperty': {'score': 0.9989876747131348, 'start': 341, 'end': 348, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '30.2 ng/ml', 'MeasuredProperty': {'score': 0.9963564872741699, 'start': 440, 'end': 446, 'answer': '神经烯醇化酶'}, 'Unit': 'ng/ml'}
+{'Quantity': '7.2μg/L', 'MeasuredProperty': {'score': 0.9991601705551147, 'start': 459, 'end': 463, 'answer': '癌胚抗原'}, 'Unit': 'μg/L'}
+{'Quantity': '8.8%', 'MeasuredProperty': {'score': 0.9516575336456299, 'start': 505, 'end': 515, 'answer': '糖化血红蛋白-A 1'}, 'Unit': '%'}
+{'Quantity': '5.9%', 'MeasuredProperty': {'score': 0.9866986870765686, 'start': 523, 'end': 535, 'answer': '糖化血红蛋白-A 1 c'}, 'Unit': '%'}
+{'Quantity': '24小时', 'MeasuredProperty': {'score': 0.7424686551094055, 'start': 1081, 'end': 1088, 'answer': '动态心电图检查'}, 'Unit': '小时'}
+{'Quantity': '24小时', 'MeasuredProperty': {'score': 0.6387493014335632, 'start': 0, 'end': 5, 'answer': '动态心电图'}, 'Unit': '小时'}
+{'Quantity': '3215次', 'MeasuredProperty': {'score': 0.9874515533447266, 'start': 1249, 'end': 1253, 'answer': '房性早搏'}, 'Unit': '次'}
+{'Quantity': '52次', 'MeasuredProperty': {'score': 0.9982576966285706, 'start': 1259, 'end': 1261, 'answer': '成对'}, 'Unit': '次'}
+{'Quantity': '36次', 'MeasuredProperty': {'score': 0.977076530456543, 'start': 1265, 'end': 1273, 'answer': '短阵房性心动过速'}, 'Unit': '次'}
+{'Quantity': '590次', 'MeasuredProperty': {'score': 0.2907550036907196, 'start': 1249, 'end': 1253, 'answer': '房性早搏'}, 'Unit': '次'}
+{'Quantity': '5次', 'MeasuredProperty': {'score': 0.6142667531967163, 'start': 1259, 'end': 1261, 'answer': '成对'}, 'Unit': '次'}
+{'Quantity': '6.79 x', 'MeasuredProperty': {'score': 0.994325578212738, 'start': 1352, 'end': 1357, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '16.9%', 'MeasuredProperty': {'score': 0.998813807964325, 'start': 1372, 'end': 1378, 'answer': '单核细胞分类'}, 'Unit': '%'}
+{'Quantity': '1.1 x', 'MeasuredProperty': {'score': 0.9963483214378357, 'start': 1386, 'end': 1392, 'answer': '单核细胞计数'}, 'Unit': 'x'}
+{'Quantity': '20.9%', 'MeasuredProperty': {'score': 0.9973865151405334, 'start': 1407, 'end': 1414, 'answer': '红细胞分布宽度'}, 'Unit': '%'}
+{'Quantity': '16.7 mg/L', 'MeasuredProperty': {'score': 0.9960876107215881, 'start': 1422, 'end': 1429, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '10.9秒', 'MeasuredProperty': {'score': 0.9900189638137817, 'start': 1471, 'end': 1478, 'answer': '正常对照PT值'}, 'Unit': '秒'}
+{'Quantity': '13.1秒', 'MeasuredProperty': {'score': 0.9973694086074829, 'start': 1485, 'end': 1491, 'answer': '凝血酶原时间'}, 'Unit': '秒'}
+{'Quantity': '1.21↑', 'MeasuredProperty': {'score': 0.9989248514175415, 'start': 1499, 'end': 1506, 'answer': '国际标准化比率'}, 'Unit': '↑'}
+{'Quantity': '15010.0μg/L', 'MeasuredProperty': {'score': 0.9926717281341553, 'start': 1513, 'end': 1520, 'answer': 'D-二聚体定量'}, 'Unit': 'μg/L'}
+{'Quantity': '61.5 g/L', 'MeasuredProperty': {'score': 0.9993259906768799, 'start': 1564, 'end': 1567, 'answer': '总蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '30.9 g/L', 'MeasuredProperty': {'score': 0.999519944190979, 'start': 1578, 'end': 1581, 'answer': '白蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '1.01↓', 'MeasuredProperty': {'score': 0.9994970560073853, 'start': 1592, 'end': 1596, 'answer': '白球比例'}, 'Unit': '↓'}
+{'Quantity': '47 U/L', 'MeasuredProperty': {'score': 0.9994222521781921, 'start': 1603, 'end': 1608, 'answer': '谷草转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '46.7μmol/L', 'MeasuredProperty': {'score': 0.9992120862007141, 'start': 1617, 'end': 1619, 'answer': '肌酐'}, 'Unit': 'μmol/L'}
+{'Quantity': '72μmol/L', 'MeasuredProperty': {'score': 0.9991692304611206, 'start': 1631, 'end': 1633, 'answer': '尿酸'}, 'Unit': 'μmol/L'}
+{'Quantity': '6.5μg/L', 'MeasuredProperty': {'score': 0.9970508217811584, 'start': 1678, 'end': 1682, 'answer': '癌胚抗原'}, 'Unit': 'μg/L'}
+{'Quantity': '29.5 U/ml', 'MeasuredProperty': {'score': 0.9173462986946106, 'start': 1692, 'end': 1696, 'answer': '糖类抗原'}, 'Unit': 'U/ml'}
+{'Quantity': '24小时', 'MeasuredProperty': {'score': 0.8467627167701721, 'start': 637, 'end': 639, 'answer': '床边'}, 'Unit': '小时'}
+{'Quantity': '90次/分', 'MeasuredProperty': {'score': 0.7153708934783936, 'start': 1858, 'end': 1862, 'answer': '窦性心律'}, 'Unit': '次/分'}
+{'Quantity': '18627次', 'MeasuredProperty': {'score': 0.9819607138633728, 'start': 1873, 'end': 1877, 'answer': '房性早搏'}, 'Unit': '次'}
+{'Quantity': '834次', 'MeasuredProperty': {'score': 0.9890539646148682, 'start': 1892, 'end': 1894, 'answer': '成对'}, 'Unit': '次'}
+{'Quantity': '668次', 'MeasuredProperty': {'score': 0.9289775490760803, 'start': 1899, 'end': 1907, 'answer': '短阵房性心动过速'}, 'Unit': '次'}
+{'Quantity': '9079次', 'MeasuredProperty': {'score': 0.8422144651412964, 'start': 1923, 'end': 1927, 'answer': '室性早搏'}, 'Unit': '次'}
+{'Quantity': '85次', 'MeasuredProperty': {'score': 0.5781148672103882, 'start': 1259, 'end': 1261, 'answer': '成对'}, 'Unit': '次'}
+{'Quantity': '3次', 'MeasuredProperty': {'score': 0.2760472893714905, 'start': 1899, 'end': 1907, 'answer': '短阵房性心动过速'}, 'Unit': '次'}
+{'Quantity': '366次', 'MeasuredProperty': {'score': 0.9955775737762451, 'start': 1962, 'end': 1969, 'answer': '加速性室性逸搏'}, 'Unit': '次'}
+{'Quantity': '3次', 'MeasuredProperty': {'score': 0.8862876892089844, 'start': 23, 'end': 30, 'answer': '房室交界性逸搏'}, 'Unit': '次'}
+"1.患者因“腹痛9天，便秘7天”入院 。2.体检：神清，精神可，皮肤巩膜无黄染，双锁骨上、双颈部、双腹股沟淋巴结未及肿大，气管居中，双肺呼吸音清，未闻及干湿性罗音。心律齐，未闻及明显病理性杂音。腹部可见陈旧性疤痕，腹平软，有压痛，无反跳痛，Murphy征(-)，肝脾肋下未及，未及明显包块，移浊（-）。双下肢无水肿。指诊无殊。实验室检查：暂缺。 
+特殊检查：暂缺。 
+病理检查：暂缺。 
+{'Quantity': '9天', 'MeasuredProperty': {'score': 0.9881545305252075, 'start': 7, 'end': 9, 'answer': '腹痛'}, 'Unit': '天'}
+{'Quantity': '7天', 'MeasuredProperty': {'score': 0.9842495322227478, 'start': 12, 'end': 14, 'answer': '便秘'}, 'Unit': '天'}
+(2020-12-20）[甲状腺、颈部淋巴结(浅表超声)]检查提示：甲状腺超声未见明显异常。
+(2020-12-20 ）[颈总动脉、颈内动脉、颈外动脉(浅表超声)]检查提示：双侧颈动脉超声检查未见明显异常。
+(2020-12-21 ）行心脏超声检查提示：左心增大，左室壁增厚，左室壁弥漫性运动减弱 二尖瓣、三尖瓣轻度返流 左室收缩、舒张功能减退 心包腔积液。
+(2020-12-21 行MR[心肌灌注(胸部)]检查提示：心包少量积液 左心室功能减低。 心肌灌注未见明显异常。
+(2020-12-22 行腹部超声[肝、胆、脾、胰、肾(腹部超声)]检查提示：脂肪肝 肝III段低回声结节，建议定期复查。
+(2020-12-23 行动态心电图检查提示：记录数据时长21:50:53,平均心率为80次/分.其中心动过速事件(心率&gt;100次/分)；持续时间占总时间的0.7%,心动过缓事件(心率&lt;60次/分)持续时间占总时间的0%.1、窦性心律；2、房性早搏4次；3、室性早搏325次；4、间歇性ST-T改变；签名日期2020-12-23；最终结论以原始报告为准。
+(2020-12-23 行ECT[心肌血流灌注显像（静息）]检查提示：静息心肌显像示： 1、左心室各室壁心肌血流灌注不均匀轻中度减低，以前壁、后侧壁中段和基底段较明显。 2、左室腔稍大， 各室壁运动减低；ESV 107 ml，EDV 149 ml，EF 28%。 3、两肺摄取示踪剂增加，提示左心功能不全。
+(2020-12-24行CT[冠脉CTA(特殊三维成像)]检查提示：冠状动脉粥样硬化表现： 左前降支近段管壁非钙化斑块，管腔轻微狭窄；中段管壁非钙化斑块，管腔轻度狭窄。 右冠状动脉近段管壁非钙化斑块，管腔轻度狭窄。 左前降支中远段心肌桥。 左心房、左心室增大；心包少量积液。
+(2020-12-27 胸部正侧位(胸部)]检查提示：心影增大，请结合专项检查。 心脏起搏器植入状态。
+(2020-12-28行平板室[起搏器程控功能检查]检查提示：1.VVI起搏模式（VS）；2.ICD工作正常    
+{'Quantity': '80次/分', 'MeasuredProperty': {'score': 0.9961464405059814, 'start': 338, 'end': 342, 'answer': '平均心率'}, 'Unit': '次/分'}
+{'Quantity': '100次/分', 'MeasuredProperty': {'score': 0.4778584837913513, 'start': 351, 'end': 357, 'answer': '心动过速事件'}, 'Unit': '次/分'}
+{'Quantity': '0.7%', 'MeasuredProperty': {'score': 0.5913822650909424, 'start': 372, 'end': 380, 'answer': '持续时间占总时间'}, 'Unit': '%'}
+{'Quantity': '60次/分', 'MeasuredProperty': {'score': 0.6926714777946472, 'start': 386, 'end': 392, 'answer': '心动过缓事件'}, 'Unit': '次/分'}
+{'Quantity': '4次', 'MeasuredProperty': {'score': 0.9945645332336426, 'start': 426, 'end': 430, 'answer': '房性早搏'}, 'Unit': '次'}
+{'Quantity': '325次', 'MeasuredProperty': {'score': 0.9729809761047363, 'start': 435, 'end': 439, 'answer': '室性早搏'}, 'Unit': '次'}
+{'Quantity': '107 ml', 'MeasuredProperty': {'score': 0.9982596635818481, 'start': 586, 'end': 589, 'answer': 'ESV'}, 'Unit': 'ml'}
+{'Quantity': '149 ml', 'MeasuredProperty': {'score': 0.9963298439979553, 'start': 597, 'end': 600, 'answer': 'EDV'}, 'Unit': 'ml'}
+{'Quantity': '28%', 'MeasuredProperty': {'score': 0.999783992767334, 'start': 608, 'end': 610, 'answer': 'EF'}, 'Unit': '%'}
+{'Quantity': '1.V', 'MeasuredProperty': {'score': 0.537751317024231, 'start': 861, 'end': 868, 'answer': 'VVI起搏模式'}, 'Unit': 'V'}
+"1.患者因“胸闷伴腹胀5小时。”入院 。2.体检：耳温：36.8℃，呼吸：19次/分，脉搏：82次/分，血压：143/110 mmHg，神志清，精神可，眼不突，口唇无紫绀，颈静脉无怒张，甲状腺未及肿大，心界不大，心率82次/分，心律齐，心音可，未闻及明显病理性杂音，双肺呼吸音清，未闻及干湿性啰音。腹软，无压痛、反跳痛，肝脾肋下未及，双肾区无叩痛，双下肢无浮肿
+{'Quantity': '5小时', 'MeasuredProperty': {'score': 0.894588828086853, 'start': 7, 'end': 12, 'answer': '胸闷伴腹胀'}, 'Unit': '小时'}
+{'Quantity': '36.8℃', 'MeasuredProperty': {'score': 0.9985938668251038, 'start': 26, 'end': 28, 'answer': '耳温'}, 'Unit': '℃'}
+{'Quantity': '19次/分', 'MeasuredProperty': {'score': 0.9993764758110046, 'start': 35, 'end': 37, 'answer': '呼吸'}, 'Unit': '次/分'}
+{'Quantity': '82次/分', 'MeasuredProperty': {'score': 0.9992125630378723, 'start': 44, 'end': 46, 'answer': '脉搏'}, 'Unit': '次/分'}
+{'Quantity': '143/110 mmHg', 'MeasuredProperty': {'score': 0.9990944266319275, 'start': 53, 'end': 55, 'answer': '血压'}, 'Unit': 'mmHg'}
+{'Quantity': '82次/分', 'MeasuredProperty': {'score': 0.9991963505744934, 'start': 55, 'end': 57, 'answer': '心率'}, 'Unit': '次/分'}
+患者腹胀仍有，解少量大便，呈粘液状便，未见明显鲜血，NRS评分1-2分。头昏乏力仍有，无明显里急后重及畏寒发热，无恶心呕吐，无明显咳嗽咳痰及胸闷气闭，胃纳一般，小便无殊，夜寐欠安，留置导尿通畅，尿色黄。血压：102/61 mmhg；查体：神清，精神软，贫血貌，全身浅表淋巴结未及肿大，颈软，两肺呼吸音清，未闻及干湿性啰音，心率68次/分，律齐，未闻及病理性杂音，腹膨隆, 肝脾肋下未及，移动性浊音+，双下肢无浮肿，四肢肌力V级。今予以出院
+{'Quantity': '1-2分', 'MeasuredProperty': {'score': 0.589052140712738, 'start': 26, 'end': 29, 'answer': 'NRS'}, 'Unit': '分'}
+{'Quantity': '102/61 mm', 'MeasuredProperty': {'score': 0.9958131313323975, 'start': 101, 'end': 103, 'answer': '血压'}, 'Unit': 'mm'}
+{'Quantity': '68次/分', 'MeasuredProperty': {'score': 0.9994798898696899, 'start': 161, 'end': 163, 'answer': '心率'}, 'Unit': '次/分'}
+现患者胃纳尚可，无腹痛腹胀，无恶心呕吐，无发热，无咳嗽咳痰等不适，睡眠可。查体：T：36.9℃，神志清，精神可，心肺查体无明显异常，腹软，腹部切口目前愈合尚可，无明显渗液，无压痛及反跳痛。现病情恢复可，今予回家休养
+{'Quantity': '36.9℃', 'MeasuredProperty': {'score': 0.9995594620704651, 'start': 40, 'end': 41, 'answer': 'T'}, 'Unit': '℃'}
+T：37℃，P：70次/分，R：20次/分，BP：130/60 mmHg，瞳孔等大等圆，直径2 mm，对光存。全身浅表淋巴结未触及肿大，心律不齐，可及早搏。双肺呼吸音粗，未闻及明显啰音。腹肌尚软，切口敷料干燥，左下腹结肠造瘘口红润。无明显粪便引出
+{'Quantity': '37℃', 'MeasuredProperty': {'score': 0.9998388290405273, 'start': 0, 'end': 1, 'answer': 'T'}, 'Unit': '℃'}
+{'Quantity': '70次/分', 'MeasuredProperty': {'score': 0.9997982978820801, 'start': 6, 'end': 7, 'answer': 'P'}, 'Unit': '次/分'}
+{'Quantity': '20次/分', 'MeasuredProperty': {'score': 0.9997553825378418, 'start': 14, 'end': 15, 'answer': 'R'}, 'Unit': '次/分'}
+{'Quantity': '130/60 mmHg', 'MeasuredProperty': {'score': 0.9998617172241211, 'start': 22, 'end': 24, 'answer': 'BP'}, 'Unit': 'mmHg'}
+{'Quantity': '2 mm', 'MeasuredProperty': {'score': 0.9991897344589233, 'start': 44, 'end': 46, 'answer': '直径'}, 'Unit': 'mm'}
+患者一般情况可，无明显头晕，无腹痛腹胀，无畏寒发热。查体：体温正常，两肺未闻及明显啰音，全腹软，各切口干燥，愈合可，造瘘口排气排便通畅，肠鸣音无殊
+患者精神可，能自主下床活动，胃纳可，进食半流质无明显腹痛腹胀，大便黄软，无粘液脓血便，切口疼痛轻。查体：神志清，体温正常，P、R、BP、SPO 2平稳，巩膜无黄染，双肺未闻及罗音；腹平软，各切口无红肿渗液，肠鸣音约4-5次/分；双下肢无浮肿。今予出院休养
+{'Quantity': '2平', 'MeasuredProperty': {'score': 0.9450011849403381, 'start': 61, 'end': 71, 'answer': 'P、R、BP、SPO'}, 'Unit': '平'}
+{'Quantity': '4-5次/分', 'MeasuredProperty': {'score': 0.999164879322052, 'start': 103, 'end': 106, 'answer': '肠鸣音'}, 'Unit': '次/分'}
+患者无恶心，无呕吐。胃纳减退。原肛门处出血不多。查体：神志清，心肺听诊无殊，腹部可见造瘘口，全腹无明显压痛，无反跳痛，肝脾肋下未及，移动性浊音阴性，双下肢无浮肿。患者一般情况尚可。今请示上级医师后予以办出院
+ 入院后完善相关检查，于干部科予美卡素降压、拜阿司匹林抗血小板聚集、阿托伐他汀钙稳定斑块、恩必普针改善大脑微循环、达美康缓释片降糖治疗。11-07患者出现体温上升，峰值达38.2℃，伴头痛，结合急血常规+超敏CRP(全血)：白细胞计数 10.76 x 10^9/L↑，中性粒细胞分类 73.4%，超敏C反应蛋白 3.4 mg/LCT[胸部平扫(心胸)]检查提示：右肺上叶小结节，炎性灶可能，双肺听诊少量啰音，考虑肺部感染伴或不伴有颅内感染，予罗氏芬针 2 g qd 抗感染。11-09患者体温仍高，峰值达38.6℃，仍有头痛，出现吞咽困难，有少量咳嗽，肺部可闻及湿啰音，更改抗生素为泰能针 1 g q 8 h 抗感染，请神经内科会诊后行腰椎穿刺测压管测得颅内压约180 mmH 2 O，全程见血性脑脊液，蛛网膜下腔出血不能除外，考虑化脓性脑炎可能。11-11因体温反复请感染科会诊，更改为罗氏芬针 2 g q 12 h 抗感染，同时查(2020-11-11 12:00，本院)CT[头颅CTA增强(特殊三维成像)]检查提示：右侧颈内动脉C 6/7交界段动脉瘤（约8.7 mm*7.6 mm）。双侧大脑前、中、后动脉硬化性血管病，管腔狭窄（右侧大脑后动脉为著），虑右侧颈内动脉动脉瘤，蛛网膜下腔出血，有手术指征，遂转入神经外科。11-16局麻下行全脑血管造影，造影见1、右侧颈内动脉后交通段动脉瘤，右侧后交通动脉起始部狭窄，右侧胚胎型大脑后动脉；2、左侧颈总动脉造影提示颈内动脉多发斑块，颈外动脉起始部重度狭窄；左侧颈内动脉后交通段动脉瘤，左侧颈内动脉造影时行右侧压颈，提示前交通开放，右侧大脑中动脉、右侧前动脉通过前交通代偿
+{'Quantity': '38.2℃', 'MeasuredProperty': {'score': 0.9857416749000549, 'start': 82, 'end': 84, 'answer': '峰值'}, 'Unit': '℃'}
+{'Quantity': '10.76 x', 'MeasuredProperty': {'score': 0.9913492202758789, 'start': 112, 'end': 117, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '73.4%', 'MeasuredProperty': {'score': 0.9984962344169617, 'start': 134, 'end': 141, 'answer': '中性粒细胞分类'}, 'Unit': '%'}
+{'Quantity': '3.4 mg/L', 'MeasuredProperty': {'score': 0.9888842701911926, 'start': 148, 'end': 155, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '2 g', 'MeasuredProperty': {'score': 0.8513957858085632, 'start': 221, 'end': 225, 'answer': '罗氏芬针'}, 'Unit': 'g'}
+{'Quantity': '38.6℃', 'MeasuredProperty': {'score': 0.43176379799842834, 'start': 82, 'end': 84, 'answer': '峰值'}, 'Unit': '℃'}
+{'Quantity': '1 g', 'MeasuredProperty': {'score': 0.9808247089385986, 'start': 291, 'end': 294, 'answer': '泰能针'}, 'Unit': 'g'}
+{'Quantity': '180 mm', 'MeasuredProperty': {'score': 0.7949504256248474, 'start': 327, 'end': 330, 'answer': '颅内压'}, 'Unit': 'mm'}
+{'Quantity': '2 g', 'MeasuredProperty': {'score': 0.9926573634147644, 'start': 165, 'end': 169, 'answer': '罗氏芬针'}, 'Unit': 'g'}
+{'Quantity': '8.7 mm', 'MeasuredProperty': {'score': 0.5747299790382385, 'start': 480, 'end': 481, 'answer': '约'}, 'Unit': 'mm'}
+{'Quantity': '7.6 mm', 'MeasuredProperty': {'score': 0.05611873045563698, 'start': 476, 'end': 479, 'answer': '动脉瘤'}, 'Unit': 'mm'}
+入院后继续予特治星针[哌拉西林钠他唑巴坦钠] 4.5 g 静脉滴注 q 8 h抗感染（12.14-12.22）。患者腹胀腹泻，不排除艰难梭菌感染，经验性予以(国采)甲硝唑片 0.2 g 鼻饲 q 8 h抗感染，余药物上予螺内酯片利尿，安内真片降压，沐舒坦化痰，复方嗜酸乳杆菌片、米雅调节肠道菌群，舒宁安片减轻气道高反应性，倍他乐克片稳定心律，卡文针静脉营养，潘妥洛克针抑酸护胃，硫糖铝保护胃黏膜，浓氯化钠针补钠，氨茶碱针平喘，博利康尼雾化液[特布他林] +普米克令舒混悬液[布地奈德]、异丙托溴铵雾化止咳平喘，力蜚能补铁，施维舒胶囊护胃、氯化钾针补钾等对症治疗。康复治疗上予气压治疗预防静脉血栓，体外膈肌起搏治促进心肺功能康复，电针改善肢体功能，微针针刺改善面瘫，慢性小脑电刺激术改善脑循环，运动疗法、大关节松动训练改善关节活动范围及肢体运动功能，单纯直流电治疗刺激肌肉收缩等综合康复治疗
+{'Quantity': '4.5 g', 'MeasuredProperty': {'score': 0.6096721291542053, 'start': 6, 'end': 10, 'answer': '特治星针'}, 'Unit': 'g'}
+{'Quantity': '0.2 g', 'MeasuredProperty': {'score': 0.4695257246494293, 'start': 82, 'end': 86, 'answer': '甲硝唑片'}, 'Unit': 'g'}
+患者入院后完善相关检查，(2020-12-18 13:42，本院)行常规心电图[常规心电图]检查提示：常规心电诊断:1.窦性心律；2.前壁导联T波改变。(2020-12-18 14:47，本院)行浅表超声[双下肢股、腘静脉(浅表超声);双侧髂静脉(浅表超声)]检查提示：双侧股、腘静脉血流通畅,双侧髂外静脉显示段血流通畅。(2020-12-21 09:52，本院)行DR[腹部立位片（DR）(腹部)]检查提示：低位不全性肠梗阻。 附见：盆腔内致密影。(2020-12-22 17:20，本院)行内镜治疗[无痛胃镜治疗]检查提示：内镜下肠梗阻导管置入术。(2020-12-23 12:18，本院)行加急：DR[腹部立位片（DR）(腹部)]检查提示：肠管扩张积气伴气液平，较前2020-12-17肠腔扩张积气加重，请结合临床。(2020-12-26 11:37，本院)行DR[腹部立位片（DR）(腹部)]检查提示：肠管扩张积气伴气液平，较前2020.12.17有所好转，请结合临床。 消化道置管中。(2020-12-31 09:39，本院)行CT[上腹部平扫(腹盆);下腹部平扫(腹盆);盆腔平扫(腹盆)]检查提示：“直肠癌术后”，内镜下肠梗阻导管置入术后改变，乙状结肠、横结肠壁节段性肠壁增厚，网膜及肠系膜多发结节，提示转移，较2020-12-16片相仿。 胰腺萎缩；胰尾部轻度增大伴密度不均。 肠系膜及腹膜后多发小淋巴结显示。 附见;胸12椎及腰2椎体楔变伴胸12椎体局部骨质密度增高。考虑患者有肠梗阻，予以胃镜下肠梗阻导管置入，引流通畅，并予以禁食、补液等对症支持治疗。现患者仍有腹痛，不剧，可忍，患者及家属要求出院，回当地医院继续治疗，告知相关风险后，今日予以签字出院。	患者一般情况可，无恶心呕吐等不适。查体：神清，精神可，生命体征平稳。心肺听诊无殊。腹软，无压痛及反跳痛	"1、注意事项：建议当地医院继续对症支持治
+{'Quantity': '12-16片', 'MeasuredProperty': {'score': 0.91152423620224, 'start': 574, 'end': 576, 'answer': '相仿'}, 'Unit': '片'}
+"1.患者因“外伤致右足出血疼痛麻木伴活动受限7小时”入院 。2.体检：神清，精神可；颈软，未见颈静脉怒张，甲状腺未及肿大，胸廓未见畸形，双肺呼吸音粗，双肺闻及大量湿罗音，腹软，四肢肌张力正常，生理反射存在，病理反射未引出。右足第一足趾可见多发不规则挤压破裂创口，创缘不齐，局部皮肤挫伤伴撕脱掀起，内见近节趾骨粉碎性骨折伴骨缺损，右足第一足趾伸肌腱离断，趾背血管、神经离断伴部分毁损。。3.辅助检查：实验室检查：暂缺。
+{'Quantity': '7小时', 'MeasuredProperty': {'score': 0.9766314625740051, 'start': 19, 'end': 23, 'answer': '活动受限'}, 'Unit': '小时'}
+辅助检查：实验室检查：(2020-12-25 06:14，本院)急诊脑钠肽前体(全血)：脑利钠肽前体 120 pg/ml；(2020-12-25 06:32，本院)急诊心肌损伤标志物(血浆)：心肌肌钙蛋白I 0.558μg/L↑；。 
+特殊检查：(2020-12-25 06:20，本院)行加急：CT[胸部平扫(心胸)]检查提示：双肺散在小结节影，建议年度随访。 冠状动脉壁钙化。 双肺未见新冠肺炎征象。。 
+病理检查：暂缺。 "	"(2020-12-25 17:22，本院)急诊血常规+超敏CRP(全血)：白细胞计数 13.86 x 10^9/L↑，中性粒细胞分类 86.4%↑，中性粒细胞计数 12.0 x 10^9/L↑，超敏C反应蛋白 4.7 mg/L；(2020-12-25 17:52，本院)急诊心肌损伤标志物(血浆)：心肌肌钙蛋白I &gt;50.000μg/L↑↑；(2020-12-26 09:32，本院)糖化血红蛋白(全血)：糖化血红蛋白-A 1 c 4.7%；(2020-12-26 09:40，本院)心肌酶谱(血清)：肌酸激酶同工酶 265.5 U/L↑；(2020-12-26 10:02，本院)生化(血清)：总蛋白 68.0 g/L，白蛋白 37.4 g/L↓，谷丙转氨酶 34 U/L，谷草转氨酶 306 U/L↑，葡萄糖 5.77 mmol/L，肌酐 58.5μmol/L，钾 3.86 mmol/L，钠 136.7 mmol/L↓，甘油三酯 0.88 mmol/L，*低密度脂蛋白胆固醇 2.90 mmol/L，乳酸脱氢酶 866 U/L↑；(2020-12-26 10:27，本院)甲状腺功能+TPO(血清)：总三碘甲状腺原氨酸(TT 3) 0.62μg/L↓，游离三碘甲状腺原氨酸(FT 3) 2.11 ng/L↓；(2020-12-26 11:16，本院)肌钙蛋白I+B型钠尿肽(全血)：心肌肌钙蛋白I 115.619μg/L↑↑，B型钠尿肽 165.9 pg/mL↑；(2020-12-26 13:24，本院)尿常规(尿液)：尿潜血 +++↑；(2020-12-26 13:46，本院)肿瘤标志物（女）(血清)：神经烯醇化酶 25.5 ng/ml↑；(2020-12-30 09:45，本院)血常规+超敏CRP(全血)：白细胞计数 5.87 x 10^9/L，血红蛋白 127 g/L，血小板计数 363 x 10^9/L↑，超敏C反应蛋白 29.4 mg/L↑；(2020-12-30 09:47，本院)心肌酶谱(血清)：肌酸激酶同工酶 11.9 U/L；(2021-01-01 12:06，本院)肾功能+胱抑素C(血清)：肌酐 67.5μmol/L，尿酸 309μmol/L；(2021-01-01 10:59，本院)肌钙蛋白I(血清)：心肌肌钙蛋白I 4.610μg/L↑↑；(2021-01-01 10:44，本院)电解质常规(血清)：钾 4.56 mmol/L，钠 135.3 mmol/L↓；(2020-12-29 08:51，本院)行腹部超声[肝、胆、脾、胰、肾(腹部超声)]检查提示：胆囊壁毛糙 左肾囊肿。(2020-12-29 09:05，本院)行心脏超声[心脏、心包(心脏超声)]检查提示：主动脉瓣、二尖瓣、三尖瓣轻度返流 左室舒张功能减退 左室假腱索。(2020-12-29 10:34，本院)行动态心电图[床边24小时动态心电图]检查提示：记录数据时长22:03:38,平均心率为71次/分.其中心动过速事件(心率&gt;100次/分)持续；时间占总时间的0.1%,心动过缓事件(心率&lt;60次/分)持续时间占总时间的4.8%.1、窦性心律；2、室性早搏8次；3、ST-T改变
+{'Quantity': '120 pg/ml', 'MeasuredProperty': {'score': 0.6753578782081604, 'start': 44, 'end': 50, 'answer': '脑利钠肽前体'}, 'Unit': 'pg/ml'}
+{'Quantity': '0.558μg/L', 'MeasuredProperty': {'score': 0.9159355163574219, 'start': 96, 'end': 103, 'answer': '心肌肌钙蛋白I'}, 'Unit': 'μg/L'}
+{'Quantity': '13.86 x', 'MeasuredProperty': {'score': 0.9861215353012085, 'start': 254, 'end': 259, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '86.4%', 'MeasuredProperty': {'score': 0.9970360994338989, 'start': 276, 'end': 283, 'answer': '中性粒细胞分类'}, 'Unit': '%'}
+{'Quantity': '12.0 x', 'MeasuredProperty': {'score': 0.9951381087303162, 'start': 291, 'end': 298, 'answer': '中性粒细胞计数'}, 'Unit': 'x'}
+{'Quantity': '4.7 mg/L', 'MeasuredProperty': {'score': 0.9970370531082153, 'start': 314, 'end': 321, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '50.000μg/L', 'MeasuredProperty': {'score': 0.5427171587944031, 'start': 366, 'end': 377, 'answer': '心肌肌钙蛋白I &gt'}, 'Unit': 'μg/L'}
+{'Quantity': '4.7%', 'MeasuredProperty': {'score': 0.8310433030128479, 'start': 423, 'end': 435, 'answer': '糖化血红蛋白-A 1 c'}, 'Unit': '%'}
+{'Quantity': '265.5 U/L', 'MeasuredProperty': {'score': 0.9592311978340149, 'start': 471, 'end': 478, 'answer': '肌酸激酶同工酶'}, 'Unit': 'U/L'}
+{'Quantity': '68.0 g/L', 'MeasuredProperty': {'score': 0.999557614326477, 'start': 518, 'end': 521, 'answer': '总蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '37.4 g/L', 'MeasuredProperty': {'score': 0.9995118379592896, 'start': 531, 'end': 534, 'answer': '白蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '34 U/L', 'MeasuredProperty': {'score': 0.9994570016860962, 'start': 545, 'end': 550, 'answer': '谷丙转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '306 U/L', 'MeasuredProperty': {'score': 0.9876213669776917, 'start': 558, 'end': 563, 'answer': '谷草转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '5.77 mmol/L', 'MeasuredProperty': {'score': 0.9993569254875183, 'start': 573, 'end': 576, 'answer': '葡萄糖'}, 'Unit': 'mmol/L'}
+{'Quantity': '58.5μmol/L', 'MeasuredProperty': {'score': 0.9994755983352661, 'start': 589, 'end': 591, 'answer': '肌酐'}, 'Unit': 'μmol/L'}
+{'Quantity': '3.86 mmol/L', 'MeasuredProperty': {'score': 0.9997344017028809, 'start': 603, 'end': 604, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '136.7 mmol/L', 'MeasuredProperty': {'score': 0.9999294281005859, 'start': 617, 'end': 618, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '0.88 mmol/L', 'MeasuredProperty': {'score': 0.9997119903564453, 'start': 633, 'end': 637, 'answer': '甘油三酯'}, 'Unit': 'mmol/L'}
+{'Quantity': '2.90 mmol/L', 'MeasuredProperty': {'score': 0.9934929013252258, 'start': 650, 'end': 660, 'answer': '*低密度脂蛋白胆固醇'}, 'Unit': 'mmol/L'}
+{'Quantity': '866 U/L', 'MeasuredProperty': {'score': 0.9995886087417603, 'start': 673, 'end': 678, 'answer': '乳酸脱氢酶'}, 'Unit': 'U/L'}
+{'Quantity': '0.62μg/L', 'MeasuredProperty': {'score': 0.939797043800354, 'start': 723, 'end': 732, 'answer': '总三碘甲状腺原氨酸'}, 'Unit': 'μg/L'}
+{'Quantity': '115.619μg/L', 'MeasuredProperty': {'score': 0.9269551634788513, 'start': 814, 'end': 821, 'answer': '心肌肌钙蛋白I'}, 'Unit': 'μg/L'}
+{'Quantity': '165.9 pg', 'MeasuredProperty': {'score': 0.9441660642623901, 'start': 836, 'end': 841, 'answer': 'B型钠尿肽'}, 'Unit': 'pg'}
+{'Quantity': '25.5 ng/ml', 'MeasuredProperty': {'score': 0.9950078725814819, 'start': 927, 'end': 933, 'answer': '神经烯醇化酶'}, 'Unit': 'ng/ml'}
+{'Quantity': '5.87 x', 'MeasuredProperty': {'score': 0.9952794909477234, 'start': 981, 'end': 986, 'answer': '白细胞计数'}, 'Unit': 'x'}
+{'Quantity': '127 g/L', 'MeasuredProperty': {'score': 0.9996819496154785, 'start': 1001, 'end': 1005, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '363 x', 'MeasuredProperty': {'score': 0.9980387687683105, 'start': 1014, 'end': 1019, 'answer': '血小板计数'}, 'Unit': 'x'}
+{'Quantity': '29.4 mg/L', 'MeasuredProperty': {'score': 0.999164879322052, 'start': 1034, 'end': 1041, 'answer': '超敏C反应蛋白'}, 'Unit': 'mg/L'}
+{'Quantity': '11.9 U/L', 'MeasuredProperty': {'score': 0.9286749362945557, 'start': 1083, 'end': 1090, 'answer': '肌酸激酶同工酶'}, 'Unit': 'U/L'}
+{'Quantity': '67.5μmol/L', 'MeasuredProperty': {'score': 0.9987500309944153, 'start': 1134, 'end': 1136, 'answer': '肌酐'}, 'Unit': 'μmol/L'}
+{'Quantity': '309μmol/L', 'MeasuredProperty': {'score': 0.9980183243751526, 'start': 1148, 'end': 1150, 'answer': '尿酸'}, 'Unit': 'μmol/L'}
+{'Quantity': '4.610μg/L', 'MeasuredProperty': {'score': 0.6503578424453735, 'start': 1192, 'end': 1199, 'answer': '心肌肌钙蛋白I'}, 'Unit': 'μg/L'}
+{'Quantity': '4.56 mmol/L', 'MeasuredProperty': {'score': 0.999661922454834, 'start': 1243, 'end': 1244, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '135.3 mmol/L', 'MeasuredProperty': {'score': 0.9997310638427734, 'start': 1257, 'end': 1258, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '24小时', 'MeasuredProperty': {'score': 0.6627628207206726, 'start': 1436, 'end': 1438, 'answer': '床边'}, 'Unit': '小时'}
+{'Quantity': '71次/分', 'MeasuredProperty': {'score': 0.9936691522598267, 'start': 1468, 'end': 1472, 'answer': '平均心率'}, 'Unit': '次/分'}
+{'Quantity': '100次/分', 'MeasuredProperty': {'score': 0.798866331577301, 'start': 1481, 'end': 1487, 'answer': '心动过速事件'}, 'Unit': '次/分'}
+{'Quantity': '0.1%', 'MeasuredProperty': {'score': 0.9425148367881775, 'start': 1504, 'end': 1510, 'answer': '时间占总时间'}, 'Unit': '%'}
+{'Quantity': '60次/分', 'MeasuredProperty': {'score': 0.3218148350715637, 'start': 1516, 'end': 1522, 'answer': '心动过缓事件'}, 'Unit': '次/分'}
+{'Quantity': '4.8%', 'MeasuredProperty': {'score': 0.7023158669471741, 'start': 423, 'end': 435, 'answer': '糖化血红蛋白-A 1 c'}, 'Unit': '%'}
+{'Quantity': '8次', 'MeasuredProperty': {'score': 0.9976353049278259, 'start': 1558, 'end': 1562, 'answer': '室性早搏'}, 'Unit': '次'}
+1.高蛋白低盐饮食；2.如有不适及时就诊；3.门诊2周后复查血常规、肝肾功能及电解质等
+{'Quantity': '2周后', 'MeasuredProperty': {'score': 0.35179340839385986, 'start': 28, 'end': 43, 'answer': '复查血常规、肝肾功能及电解质等'}, 'Unit': '周后'}
+注意休息，饮食易消化，保持二便通畅，建议1周内肿瘤内科行术后辅助治疗
+{'Quantity': '1周内', 'MeasuredProperty': {'score': 0.5159553289413452, 'start': 23, 'end': 34, 'answer': '肿瘤内科行术后辅助治疗'}, 'Unit': '周内'}
+1、注意休息，饮食易消化、避免刺激性食物，保持大便通畅；若有腹痛或便血等不适及时就诊；2、建议出院短期休养（1-2周）后住院化疗；3、外科或肿瘤内科定期复查（术后2年内每三个月复查一次,以后每半年复查一次至五年,5年后每年复查一次；术后半年内复查结肠镜）；4、注意定期复查甲状腺B超，注意结节变化，必要时手术治疗。5、待PMS结果，必要时行BRAF基因检测等，建议行遗传性结直肠癌家系咨询诊断
+{'Quantity': '1-2周', 'MeasuredProperty': {'score': 0.7459906935691833, 'start': 47, 'end': 53, 'answer': '出院短期休养'}, 'Unit': '周'}
+{'Quantity': '2年内', 'MeasuredProperty': {'score': 0.5237207412719727, 'start': 84, 'end': 92, 'answer': '每三个月复查一次'}, 'Unit': '年内'}
+{'Quantity': '5年后', 'MeasuredProperty': {'score': 0.7322126030921936, 'start': 109, 'end': 115, 'answer': '每年复查一次'}, 'Unit': '年后'}
+注意原肛门处出血情况，如出血加重，及时来院就诊。5天内复查血常规及肝肾功能。下次化疗时间：2018-4-18.建议下次化疗加用分子靶向药物
+{'Quantity': '5天内', 'MeasuredProperty': {'score': 0.6772858500480652, 'start': 27, 'end': 37, 'answer': '复查血常规及肝肾功能'}, 'Unit': '天内'}
+ 排除手术禁忌后于11-20全麻下行开颅神经内镜辅助下右侧颈内动脉C 6-7段动脉瘤夹闭术+左侧颈内动脉C 6/7段动脉瘤夹闭术。术后继续罗氏芬抗感染，辅以补液等治疗。患者术后体温仍高，峰值达40.5℃，血压波动在70-120/40-70 mmHg左右，先后予多巴胺、间羟胺、去甲肾上腺素升压治疗，血管活性药物剂量逐渐加大，血压仍有不稳定。2020-11-23患者面罩吸氧8 L/min条件下，血氧饱和度82%，转入ICU治疗。转入ICU后因氧饱低，于2020-11-23行气管插管术，予倍能联合恒捷针抗感染治疗。2020-12-03因严重脓毒血症予CRRT穿刺置管及上机，并调整抗生素为替加环素联合倍能抗感染。患者脱机拔管困难，于2020-12-15行经皮气管切开。2020-12-16患者血压波动明显，床边超声示心包积液较前增多，于2020-12-17行心包穿刺术。2021-01-08患者突然循环不稳，床边超声提示容量不足，考虑患者感染加重更改抗生素为斯沃针 +科赛斯针+舒普深针联合抗感染治疗，并辅以吗啡、丙泊酚加强镇静。经积极补液抗感染抗炎利尿等治疗，患者病情稳定，于2021-01-14脱机。现患者病情暂稳定，呼吸氧合、循环稳定，请示医疗组长同意后，予今日办理出入院。	气管切开鼻导管吸氧，SPO 2 维持在96-100%，皮肤巩膜色泽无黄染，颈软，无抵抗，双侧瞳孔等大等圆，光反应灵敏，双肺呼吸音粗，右肺闻及少许湿啰音，心律齐，未闻及明显病理杂音，腹软，肝脾肋下未及，四肢肌力检查不配合，四肢肌张力正常，双手水肿明显，下肢未见明显水肿，双巴氏征阴性	"1、建议转入普通病房进一步治疗
+2、VTE评估及处置计划:VTE评分:9分；  ；，其他：                       。3、出院带药：无带药。
+{'Quantity': '40.5℃', 'MeasuredProperty': {'score': 0.9857774376869202, 'start': 93, 'end': 95, 'answer': '峰值'}, 'Unit': '℃'}
+{'Quantity': '40-70 mmHg', 'MeasuredProperty': {'score': 0.769685685634613, 'start': 102, 'end': 106, 'answer': '血压波动'}, 'Unit': 'mmHg'}
+{'Quantity': '82%', 'MeasuredProperty': {'score': 0.9949018359184265, 'start': 197, 'end': 202, 'answer': '血氧饱和度'}, 'Unit': '%'}
+{'Quantity': '96-100%', 'MeasuredProperty': {'score': 0.9682520627975464, 'start': 558, 'end': 560, 'answer': '持在'}, 'Unit': '%'}
+{'Quantity': '9分', 'MeasuredProperty': {'score': 0.312818706035614, 'start': 701, 'end': 704, 'answer': 'VTE'}, 'Unit': '分'}
+12.30患者无明显诱因出现发热，伴气促，尿量减少，四肢水肿，完善胸部CT提示肺部感染较前相仿，胸腔积液增多，炎症指标明显升高，D二聚体进行性升高，完善下肢超声，未见明显异常。拔除PICC后，导管尖端及血培养未见明显异常。请重症医学科、呼吸科会诊，完善肺动脉CTA，(2021-01-05 16:19，本院)行CT[肺动脉CTA增强(特殊三维成像)]检查提示：肺动脉CTA未见明显异常。 两肺散在少量炎症，两侧少量胸腔积液伴邻近肺局部膨胀不全，双侧胸腔少量积液；心包少量积液。 主动脉壁、主动脉瓣、冠脉壁钙化。先后予特治星针、异帕米星针、泰能针[亚胺培南西司他丁钠]抗感染治疗，百特针[人血白蛋白] 10 g 静脉滴注 bid补白蛋白等对症治疗后，患者炎症感染控制，水肿消退，仍有阵发性气促。现患者病情尚稳定，请示医疗组长同意后予今日出院。"	患者卧床，无发热，无恶心呕吐等不适。查体：神清，面色苍白，肺部听诊呼吸音稍粗，双肺可闻及干湿罗音。双上肢伸肌、屈肌肌张力1+级，余肢体肌张力均为0级，四肢腱反射正常，右侧巴氏征阳性，左侧巴氏征阴性。认知功能：高级脑功能障碍，MMSE检查无法完成。运动功能：右侧Brunstrom分期（上肢-手-下肢）II期 -III期 -III期；左侧肢体Brunstrom分期（上肢-手-下肢）III期 -IV期 -III期。言语功能：偶有发声，听理解、复述、阅读、命名、书写不能配合。吞咽功能、感觉功能均不能配合检查。坐位平衡1级，立位平衡不能配合。ADL评定：Barthel指数0分。社会参与重度受限。	"1、营养医嘱及注意事项（营养指导及健康宣教）
+{'Quantity': '10 g', 'MeasuredProperty': {'score': 0.5769684314727783, 'start': 289, 'end': 292, 'answer': '百特针'}, 'Unit': 'g'}
+{'Quantity': '1级', 'MeasuredProperty': {'score': 0.9984619617462158, 'start': 625, 'end': 629, 'answer': '坐位平衡'}, 'Unit': '级'}
+"1.患者因“胸痛伴胸闷气促3天”入院 。2.体检：耳温：36.6℃，呼吸：18次/分，心率：101次/分，血压：152/90 mmHg，神志清，精神可，眼不突，口唇无紫绀，颈静脉无怒张，甲状腺未及肿大，双肺呼吸音清，可闻及湿性啰音，心界不大，律齐，心音有力，未闻及明显病理性杂音。腹软，无压痛、反跳痛，肝脾肋下未及，双肾区无叩痛，双下肢轻度浮肿。NS（-）
+{'Quantity': '3天', 'MeasuredProperty': {'score': 0.8126012086868286, 'start': 7, 'end': 14, 'answer': '胸痛伴胸闷气促'}, 'Unit': '天'}
+{'Quantity': '36.6℃', 'MeasuredProperty': {'score': 0.9984652996063232, 'start': 26, 'end': 28, 'answer': '耳温'}, 'Unit': '℃'}
+{'Quantity': '18次/分', 'MeasuredProperty': {'score': 0.9991410970687866, 'start': 35, 'end': 37, 'answer': '呼吸'}, 'Unit': '次/分'}
+{'Quantity': '101次/分', 'MeasuredProperty': {'score': 0.9993597865104675, 'start': 44, 'end': 46, 'answer': '心率'}, 'Unit': '次/分'}
+{'Quantity': '152/90 mmHg', 'MeasuredProperty': {'score': 0.998967170715332, 'start': 54, 'end': 56, 'answer': '血压'}, 'Unit': 'mmHg'}
+"1.患者因“重物坠落击伤头部神志不清6小时余。”入院 。2.体检：GCS评分3分，体温：36.8℃ 脉搏：109次/分 呼吸：22次/分 血压:140/119 mmHg  血氧饱和度：98% 。患者昏迷状态，头部已包扎，可见渗血，两侧瞳孔2 mm，等大等圆，对光反应迟钝，颈部颈托固定妥，双肺呼吸音清，双下肺未闻及湿罗音，腹部平坦、软，左侧腰部有2-3 cm伤口，未见活动性出血,右侧足背肿胀，足背动脉细数，四肢肌力检查不配合，肌张力低。双侧巴氏征阳性。3.辅助检查：实验室检查：(2020-12-23 17:17，本院
+{'Quantity': '6小时', 'MeasuredProperty': {'score': 0.6870254874229431, 'start': 15, 'end': 19, 'answer': '神志不清'}, 'Unit': '小时'}
+{'Quantity': '3分', 'MeasuredProperty': {'score': 0.5473567843437195, 'start': 34, 'end': 39, 'answer': 'GCS评分'}, 'Unit': '分'}
+{'Quantity': '36.8℃', 'MeasuredProperty': {'score': 0.9980949759483337, 'start': 42, 'end': 44, 'answer': '体温'}, 'Unit': '℃'}
+{'Quantity': '109次/分', 'MeasuredProperty': {'score': 0.9993293285369873, 'start': 51, 'end': 53, 'answer': '脉搏'}, 'Unit': '次/分'}
+{'Quantity': '22次/分', 'MeasuredProperty': {'score': 0.9974849820137024, 'start': 61, 'end': 63, 'answer': '呼吸'}, 'Unit': '次/分'}
+{'Quantity': '140/119 mmHg', 'MeasuredProperty': {'score': 0.9987643361091614, 'start': 70, 'end': 72, 'answer': '血压'}, 'Unit': 'mmHg'}
+{'Quantity': '98%', 'MeasuredProperty': {'score': 0.9957846403121948, 'start': 87, 'end': 92, 'answer': '血氧饱和度'}, 'Unit': '%'}
+{'Quantity': '2 mm', 'MeasuredProperty': {'score': 0.9749546051025391, 'start': 116, 'end': 120, 'answer': '两侧瞳孔'}, 'Unit': 'mm'}
+{'Quantity': '2-3 cm', 'MeasuredProperty': {'score': 0.8940165638923645, 'start': 169, 'end': 173, 'answer': '左侧腰部'}, 'Unit': 'cm'}
+"1.患者因“胸痛1年，再发加重半小时”入院 。2.体检：耳温：37.2℃，呼吸：16次/分，心率：91次/分，血压：155/112 mmHg，神志清，精神软，颈软，双肺呼吸音粗，双下肺未闻及湿罗音，心律齐，未闻及杂音。腹软，肝脾肋下未及，无压痛，无反跳痛，双下肢无浮肿，四肢肌力、肌张力正常。。3.辅助检查：实验室检查：暂缺
+{'Quantity': '1年', 'MeasuredProperty': {'score': 0.9871641397476196, 'start': 7, 'end': 9, 'answer': '胸痛'}, 'Unit': '年'}
+{'Quantity': '37.2℃', 'MeasuredProperty': {'score': 0.9985262155532837, 'start': 29, 'end': 31, 'answer': '耳温'}, 'Unit': '℃'}
+{'Quantity': '16次/分', 'MeasuredProperty': {'score': 0.9992254376411438, 'start': 38, 'end': 40, 'answer': '呼吸'}, 'Unit': '次/分'}
+{'Quantity': '91次/分', 'MeasuredProperty': {'score': 0.9993330836296082, 'start': 47, 'end': 49, 'answer': '心率'}, 'Unit': '次/分'}
+{'Quantity': '155/112 mmHg', 'MeasuredProperty': {'score': 0.9990853071212769, 'start': 56, 'end': 58, 'answer': '血压'}, 'Unit': 'mmHg'}

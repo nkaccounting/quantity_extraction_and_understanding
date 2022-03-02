@@ -5,9 +5,12 @@ from transformers import BertForQuestionAnswering, AutoTokenizer, QuestionAnswer
 from pre_process_for_text import pre_process
 from quantity_extraction import extract_quantity
 
-model = BertForQuestionAnswering.from_pretrained('../fine_tune_mrc_quantity')
+model_dir = '../是什事？'
+# model_dir = '../../chinese_pretrain_mrc_roberta_wwm_ext_large'
 
-tokenizers = AutoTokenizer.from_pretrained('../fine_tune_mrc_quantity')
+model = BertForQuestionAnswering.from_pretrained(model_dir)
+
+tokenizers = AutoTokenizer.from_pretrained(model_dir)
 
 pipeline = QuestionAnsweringPipeline(model=model, tokenizer=tokenizers)
 
@@ -23,7 +26,7 @@ print(quantities)
 
 context = [context] * len(quantities)
 
-questions = ['{quantity}指的是？'.format(quantity=q) for q in quantities]
+questions = ['{quantity}是什事？'.format(quantity=q) for q in quantities]
 
 print(questions)
 
