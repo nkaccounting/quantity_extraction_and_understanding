@@ -1,0 +1,66 @@
+1.患者因“头部摔伤后意识不清，四肢活动不利2年余”入院 。2.体检：耳温：36.8℃，呼吸：20次/分，脉搏：87次/分，血压：148/85 mmHg，神清，精神一般，双侧瞳孔等大等圆，直径3 mm，对光反射可，右侧鼻唇沟稍浅，口角向左歪斜，伸舌不能配合，咽反射不能配合。肺部听诊呼吸音稍粗，双肺可闻及湿性罗音，心腹查体无殊。患者双侧肩关节被动活动轻度受限，被动活动肩关节患者有痛苦表情，四肢轻度水肿。双上肢伸肌、屈肌肌张力1+级，余肢体肌张力均为0级，四肢腱反射正常，右侧巴氏征阳性，左侧巴氏征阴性。认知功能：高级脑功能障碍，MMSE检查无法完成。运动功能：右侧Brunstrom分期（上肢-手-下肢）II期 -III期 -III期；左侧肢体Brunstrom分期（上肢-手-下肢）III期 -IV期 -III期。言语功能：偶有发声，听理解、复述、阅读、命名、书写不能配合。吞咽功能、感觉功能均不能配合检查。坐位平衡1级，立位平衡不能配合。ADL评定：Barthel指数0分。社会参与重度受限。
+{'Quantity': '2年余', 'MeasuredProperty': {'score': 0.6261577010154724, 'start': 16, 'end': 22, 'answer': '四肢活动不利'}, 'Unit': '年余'}
+{'Quantity': '36.8℃', 'MeasuredProperty': {'score': 0.9993336200714111, 'start': 35, 'end': 37, 'answer': '耳温'}, 'Unit': '℃'}
+{'Quantity': '20次/分', 'MeasuredProperty': {'score': 0.9982905387878418, 'start': 44, 'end': 46, 'answer': '呼吸'}, 'Unit': '次/分'}
+{'Quantity': '87次/分', 'MeasuredProperty': {'score': 0.999363124370575, 'start': 53, 'end': 55, 'answer': '脉搏'}, 'Unit': '次/分'}
+{'Quantity': '148/85 mmHg', 'MeasuredProperty': {'score': 0.9989753365516663, 'start': 62, 'end': 64, 'answer': '血压'}, 'Unit': 'mmHg'}
+{'Quantity': '3 mm', 'MeasuredProperty': {'score': 0.9985752701759338, 'start': 94, 'end': 96, 'answer': '直径'}, 'Unit': 'mm'}
+{'Quantity': '0级', 'MeasuredProperty': {'score': 0.9967883825302124, 'start': 217, 'end': 223, 'answer': '余肢体肌张力'}, 'Unit': '级'}
+{'Quantity': '1级', 'MeasuredProperty': {'score': 0.9992392659187317, 'start': 406, 'end': 410, 'answer': '坐位平衡'}, 'Unit': '级'}
+{'Quantity': '0分', 'MeasuredProperty': {'score': 0.9864475131034851, 'start': 428, 'end': 437, 'answer': 'Barthel指数'}, 'Unit': '分'}
+1.患者因“确诊右肺腺癌10天”入院 。2.体检：神清，口唇无紫绀，皮肤巩膜无黄染，双锁骨上淋巴结未及肿大，颈静脉无怒张，气管居中，双肺呼吸音清，未闻及干湿性罗音，心律齐，未闻及病理性杂音，腹软，无压痛，肝脾肋下未及，双下肢无水肿，NS(-)。
+{'Quantity': '10天', 'MeasuredProperty': {'score': 0.9950128197669983, 'start': 8, 'end': 12, 'answer': '右肺腺癌'}, 'Unit': '天'}
+1.患者因“重物坠落击伤头部神志不清6小时余。”入院 。2.体检：GCS评分3分，体温：36.8℃ 脉搏：109次/分 呼吸：22次/分 血压:140/119 mmHg  血氧饱和度：98% 。患者昏迷状态，头部已包扎，可见渗血，两侧瞳孔2 mm，等大等圆，对光反应迟钝，颈部颈托固定妥，双肺呼吸音清，双下肺未闻及湿罗音，腹部平坦、软，左侧腰部有2-3 cm伤口，未见活动性出血,右侧足背肿胀，足背动脉细数，四肢肌力检查不配合，肌张力低。双侧巴氏征阳性。
+{'Quantity': '6小时', 'MeasuredProperty': {'score': 0.9410656094551086, 'start': 14, 'end': 18, 'answer': '神志不清'}, 'Unit': '小时'}
+{'Quantity': '3分', 'MeasuredProperty': {'score': 0.9874734282493591, 'start': 33, 'end': 38, 'answer': 'GCS评分'}, 'Unit': '分'}
+{'Quantity': '36.8℃', 'MeasuredProperty': {'score': 0.9991563558578491, 'start': 41, 'end': 43, 'answer': '体温'}, 'Unit': '℃'}
+{'Quantity': '109次/分', 'MeasuredProperty': {'score': 0.9995919466018677, 'start': 50, 'end': 52, 'answer': '脉搏'}, 'Unit': '次/分'}
+{'Quantity': '22次/分', 'MeasuredProperty': {'score': 0.9979469180107117, 'start': 60, 'end': 62, 'answer': '呼吸'}, 'Unit': '次/分'}
+{'Quantity': '140/119 mmHg', 'MeasuredProperty': {'score': 0.9990391731262207, 'start': 69, 'end': 71, 'answer': '血压'}, 'Unit': 'mmHg'}
+{'Quantity': '98%', 'MeasuredProperty': {'score': 0.9983657598495483, 'start': 86, 'end': 91, 'answer': '血氧饱和度'}, 'Unit': '%'}
+{'Quantity': '2 mm', 'MeasuredProperty': {'score': 0.9599481821060181, 'start': 115, 'end': 119, 'answer': '两侧瞳孔'}, 'Unit': 'mm'}
+{'Quantity': '2-3 cm', 'MeasuredProperty': {'score': 0.9915997385978699, 'start': 168, 'end': 172, 'answer': '左侧腰部'}, 'Unit': 'cm'}
+1.患者因“腹痛9天，便秘7天”入院 。2.体检：神清，精神可，皮肤巩膜无黄染，双锁骨上、双颈部、双腹股沟淋巴结未及肿大，气管居中，双肺呼吸音清，未闻及干湿性罗音。心律齐，未闻及明显病理性杂音。腹部可见陈旧性疤痕，腹平软，有压痛，无反跳痛，Murphy征(-)，肝脾肋下未及，未及明显包块，移浊（-）。双下肢无水肿。指诊无殊。
+{'Quantity': '9天', 'MeasuredProperty': {'score': 0.9954907298088074, 'start': 6, 'end': 8, 'answer': '腹痛'}, 'Unit': '天'}
+{'Quantity': '7天', 'MeasuredProperty': {'score': 0.9991401433944702, 'start': 11, 'end': 13, 'answer': '便秘'}, 'Unit': '天'}
+1.患者因“胸闷伴腹胀5小时。”入院 。2.体检：耳温：36.8℃，呼吸：19次/分，脉搏：82次/分，血压：143/110 mmHg，神志清，精神可，眼不突，口唇无紫绀，颈静脉无怒张，甲状腺未及肿大，心界不大，心率82次/分，心律齐，心音可，未闻及明显病理性杂音，双肺呼吸音清，未闻及干湿性啰音。腹软，无压痛、反跳痛，肝脾肋下未及，双肾区无叩痛，双下肢无浮肿。
+{'Quantity': '5小时', 'MeasuredProperty': {'score': 0.7999858260154724, 'start': 6, 'end': 11, 'answer': '胸闷伴腹胀'}, 'Unit': '小时'}
+{'Quantity': '36.8℃', 'MeasuredProperty': {'score': 0.9993116855621338, 'start': 25, 'end': 27, 'answer': '耳温'}, 'Unit': '℃'}
+{'Quantity': '19次/分', 'MeasuredProperty': {'score': 0.9988458156585693, 'start': 34, 'end': 36, 'answer': '呼吸'}, 'Unit': '次/分'}
+{'Quantity': '82次/分', 'MeasuredProperty': {'score': 0.9997177124023438, 'start': 43, 'end': 45, 'answer': '脉搏'}, 'Unit': '次/分'}
+{'Quantity': '143/110 mmHg', 'MeasuredProperty': {'score': 0.9994088411331177, 'start': 52, 'end': 54, 'answer': '血压'}, 'Unit': 'mmHg'}
+{'Quantity': '82次/分', 'MeasuredProperty': {'score': 0.9995824098587036, 'start': 55, 'end': 57, 'answer': '心率'}, 'Unit': '次/分'}
+实验室检查：(2020-12-19 01:19，本院)急诊脑钠肽前体(全血)：脑利钠肽前体 652 pg/ml↑；(2020-12-19 01:49，本院)急诊生化(血浆)：钾 3.85 mmol/L，钠 136.5 mmol/L↓，氯 102.9 mmol/L，谷丙转氨酶 100 U/L↑，葡萄糖 10.43 mmol/L↑；(2020-12-19 01:49，本院)急诊心肌损伤标志物(血浆)：心肌肌钙蛋白I 0.239μg/L↑；(2020-12-19 01:51，本院)ABO+Rh血型(全血)：白细胞计数 11.29 x 10^9/L↑，淋巴细胞计数 1.8 x 10^9/L，中性粒细胞计数 8.9 x 10^9/L↑，血红蛋白 147 g/L，血小板计数 233 x 10^9/L；。 
+{'Quantity': '652 pg/ml', 'MeasuredProperty': {'score': 0.45167768001556396, 'start': 29, 'end': 34, 'answer': '脑钠肽前体'}, 'Unit': 'pg/ml'}
+{'Quantity': '3.85 mmol/L', 'MeasuredProperty': {'score': 0.9997377395629883, 'start': 87, 'end': 88, 'answer': '钾'}, 'Unit': 'mmol/L'}
+{'Quantity': '136.5 mmol/L', 'MeasuredProperty': {'score': 0.28658023476600647, 'start': 30, 'end': 31, 'answer': '钠'}, 'Unit': 'mmol/L'}
+{'Quantity': '102.9 mmol/L', 'MeasuredProperty': {'score': 0.9937681555747986, 'start': 117, 'end': 118, 'answer': '氯'}, 'Unit': 'mmol/L'}
+{'Quantity': '100 U/L', 'MeasuredProperty': {'score': 0.9995670914649963, 'start': 132, 'end': 137, 'answer': '谷丙转氨酶'}, 'Unit': 'U/L'}
+{'Quantity': '10.43 mmol/L', 'MeasuredProperty': {'score': 0.9995042085647583, 'start': 147, 'end': 150, 'answer': '葡萄糖'}, 'Unit': 'mmol/L'}
+{'Quantity': '0.239μg/L', 'MeasuredProperty': {'score': 0.9512986540794373, 'start': 200, 'end': 207, 'answer': '心肌肌钙蛋白I'}, 'Unit': 'μg/L'}
+{'Quantity': '11.29 x 10^9/L', 'MeasuredProperty': {'score': 0.999104917049408, 'start': 253, 'end': 258, 'answer': '白细胞计数'}, 'Unit': 'x 10^9/L'}
+{'Quantity': '1.8 x 10^9/L', 'MeasuredProperty': {'score': 0.9996286034584045, 'start': 275, 'end': 281, 'answer': '淋巴细胞计数'}, 'Unit': 'x 10^9/L'}
+{'Quantity': '8.9 x 10^9/L', 'MeasuredProperty': {'score': 0.9987743496894836, 'start': 295, 'end': 302, 'answer': '中性粒细胞计数'}, 'Unit': 'x 10^9/L'}
+{'Quantity': '147 g/L', 'MeasuredProperty': {'score': 0.9997062683105469, 'start': 317, 'end': 321, 'answer': '血红蛋白'}, 'Unit': 'g/L'}
+{'Quantity': '233 x 10^9/L', 'MeasuredProperty': {'score': 0.9989481568336487, 'start': 330, 'end': 335, 'answer': '血小板计数'}, 'Unit': 'x 10^9/L'}
+特殊检查：(2020-12-19 01:51，本院)行加急：CT[胸部平扫(心胸)]检查提示：两肺水肿可能。 心脏增大，心包积液。 附见：脂肪肝。 
+1.患者因“胸痛伴胸闷气促3天”入院 。2.体检：耳温：36.6℃，呼吸：18次/分，心率：101次/分，血压：152/90 mmHg，神志清，精神可，眼不突，口唇无紫绀，颈静脉无怒张，甲状腺未及肿大，双肺呼吸音清，可闻及湿性啰音，心界不大，律齐，心音有力，未闻及明显病理性杂音。腹软，无压痛、反跳痛，肝脾肋下未及，双肾区无叩痛，双下肢轻度浮肿。
+{'Quantity': '3天', 'MeasuredProperty': {'score': 0.4405328035354614, 'start': 9, 'end': 13, 'answer': '胸闷气促'}, 'Unit': '天'}
+{'Quantity': '36.6℃', 'MeasuredProperty': {'score': 0.9992230534553528, 'start': 25, 'end': 27, 'answer': '耳温'}, 'Unit': '℃'}
+{'Quantity': '18次/分', 'MeasuredProperty': {'score': 0.9990429282188416, 'start': 34, 'end': 36, 'answer': '呼吸'}, 'Unit': '次/分'}
+{'Quantity': '101次/分', 'MeasuredProperty': {'score': 0.9993965029716492, 'start': 43, 'end': 45, 'answer': '心率'}, 'Unit': '次/分'}
+{'Quantity': '152/90 mmHg', 'MeasuredProperty': {'score': 0.9995146989822388, 'start': 53, 'end': 55, 'answer': '血压'}, 'Unit': 'mmHg'}
+1.患者因“胸痛1年，再发加重半小时”入院 。2.体检：耳温：37.2℃，呼吸：16次/分，心率：91次/分，血压：155/112 mmHg，神志清，精神软，颈软，双肺呼吸音粗，双下肺未闻及湿罗音，心律齐，未闻及杂音。腹软，肝脾肋下未及，无压痛，无反跳痛，双下肢无浮肿，四肢肌力、肌张力正常。。3.辅助检查：实验室检查：暂缺。
+{'Quantity': '1年', 'MeasuredProperty': {'score': 0.9987629652023315, 'start': 6, 'end': 8, 'answer': '胸痛'}, 'Unit': '年'}
+{'Quantity': '37.2℃', 'MeasuredProperty': {'score': 0.9995155930519104, 'start': 28, 'end': 30, 'answer': '耳温'}, 'Unit': '℃'}
+{'Quantity': '16次/分', 'MeasuredProperty': {'score': 0.999119222164154, 'start': 37, 'end': 39, 'answer': '呼吸'}, 'Unit': '次/分'}
+{'Quantity': '91次/分', 'MeasuredProperty': {'score': 0.9994784593582153, 'start': 46, 'end': 48, 'answer': '心率'}, 'Unit': '次/分'}
+{'Quantity': '155/112 mmHg', 'MeasuredProperty': {'score': 0.9996042847633362, 'start': 55, 'end': 57, 'answer': '血压'}, 'Unit': 'mmHg'}
+1.患者因“外伤致右足出血疼痛麻木伴活动受限7小时”入院 。2.体检：神清，精神可；颈软，未见颈静脉怒张，甲状腺未及肿大，胸廓未见畸形，双肺呼吸音粗，双肺闻及大量湿罗音，腹软，四肢肌张力正常，生理反射存在，病理反射未引出。右足第一足趾可见多发不规则挤压破裂创口，创缘不齐，局部皮肤挫伤伴撕脱掀起，内见近节趾骨粉碎性骨折伴骨缺损，右足第一足趾伸肌腱离断，趾背血管、神经离断伴部分毁损。。3.辅助检查：实验室检查：暂缺。
+{'Quantity': '7小时', 'MeasuredProperty': {'score': 0.9493595957756042, 'start': 18, 'end': 22, 'answer': '活动受限'}, 'Unit': '小时'}
+1.患者因“头痛4天，右侧肢体麻木疼痛2天”入院 。2.体检：BP 151/91 mmHg，双侧鼻唇沟对称，双肺呼吸音清，未及啰音，HR 74次/分，律齐，腹软，无压痛，无反跳痛。四肢肌力5级，肌张力正常。双侧巴氏征阴性。双侧肢体针刺痛觉对称。掌颏反射阳性。
+{'Quantity': '4天', 'MeasuredProperty': {'score': 0.9981906414031982, 'start': 6, 'end': 8, 'answer': '头痛'}, 'Unit': '天'}
+{'Quantity': '2天', 'MeasuredProperty': {'score': 0.9624332785606384, 'start': 11, 'end': 19, 'answer': '右侧肢体麻木疼痛'}, 'Unit': '天'}
+{'Quantity': '151/91 mmHg', 'MeasuredProperty': {'score': 0.9998478889465332, 'start': 31, 'end': 33, 'answer': 'BP'}, 'Unit': 'mmHg'}
+{'Quantity': '74次/分', 'MeasuredProperty': {'score': 0.9995642900466919, 'start': 66, 'end': 68, 'answer': 'HR'}, 'Unit': '次/分'}
+{'Quantity': '5级', 'MeasuredProperty': {'score': 0.9974693059921265, 'start': 90, 'end': 94, 'answer': '四肢肌力'}, 'Unit': '级'}
