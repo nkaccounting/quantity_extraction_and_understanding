@@ -753,6 +753,27 @@ EM和F值均有大幅度的提升
 结果还有待进一步分析
 
 
+###换了一批unseen数据重新做这个过程
+是什事？
+
+    ***** eval metrics *****
+      eval_P           = 98.1818
+      eval_R           = 95.4079
+      eval_exact_match = 92.7273
+      eval_f1          = 96.1449
+      eval_samples     =      55
+
+数据指标非常高，也很好看，因此和之前的充分训练以后得到的数据进行对比
+
+指的是？
+
+    ***** eval metrics *****
+      eval_P           = 96.2662
+      eval_R           =  94.317
+      eval_exact_match = 87.2727
+      eval_f1          = 94.0433
+      eval_samples     =      55
+
 
 ###用一些实例去分析：
 用例1：
@@ -766,4 +787,6 @@ EM和F值均有大幅度的提升
 
 <table><tr><td>数值</td><td>指的是？</td><td>score1</td><td>是什事？</td><td>score2</td></tr><tr><td>0.8</td><td>资产负债率</td><td>0.785192728</td><td>资产负债率</td><td>0.970654964</td></tr><tr><td>0.35</td><td>现金分红</td><td>0.526358366</td><td>现金分红不少于可分配利润</td><td>0.623749018</td></tr><tr><td></td></tr></table>
 
-整体来说，指的是和是什事都是
+整体来说，是什事？ 优于 指的是？
+
+原本unsupervise下，em值，还可以，f值一般
