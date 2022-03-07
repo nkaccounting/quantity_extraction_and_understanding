@@ -71,6 +71,7 @@ A project to extract the meaningful quantity in medical area and understand the 
 ### 最后还是选择策略，让模型尽可能说出答案
 
 无监督对比曲线：
+
 ![](pic/Unsupervise.jpg)
 
 说明，基于MRC的方法，无监督就能够把数值的指向说得大差不差了，只是一些表述可能不全面
@@ -179,6 +180,7 @@ prompt选取，T5 trick(选取一下)
     eval_samples     =      50
 
 有监督实验总结：
+
 ![](pic/Supervise.jpg)
 
 分析：由于自己的训练样本真的太少了，自己的训练策略也比较一般，如果单一的数据训练多了，就容易导致过拟合/数据遗忘之前的知识，导致随着轮数的增加，效果反而不行了
@@ -280,6 +282,9 @@ run_qa里面的metric修改为squad，改import；修改data 2.0->1.1（也许�
     拆解出来是t 30 mg
 
 ### 写在专利中的内容
+
+基本架构
+![](pic/数值理解专利内容.jpg)
 
 1. 中英文混合的tokenizer过程
 
@@ -712,7 +717,9 @@ EM具有一定的不可控性，不一定刚好和标注人员标注的gold resu
     是甚么？
     都是？
 
-设计有监督方案，共同进行比较。
+设计有监督方案，共同进行比较。（最终因为开销不是很大，所以上面的prompt都验证了一遍，没有特别关注语义，人关注到的语义不一定对）
+
+但是会不会存在实验的随机性，也就是说，因为偶然训练出某一个prompt表现结果比较好？
 
 
 ###supervise部分的实验结果
@@ -790,3 +797,43 @@ EM和F值均有大幅度的提升
 整体来说，是什事？ 优于 指的是？
 
 原本unsupervise下，em值，还可以，f值一般
+
+###attention virtualization
+Unsupervise下，是什事？和指的是？差别不是很大
+
+![](prompt_interpretability/pretrain注意力机制/指的是？/指.png)
+
+![](prompt_interpretability/pretrain注意力机制/是什事？/什.png)
+
+但是相对来说，比较关键的问句字符当中，什的attention比指的attention更集中，并且集中在目标上面
+
+
+supervise下，是什事？和指的是？差别较大
+
+![](prompt_interpretability/fine-tune以后的注意力机制/指的是？/指.png)
+
+![](prompt_interpretability/fine-tune以后的注意力机制/是什事？/什.jpg)
+
+相对来说，指的attention比较强，但是相对也比较散
+
+而什的attention主要集中在target附近
+###整体来说
+从结果，attention，数据，test结果各方面综合来解释
+
+是什事？的可解释性
+
+是、？这两个相当于做提问的标志位，是--理解为英文中的is或者are，？即问句
+
+什，可以理解为  什么--即提问数值指代的基本语句
+
+事，可以理解为 发生了什么事--隐含数值指代的动态提问，例如说增长、比XXX多，不少于等信息
+
+但是事字的训练，在原始的小样本训练数据里面几乎是没有什么的，这部分可以添加部分样本一起训练。
+
+现在还不足的两个方面
+
+面向领域的数值单位，以及数值模式（抽取阶段）
+
+在理解层面，某个数值为一个动态含义，例如什么比什么多，什么增长，包含比较的一些概念，以及概念跨越span
+
+其他部分基本上没有什么提升了
