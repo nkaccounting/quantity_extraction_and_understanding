@@ -961,3 +961,47 @@ supervise下，是什事？和指的是？差别较大
 唯一的prompt：是什么
 
 相对单一，不如bert可控
+
+
+
+回到最初的baseline，一开始都是假设小样本学习直接训练不出东西来
+
+现在跑一下结果
+#!/bin/bash
+ 
+for i in ./chinese-roberta-wwm-ext-large ./chinese-bert-wwm ./bert-base-chinese ./bert-base-multilingual-cased ;
+do
+echo $i is appoint ;
+python run_qa.py \
+  --model_name_or_path $i \
+  --train_file ./data/VU_squad2.0_train.json \
+  --validation_file ./data/VU_squad2.0_validate.json \
+  --do_train \
+  --do_eval\
+  --per_device_train_batch_size 6 \
+  --learning_rate 3e-5 \
+  --num_train_epochs 2 \
+  --max_seq_length 512 \
+  --doc_stride 128 \
+  --output_dir ./fine_tune_mrc_squad_$i/
+done
+
+
+bert-base-chinese
+
+![img.png](pic/bert-base-chinese.png)
+
+bert-base-multilingual-cased
+![img_1.png](pic/bert-base-multilingual-cased.png)
+
+chinese-bert-wwm
+![img_2.png](pic/chinese-bert-wwm.png)
+
+chinese-roberta-wwm-ext-large
+![img_3.png](pic/chinese-roberta-wwm-ext-large.png)
+
+
+通过dureader训练以后，使得unsupervise的结果超过了以上3个结果
+
+改成jieba分词以后，再重新进行evaluation的计算，F值有所下降
+

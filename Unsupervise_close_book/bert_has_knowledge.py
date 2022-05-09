@@ -34,3 +34,14 @@ for r in res:
         print(rr)
 # {'score': 0.2685059607028961, 'token': 1525, 'token_str': '哪', 'sequence': '[CLS] 中 国 的 首 都 是 哪 [MASK] [SEP]'}
 # {'score': 0.8627076148986816, 'token': 8043, 'token_str': '？', 'sequence': '[CLS] 中 国 的 首 都 是 [MASK] ？ [SEP]'}
+print()
+
+analysis = '未闻及干湿性啰音，心率83次/分。问题：83次/分是什么？答案：[MASK][MASK]'
+
+res = unmasker(analysis)
+
+for r in res:
+    for rr in r:
+        print(rr)
+# {'score': 0.2685059607028961, 'token': 1525, 'token_str': '哪', 'sequence': '[CLS] 中 国 的 首 都 是 哪 [MASK] [SEP]'}
+# {'score': 0.8627076148986816, 'token': 8043, 'token_str': '？', 'sequence': '[CLS] 中 国 的 首 都 是 [MASK] ？ [SEP]'}
