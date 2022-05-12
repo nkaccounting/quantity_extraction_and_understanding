@@ -13,23 +13,13 @@ base_mode = [
     '[1-9]\d*\.?\d*',  # normal digital mode
 ]
 
+middle = ['\*?', '×?', 'x?', '-?', '/?', '~?']
+
 # quantity mode
-quantity_mode = [
-                    base_mode[0] + '\*?' + base_mode[0] + '\*?' + base_mode[0],
-                    base_mode[1] + '\*?' + base_mode[1] + '\*?' + base_mode[1],  # 3*4*5cm mode
-                    base_mode[0] + '\*?' + base_mode[0],
-                    base_mode[1] + '\*?' + base_mode[1],  # 3*4cm mode
-                    base_mode[0] + '×?' + base_mode[0] + '×?' + base_mode[0],
-                    base_mode[1] + '×?' + base_mode[1] + '×?' + base_mode[1],  # 3*4*5cm mode
-                    base_mode[0] + '×?' + base_mode[0],
-                    base_mode[1] + '×?' + base_mode[1],  # 3*4cm mode
-                    base_mode[0] + '-?' + base_mode[0],
-                    base_mode[1] + '-?' + base_mode[1],  # 6-7次/分 mode
-                    base_mode[0] + '-?' + base_mode[1],  # 0-7次/分 mode,
-                    base_mode[0] + '/?' + base_mode[0],
-                    base_mode[1] + '/?' + base_mode[1],  # 159/87mmHg mode,
-                    base_mode[0] + '/?' + base_mode[1],  # 0/87mmHg mode
-                ] + base_mode
+quantity_mode = [base_mode[0] + m + base_mode[0] for m in middle] \
+                + [base_mode[0] + m + base_mode[1] for m in middle] \
+                + [base_mode[1] + m + base_mode[1] for m in middle] \
+                + base_mode
 
 
 class Quantity:
@@ -50,7 +40,7 @@ def extract_quantity(text: str):
 if __name__ == '__main__':
     all = extract_quantity(input())
     print(len(all))
-    quantities=[quantity.value for quantity in all]
+    quantities = [quantity.value for quantity in all]
     for quantity in quantities:
         print(quantity)
     print(Counter(quantities))
