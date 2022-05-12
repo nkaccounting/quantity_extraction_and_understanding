@@ -7,7 +7,7 @@ dataframe = pd.read_csv('../data/unit.csv', header=None)
 unit_list = list(dataframe[0])
 
 # Add a list of unit
-new_unit = ['月前', '年前', '天前', '周前', '余月前', '余年前', '余天前', '余周前', '月余', '年余', '天余', '周余', '月后', '年后', '天后', '周后', '余月后', '余年后', '余天后', '余周后', '月内', '年内', '天内', '周内', '余月内', '余年内', '余天内', '余周内']
+new_unit = ['个/HPF', '/HPF', 'mmHg', '%', 'mmol/dl', 'mmol/L', 'ml/dl', 'g/L', 'mg/dl', '个/μl', '/μl', 'mg/L', 'g/dL', 'mg', 'mmol', 'mg/24h', 'mmol/24h', '个/LPF', '/LPF', 'Ms/cm', '\*10\^9/L', '10\^9/L', '\*10\^12/L', '10\^12/L', 'mm/h', 'μmol/L', 'U/L', 'mU/L', 'pmol/L', 'nmol/L', 'μg/dl', 'S/CO', 'ng/mL', 'mmol/L', '包/天', '根/天', 'PEI U/mL', 'IU/mL', 'mIU/mL', '个', 'umol/L', 'mIU/L', 'mm/60min', 'IU/L', 'ug/dl', 'cm', 'kg', 'kg/m\^2', '℃', '次/分', 'm', 'ng/L', 'U/mL', 'mU/mL', 'L', 'ml', 'dl', 'mL', 'dL', 'μl', 'ul']
 
 unit_list = list(set(unit_list + new_unit))
 
