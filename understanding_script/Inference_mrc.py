@@ -5,7 +5,7 @@ from transformers import BertForQuestionAnswering, AutoTokenizer, QuestionAnswer
 from pre_process_for_text import pre_process
 from quantity_extraction import extract_quantity
 
-model_dir = '../是什事？'
+model_dir = '../whatisit'
 # model_dir = '../../chinese_pretrain_mrc_roberta_wwm_ext_large'
 
 model = BertForQuestionAnswering.from_pretrained(model_dir)
