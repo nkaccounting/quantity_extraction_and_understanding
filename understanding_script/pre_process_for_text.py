@@ -29,8 +29,12 @@ def removeTime(text: str):
 
 def pre_process(text: str):
     text = removeTime(text)
-    text = better_tokenizer_pre_process(text)
     return text + '。'
+
+
+def after_process(text: str):
+    text = better_tokenizer_pre_process(text)
+    return text
 
 
 if __name__ == '__main__':

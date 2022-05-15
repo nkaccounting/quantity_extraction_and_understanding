@@ -33,7 +33,7 @@ class Quantity:
 def extract_quantity(text: str):
     unit_pattern = '(' + '|'.join(unit_list) + ')'
     quantity_pattern = '|'.join(quantity_mode)
-    nums = re.findall('(' + quantity_pattern + ')([ ]|)' + unit_pattern, text)
+    nums = re.findall('(' + quantity_pattern + ')([ ]||\+)' + unit_pattern, text)
     return [Quantity(num[0], num[1], num[2]) for num in nums]
 
 
