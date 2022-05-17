@@ -24,6 +24,8 @@ def removeTime(text: str):
         '\d+月\d+日',
     ]
     pattern = "|".join(mode)
+    text = re.sub(pattern, '##', text)
+    text = re.sub('\"', '', text)
     return re.sub(pattern, '##', text)
 
 
