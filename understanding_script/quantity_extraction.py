@@ -44,7 +44,11 @@ def extract_quantity(text: str):
     nums_no_num = re.findall(quantity_no_num_pattern + unit_no_num_pattern, text)
     nums_no_num = [(num[0] + num[1], '', '') for num in nums_no_num]
 
-    nums = nums + nums_no_num
+    other_unit_pattern = '(' + '|'.join(["，", "、", "；"]) + ')'
+    other_quantity_pattern = '\d*\.\d+'
+    other_nums = re.findall('(' + other_quantity_pattern + ')([ ]||\+)' + other_unit_pattern, text)
+
+    nums = nums + nums_no_num + other_nums
     return [Quantity(num[0], num[1], num[2]) for num in nums]
 
 
