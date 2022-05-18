@@ -1,10 +1,188 @@
+#已申请专利
+
+转载请注明出处，如需合作请联系zengxiaodong@stu.pku.edu.cn
+
+基于小样本的医疗数值抽取和理解方法及装置
+
+专利类型：	发明公开
+
+申请(专利)号：	CN202210221233.9申请日：	2022-03-09
+
+申请公布号：	CN114357144A公开公告日：	2022-04-15
+
+申请人：	北京大学
+
+地址：	100871 北京市海淀区颐和园路5号
+
+发明人：	胡文蕙; 刘学洋; 曾晓东
+
+专辑：	工程科技Ⅱ辑
+
+专题：	电力工业
+
+分类号：	G06F16/332;G06F40/216;G06K9/62;G16H50/70;G06F40/289
+
+主分类号：	G06F16/332国省代码：	11
+
+页数：	22
+
+代理机构：	北京路浩知识产权代理有限公司代理人：	郭亮
+
+# 主要业务合作
+与北京大学医学部公共卫生学院合作完成北京多家医院病人数据的数据治理
+
+业务输入为：一段病人查房记录，其中包含一些病人的病情信息，包含症状实体，疾病实体，各项指标实体
+
+医学部主诉分析需求为提取非结构化文本数据当中的指标信息，抽取其中的指标类数值，服务于下游预测分析
+
+常见的指标类数值包含：
+
+1.基本带数字和单位的指标
+
+2.纯数字的比值类的指标
+
+3.+—号等说明阴阳性的指标
+
+并将指标链接到对应的度量对象、时间、和所属大类别的检查项目
+
+输入输出样例：
+
+    {
+      "原文": "  2016-09-1009:58:46院内会诊记录单  姓名：***性别：女年龄：62岁科室：中西医结合科床号：112住院号：***  病历摘要及请求会诊的目的和要求：  患者目前考虑干燥综合征可能性大，请贵科会诊完善干眼症等相关检查。敬邀！  特请科室：眼科医生：科室会诊  请会诊医师：***,中西医结合科  请会诊日期：2016-9-98:40:42  会诊医师意见：  病史敬悉。患者诉干眼病史。查体：右0.8，左0.2，双眼角膜明，BUT下降，前房中深，瞳孔直径3mm，光敏，眼底网膜色淡红。辅助检查：泪液分泌实验：右3mm，左2mm。医学验光：右0.9，左0.8。眼压双眼15mmHg。B超：双眼玻璃体轻混。OCT未见明显异常。VEP：左眼幅值稍低。ERG双眼幅值稍低。会诊考虑双眼干眼症；双眼屈光不正。建议：玻璃酸钠眼液，点双眼，4次/日；注意休息；我科密切随访，谢邀！  会诊医师：***，眼科  会诊日期：2016-9-911:24:33-->",
+      "result": [
+        {
+          "数值": "62",
+          "单位": "岁",
+          "指标名": "年龄",
+          "可信度": "0.9788012504577637",
+          "时间": "2016-09-10",
+          "所属检查项目": ""
+        },
+        {
+          "数值": "3",
+          "单位": "mm",
+          "指标名": "瞳孔直径",
+          "可信度": "0.9994403123855591",
+          "时间": "2016-09-10",
+          "所属检查项目": "查体"
+        },
+        {
+          "数值": "0.8",
+          "单位": "",
+          "指标名": "右眼视力",
+          "可信度": "0.99954754114151",
+          "时间": "2016-09-10",
+          "所属检查项目": "查体"
+        },
+        {
+          "数值": "0.2",
+          "单位": "",
+          "指标名": "左眼视力",
+          "可信度": "0.9990530014038086",
+          "时间": "2016-09-10",
+          "所属检查项目": "查体"
+        },
+        {
+          "数值": "3",
+          "单位": "mm",
+          "指标名": "右",
+          "可信度": "0.8601629734039307",
+          "时间": "2016-09-10",
+          "所属检查项目": "泪液分泌实验"
+        },
+        {
+          "数值": "2",
+          "单位": "mm",
+          "指标名": "左",
+          "可信度": "0.885072648525238",
+          "时间": "2016-09-10",
+          "所属检查项目": "泪液分泌实验"
+        },
+        {
+          "数值": "0.9",
+          "单位": "",
+          "指标名": "右眼视力",
+          "可信度": "0.9916517734527588",
+          "时间": "2016-09-10",
+          "所属检查项目": "医学验光"
+        },
+        {
+          "数值": "0.8",
+          "单位": "",
+          "指标名": "左眼视力",
+          "可信度": "0.9902620315551758",
+          "时间": "2016-09-10",
+          "所属检查项目": "医学验光"
+        },
+        {
+          "数值": "15",
+          "单位": "mmHg",
+          "指标名": "眼压双眼",
+          "可信度": "0.564716100692749",
+          "时间": "2016-09-10",
+          "所属检查项目": ""
+        },
+        {
+          "数值": "4",
+          "单位": "次",
+          "指标名": "玻璃酸钠眼液",
+          "可信度": "0.4852046072483063",
+          "时间": "2016-09-10",
+          "所属检查项目": "建议"
+        }
+      ]
+    }
+
 # quantity_extraction_and_understanding
 
 A project to extract the meaningful quantity in medical area and understand the reference of quantity
 
-### 1.基于bert的无微调结果
+首先使用data下的 `VU_squad2.0_train.json` 进行训练
 
-（肯定不行，bert先验不能回答问题，相当于纯蒙）--没必要放上去,但是可以作为无监督的base起点对比
+选取`bert-base-chinese`、`bert-base-multilingual-cased`、`chinese-bert-wwm`三种模型结构进行训练
+
+    #!/bin/bash
+ 
+    for i in ./chinese-roberta-wwm-ext-large ./chinese-bert-wwm ./bert-base-chinese ./bert-base-multilingual-cased ;
+    do
+    echo $i is appoint ;
+    python run_qa.py \
+      --model_name_or_path $i \
+      --train_file ./data/VU_squad2.0_train.json \
+      --validation_file ./data/VU_squad2.0_validate.json \
+      --do_train \
+      --do_eval\
+      --per_device_train_batch_size 6 \
+      --learning_rate 3e-5 \
+      --num_train_epochs 2 \
+      --max_seq_length 512 \
+      --doc_stride 128 \
+      --output_dir ./fine_tune_mrc_squad_$i/
+    done
+
+bert-base-chinese
+
+![img.png](pic/bert-base-chinese.png)
+
+bert-base-multilingual-cased
+![img_1.png](pic/bert-base-multilingual-cased.png)
+
+chinese-bert-wwm
+![img_2.png](pic/chinese-bert-wwm.png)
+
+chinese-roberta-wwm-ext-large
+![img_3.png](pic/chinese-roberta-wwm-ext-large.png)
+
+以上效果都不佳
+
+`考虑通过小样本学习来进一步提升，而不是使用更多的标注数据`，进行了如下实验与探索
+
+最后通过模型蒸馏的形式，将大模型好的理解能力用一个小模型实现，以节约机器和推理开销
+
+
+### 1.基于bert Unsupervise的结果
+
+作为无监督的base起点对比，对比middle task对最终结果的提升程度
 
     ***** eval metrics *****
     eval_P           = 1.8565
@@ -13,15 +191,24 @@ A project to extract the meaningful quantity in medical area and understand the 
     eval_f1          = 2.3776
     eval_samples     =    559
 
-### 2.基于共指（只选择了预指和回指）的无微调结果：
+### 2.共指消解数据集作为middle task的无微调结果：
 
-（共指消解），数据集是ontonotes-release-5.0
+数据集是ontonotes-release-5.0
 
-共指的理解还是太单一了
+设计这个middle task的想法是：
 
-该数据集可能涉及到版权问题，北大是否有版权使用？
+分析具体问题场景时，数值抽取主要包含两种形式：
 
-（后续还需要进一步验证该过程，prompt不一致）
+数值在前面：
+
+8%的病人病情不容乐观->8% 病人病情
+
+数值在后面：
+
+病人的体温为37度->37度 体温
+
+将数值和指标看做是共指消解中的`预指`和`回指`
+
 
     ***** eval metrics *****
     eval_P           = 54.5677
@@ -30,9 +217,7 @@ A project to extract the meaningful quantity in medical area and understand the 
     eval_f1          = 50.9436
     eval_samples     =     560
 
-### 3.Roberta_base（较少mrc）--不及共指的效果
-
-……不断加大MRC的数据集（//换用不同的MRC来做，等效于我换了不同的数据集--具体数据体量在github上搜一下）
+### 3.少量dureader作为middle task的无微调结果
 
     ***** eval metrics *****
     eval_P           =  36.186
@@ -41,9 +226,7 @@ A project to extract the meaningful quantity in medical area and understand the 
     eval_f1          = 33.4211
     eval_samples     =     559
 
-### 4.roberta_wwm（最多的mrc
-
-（MRC的终点） 基于MRC的无微调结果（带重复数值解决方案-
+### 4.全量dureader作为middle task的无微调结果
 
     ***** eval metrics *****
     eval_P           = 71.4912
@@ -52,11 +235,10 @@ A project to extract the meaningful quantity in medical area and understand the 
     eval_f1          = 71.5788
     eval_samples     =     560
 
-（注意：在1.1的评价体系下不要带为空的list）
+（注意：在1.1的评价体系下不要带为空的list，SQuAD1.1不含无回答的情况）
+分词由空格改成jieba分词
 
-### 5.macbert_large
-
-（这两个都是比较多的，是相同的数据体量，不同的架构） 最后还是保留roberta_wwm
+### 5.全量dureader+共指消解作为middle task的无微调结果
 
     ***** eval metrics *****
     eval_P           = 72.3288
@@ -65,38 +247,25 @@ A project to extract the meaningful quantity in medical area and understand the 
     eval_f1          =  71.503
     eval_samples     =     559
 
-(小bug，不能把无监督的时候no answer放进来，无监督的时候no answer特别多)
-当时设置成[] in answer，无答案直接标成1的f值了，导致虚高
+## 最后选择策略：让模型尽可能说出答案
 
-### 最后还是选择策略，让模型尽可能说出答案
+不设置不可回答模式，当无答案存在时，P第二的answer将作为回答，但其score值较低
 
-无监督对比曲线：
+可以根据需要，按score进行修正
+
+##无监督对比曲线：
 
 ![](pic/Unsupervise.jpg)
 
-说明，基于MRC的方法，无监督就能够把数值的指向说得大差不差了，只是一些表述可能不全面
+## Supervise method
 
-往往是：比如说患高血压4年，然后抽取出高血压，患字抽不出来，但是我准备的标准答案是带有患字的
+选取前面F值表现最好的模型和策略，进行fine-tune
 
-因解便血，抽取出解便血；
-
-评估MRC好不好，就拿上次讨论班习近平那个例子来测试，初始测试+对抗测试（自己的小想法）
-
-prompt选取，T5 trick(选取一下)
-
-目前只能人造
-
-重复数值解决： 4种方案，在所有工作调优，调整到最优以后，对比4种方案
-
-划分好的eval太难了，简单的都拿去训练了，后面看看怎么调一下 注意公平比较，我后半段选取的eval是比较难的数据集？？？ 那怎么样才能公平比较呢？ 国新那边能否提供1~2条数据作为我的evaluation 本身还是很难的
-
-## 有监督部分
-
-选取前面F值表现最好的模型Roberta_wwm进行fine-tune
+`就像选择优生进入北大清华进一步培养一样`
 
 ### 1.fair comparison的微调起点
 
-之前无监督部分的数据集划分成了两部分，一部分用于train，一部分用于eval
+把之前无监督部分的数据集划分成了两部分，一部分用于train，一部分用于eval
 
 选的样本相对平均水平更难一些（相对来说，训练的样本是里面简单的，验证的是更难的）
 
@@ -107,7 +276,6 @@ prompt选取，T5 trick(选取一下)
     eval_f1          = 56.4711
     eval_samples     =      50
 
-因为是两个核，batch相当于是乘2的
 
 ### 2.batch size=4 epoch=1
 
@@ -179,13 +347,15 @@ prompt选取，T5 trick(选取一下)
     eval_f1          = 78.2393
     eval_samples     =      50
 
-有监督实验总结：
+##有监督实验总结：
 
 ![](pic/Supervise.jpg)
 
-分析：由于自己的训练样本真的太少了，自己的训练策略也比较一般，如果单一的数据训练多了，就容易导致过拟合/数据遗忘之前的知识，导致随着轮数的增加，效果反而不行了
+原本模型已经经过大量的middle task来进行训练，现阶段数值理解训练数据较少，多轮训练容易过拟合
 
-几件事情：
+但是单轮训练的表现已经很好了
+
+###future todo list：
 
 1.目前的条件还不允许做，不可回答问题，去理解无效数值（可以写成一些思想，如果有更多的数据集，或者在fine-tune结束以后再看看支持2.0的情况
 
@@ -203,7 +373,7 @@ run_qa里面的metric修改为squad，改import；修改data 2.0->1.1（也许�
 
 拿fine-tune过一轮的结果去重新跑之前的项目
 
-具体结果在result/out_after_fine-tune.txt
+具体结果在original_result/out_after_fine-tune.txt
 
 ## 关于token的实验验证和思考：
 
@@ -330,7 +500,7 @@ run_qa里面的metric修改为squad，改import；修改data 2.0->1.1（也许�
 
 ### 重新tokenizer后重复上面的实验
 
-### 1.基于bert的无微调结果
+### 1.基于bert Unsupervise的结果
 
     ***** eval metrics *****
     eval_P           = 1.8353
@@ -339,7 +509,7 @@ run_qa里面的metric修改为squad，改import；修改data 2.0->1.1（也许�
     eval_f1          = 2.2203
     eval_samples     =    601
 
-### 2.基于共指（只选择了预指和回指）的无微调结果：
+### 2.共指消解数据集作为middle task的无微调结果：
 
     ***** eval metrics *****
     eval_P           = 31.3643
@@ -348,7 +518,7 @@ run_qa里面的metric修改为squad，改import；修改data 2.0->1.1（也许�
     eval_f1          = 29.5961
     eval_samples     =     625
 
-### 3.Roberta_base（较少mrc）--不及共指的效果
+### 3.少量dureader作为middle task的无微调结果
 
     ***** eval metrics *****
     eval_P           = 36.2996
@@ -357,7 +527,7 @@ run_qa里面的metric修改为squad，改import；修改data 2.0->1.1（也许�
     eval_f1          = 33.0175
     eval_samples     =     601
 
-### 4.roberta_wwm（最多的mrc
+### 4.全量dureader作为middle task的无微调结果
 
     ***** eval metrics *****
     eval_P           = 74.2892
@@ -366,7 +536,7 @@ run_qa里面的metric修改为squad，改import；修改data 2.0->1.1（也许�
     eval_f1          = 74.6617
     eval_samples     =     625
 
-### 5.macbert_large
+### 5.全量dureader+共指消解作为middle task的无微调结果
 
     ***** eval metrics *****
     eval_P           = 75.2786
@@ -375,7 +545,7 @@ run_qa里面的metric修改为squad，改import；修改data 2.0->1.1（也许�
     eval_f1          = 72.8294
     eval_samples     =     601
 
-新的结果，最好的模型，有小幅度提升，就是那些英文的
+新的结果，最好的模型，有小幅度提升
 ![](pic/new_Unsupervise.jpg)
 
 ### Supervise(有了之前的经验，就直接fine-tune了一轮)
@@ -390,71 +560,24 @@ start_point还是一样的
     eval_f1          = 86.6379
     eval_samples     =      50
 
-分析就是解决了之前token分词不对的问题
+解决了之前token分词不对的问题
 
-### 现阶段得到三个模型：
-
-    fine_tune_mrc_quantity 最初基于原来的分词方法+train样本训练得到的
-    fine_tune_mrc_squad_b4e1 利用新的分词方法+train样本训练得到的
-    fine_tune_mrc_squad_b4e1_all 利用新的分词方法+train+eval训练样本得到的
-
-由于新的分词方法理论上是更好的，因此在这一轮做eval的时候不考虑旧的分词策略
-
-将新的分词策略直接eval
-
-三个结果：
-
-    fine_tune_mrc_quantity{
-        "eval_P": 98.35958005249344,
-        "eval_R": 97.3612673415823,
-        "eval_exact_match": 94.09448818897638,
-        "eval_f1": 97.5561828167201,
-        "eval_samples": 625
-    }
-
-    fine_tune_mrc_squad_b4e1{
-        "eval_P": 94.68789227433527,
-        "eval_R": 93.4911190078513,
-        "eval_exact_match": 88.58267716535433,
-        "eval_f1": 93.15098263317955,
-        "eval_samples": 625
-    }
-
-    fine_tune_mrc_squad_b4e1_all{
-        "eval_P": 96.46137982752157,
-        "eval_R": 96.73228346456693,
-        "eval_exact_match": 94.48818897637796,
-        "eval_f1": 96.47234770787341,
-        "eval_samples": 625
-    }
-
-![](pic/关于模型是否过拟合的实验结果.jpg)
-
-理论上用了新的方法，对应原来相同体量的数据进行fine-tune，其结果应该更好
-
-但实际上没有
-
-1~2之间，下滑；从token的角度来看，之前分词错误的情况下，部分数据没有参与到fine-tune的过程中
-
-也就是说，实际有效的训练数据比喂进去的更小
-
-而从2~3之间，正常上升，说明是过拟合导致的；但是它自己都不能对应自己达到100%，说明在训练过程中产生在训练到某个局部时过拟合/欠拟合的问题
-
-分析eval_predictions.json
-
-确实后两个的输出也并不如第一个好
-
-### 说明的确还是需要用主动学习的范式
+### 医学部配合进行有价值的标注工作，同时不需要大量的标注数据进行标注
 
 首先基于最开始的预训练
 
 然后，inference出低score和回答错误的样本
 
-然后把这些拿进去fine-tune
+然后把这些拿进去fine-tune ，而不是一股脑都扔进去训练
 
-而不是一股脑都扔进去训练
+###基于bart模型的自动填词
 
-###prompt生成过程
+[{'generated_text': '83 次 / 分 是 什 么 ？ 心 率 未 闻 及 干 湿 性 啰 音 ， 心 率 83 次 / 分 。'}]
+唯一的prompt：是什么
+
+相对单一，不如bert可控
+
+##prompt生成过程，寻找最优query，相当于是一种特征工程
 原文本+句号+数值+待填入的prompt+答案
 
 1.prompt：[MASK]是？
@@ -671,174 +794,6 @@ start_point还是一样的
     ('，{是}女', 0.10508105727469208)
     低于0.1的截断
 
-###根据自动化程序评估
-![](pic/自动化程序评估设计.png)
-
-无监督情况下：
-大致选出以下几个比较优秀的prompt
-
-    是？
-    份是？
-    内是？
-    后是？
-    复查是？
-    就是？
-    底是？
-    是什么？
-    是什事？
-    是什点？
-    是什级？
-    是什？
-    是啥？
-    是指？
-    是甚么？
-    都是？
-    超是？
-    钟是？
-
-从指标的优先性角度来看，最核心主要是EM和F值
-
-然后F值是由PR共同影响的
-
-EM具有一定的不可控性，不一定刚好和标注人员标注的gold result完全一致，参考性较弱
-
-所以主要看F值表现比较好的相关的prompt
-
-综合数据+语义进行筛选，得到最终参与到supervise模式下的prompt
-
-+原mammal的prompt指的是？
-
-    是？
-    就是？
-    是什么？
-    是什？
-    是啥？
-    是指？
-    是甚么？
-    都是？
-
-设计有监督方案，共同进行比较。（最终因为开销不是很大，所以上面的prompt都验证了一遍，没有特别关注语义，人关注到的语义不一定对）
-
-但是会不会存在实验的随机性，也就是说，因为偶然训练出某一个prompt表现结果比较好？
-
-
-###supervise部分的实验结果
-
-实验结果更新到get_prompt/supervise_result下
-
-其中有一个结果几乎都很不错
-
-prompt为：是什事？
-
-结果为：
-
-    {
-        "epoch": 1.0,
-        "eval_P": 89.22413793103448,
-        "eval_R": 89.22413793103448,
-        "eval_exact_match": 86.20689655172414,
-        "eval_f1": 89.22413793103448,
-        "eval_samples": 50
-    }
-
-之前的我自己的SOTA：
-
-    ***** eval metrics *****
-    epoch            =     1.0
-    eval_P           = 83.5617
-    eval_R           = 91.2931
-    eval_exact_match = 72.4138
-    eval_f1          = 84.7048
-    eval_samples     =      50
-
-EM和F值均有大幅度的提升
-
-但是这个是什事的可解释性略差，猜测其无限接近于最优的prompt
-
-例如，是什么度量，是指什么，是……
-
-结果还有待进一步分析
-
-
-###换了一批unseen数据重新做这个过程
-是什事？
-
-    ***** eval metrics *****
-      eval_P           = 98.1818
-      eval_R           = 95.4079
-      eval_exact_match = 92.7273
-      eval_f1          = 96.1449
-      eval_samples     =      55
-
-数据指标非常高，也很好看，因此和之前的充分训练以后得到的数据进行对比
-
-指的是？
-
-    ***** eval metrics *****
-      eval_P           = 96.2662
-      eval_R           =  94.317
-      eval_exact_match = 87.2727
-      eval_f1          = 94.0433
-      eval_samples     =      55
-
-
-###用一些实例去分析：
-用例1：
-
-2019年，华夏幸福销售金额1431.7亿元，产业新城业务园区结算收入额368.4亿元，园区配套住宅业务签约销售额1029.4亿元。营业收入破千亿，实现1052.1亿元，同比增长25.6%。毛利润率43.7%，同比增长2.1百分点。净利润率14%，盈利能力持续提升。公司2020年一季度稳健增长，如果剔除掉报告期内理财收益同比减少1600万元的影响，体现出即使在疫情影响下，公司的经营业绩依旧突出。我们认为，未来受益于军品定价改革及军贸市场拓展，公司盈利水平有望进一步提升。事件：公司发布2020年第一季度报告，报告期内实现营业收入3.66亿元，同比增长9.62%；实现归属于上市公司股东的净利润1.51亿元，同比减少5.13%。
-
-<table><tr><td>数值</td><td>指的是？</td><td>score1</td><td>是什事？</td><td>score2</td></tr><tr><td>2019年</td><td>华夏幸福</td><td>0.399066299</td><td>华夏幸福</td><td>0.039663997</td></tr><tr><td>1431.7亿</td><td>销售金额</td><td>0.602821529</td><td>销售金额</td><td>0.808770418</td></tr><tr><td>368.4亿</td><td>产业新城业务园区结算收入额</td><td>0.857612789</td><td>产业新城业务园区结算收入额</td><td>0.842957795</td></tr><tr><td>1029.4亿</td><td>园区配套住宅业务签约销售额</td><td>0.98635906</td><td>园区配套住宅业务签约销售额</td><td>0.977001786</td></tr><tr><td>1052.1亿</td><td>实现1052.1亿元</td><td>0.167815864</td><td>营业收入破千亿</td><td>0.233131021</td></tr><tr><td>0.256</td><td>同比增长</td><td>0.227340564</td><td>同比增长</td><td>0.995192707</td></tr><tr><td>0.437</td><td>毛利润率</td><td>0.998396277</td><td>毛利润率</td><td>0.999723434</td></tr><tr><td>2.1百分点</td><td>毛利润率43.7%</td><td>0.501325607</td><td>毛利润率43.7%</td><td>0.645691633</td></tr><tr><td>0.14</td><td>净利润率</td><td>0.997088909</td><td>净利润率</td><td>0.999571443</td></tr><tr><td>2020年</td><td>第一季度报告</td><td>0.22753343</td><td>公司发布2020年第一季度报告</td><td>0.044446275</td></tr><tr><td>1600万元</td><td>理财收益</td><td>0.391643345</td><td>理财收益</td><td>0.463228166</td></tr><tr><td>2020年</td><td>第一季度报告</td><td>0.22753343</td><td>公司发布2020年第一季度报告</td><td>0.044446275</td></tr><tr><td>3.66亿</td><td>营业收入</td><td>0.702940166</td><td>营业收入</td><td>0.520232558</td></tr><tr><td>0.0962</td><td>同比增长</td><td>0.801968873</td><td>同比增长</td><td>0.960660577</td></tr><tr><td>1.51亿</td><td>实现归属于上市公司股东的净利润</td><td>0.768108368</td><td>实现归属于上市公司股东的净利润</td><td>0.80387938</td></tr><tr><td>0.0513</td><td>同比减少</td><td>0.500079632</td><td>同比减少</td><td>0.91536814</td></tr><tr><td></td></tr></table>
-用例2：
-
-公司公布未来五年股东回报规划，根据资产负债率调整分红比例，资产负债率大于80%，现金分红不少于可分配利润的35%。分红计划充分体现了公司对投资者长期回报的坚定信心，引导投资者树立长期投资和理性投资的理念，为公司营造了良好的投资环境。
-
-<table><tr><td>数值</td><td>指的是？</td><td>score1</td><td>是什事？</td><td>score2</td></tr><tr><td>0.8</td><td>资产负债率</td><td>0.785192728</td><td>资产负债率</td><td>0.970654964</td></tr><tr><td>0.35</td><td>现金分红</td><td>0.526358366</td><td>现金分红不少于可分配利润</td><td>0.623749018</td></tr><tr><td></td></tr></table>
-
-整体来说，是什事？ 优于 指的是？
-
-原本unsupervise下，em值，还可以，f值一般
-
-###attention virtualization
-Unsupervise下，是什事？和指的是？差别不是很大
-
-![](prompt_interpretability/pretrain注意力机制/指的是？/指.png)
-
-![](prompt_interpretability/pretrain注意力机制/是什事？/什.png)
-
-但是相对来说，比较关键的问句字符当中，什的attention比指的attention更集中，并且集中在目标上面
-
-
-supervise下，是什事？和指的是？差别较大
-
-![](prompt_interpretability/fine-tune以后的注意力机制/指的是？/指.png)
-
-![](prompt_interpretability/fine-tune以后的注意力机制/是什事？/什.jpg)
-
-相对来说，指的attention比较强，但是相对也比较散
-
-而什的attention主要集中在target附近
-###整体来说
-从结果，attention，数据，test结果各方面综合来解释
-
-是什事？的可解释性
-
-是、？这两个相当于做提问的标志位，是--理解为英文中的is或者are，？即问句
-
-什，可以理解为  什么--即提问数值指代的基本语句
-
-事，可以理解为 发生了什么事--隐含数值指代的动态提问，例如说增长、比XXX多，不少于等信息
-
-但是事字的训练，在原始的小样本训练数据里面几乎是没有什么的，这部分可以添加部分样本一起训练。
-
-现在还不足的两个方面
-
-面向领域的数值单位，以及数值模式（抽取阶段）
-
-在理解层面，某个数值为一个动态含义，例如什么比什么多，什么增长，包含比较的一些概念，以及概念跨越span
-
-其他部分基本上没有什么提升了
-
-
 ###基于back-translation的prompt丰富
 
 1.是什事？
@@ -955,53 +910,172 @@ supervise下，是什事？和指的是？差别较大
     是什么意思?
     这是什么意思
 
-###基于bart模型的自动填词
+###根据自动化程序评估
+![](pic/自动化程序评估设计.png)
 
-[{'generated_text': '83 次 / 分 是 什 么 ？ 心 率 未 闻 及 干 湿 性 啰 音 ， 心 率 83 次 / 分 。'}]
-唯一的prompt：是什么
+无监督情况下：
+大致选出以下几个比较优秀的prompt
 
-相对单一，不如bert可控
+    是？
+    份是？
+    内是？
+    后是？
+    复查是？
+    就是？
+    底是？
+    是什么？
+    是什事？
+    是什点？
+    是什级？
+    是什？
+    是啥？
+    是指？
+    是甚么？
+    都是？
+    超是？
+    钟是？
+
+从指标的优先性角度来看，最核心主要是EM和F值
+
+然后F值是由PR共同影响的
+
+EM具有一定的不可控性，不一定刚好和标注人员标注的gold result完全一致，参考性较弱
+
+所以主要看F值表现比较好的相关的prompt
+
+综合数据+语义进行筛选，得到最终参与到supervise模式下的prompt
+
++原mammal的prompt指的是？
+
+    是？
+    就是？
+    是什么？
+    是什？
+    是啥？
+    是指？
+    是甚么？
+    都是？
+
+设计有监督方案，共同进行比较。（最终因为开销不是很大，所以上面的prompt都验证了一遍，没有特别关注语义，人关注到的语义不一定对）
+
+###supervise部分的实验结果
+
+实验结果更新到get_prompt/supervise_result下
+
+其中有一个结果几乎都很不错
+
+prompt为：是什事？
+
+结果为：
+
+    {
+        "epoch": 1.0,
+        "eval_P": 89.22413793103448,
+        "eval_R": 89.22413793103448,
+        "eval_exact_match": 86.20689655172414,
+        "eval_f1": 89.22413793103448,
+        "eval_samples": 50
+    }
+
+之前的我`自己的SOTA`：
+
+    ***** eval metrics *****
+    epoch            =     1.0
+    eval_P           = 83.5617
+    eval_R           = 91.2931
+    eval_exact_match = 72.4138
+    eval_f1          = 84.7048
+    eval_samples     =      50
+
+EM和F值均有大幅度的提升
+
+但是这个是什事的可解释性略差，猜测其无限接近于最优的prompt，相当于是最优query的向量最接近的向量，输出得到的结果
+
+例如，是什么度量，是指什么，是……
+
+结果还有待进一步分析
 
 
+###换了一批unseen数据重新做这个过程
+是什事？
 
-回到最初的baseline，一开始都是假设小样本学习直接训练不出东西来
+    ***** eval metrics *****
+      eval_P           = 98.1818
+      eval_R           = 95.4079
+      eval_exact_match = 92.7273
+      eval_f1          = 96.1449
+      eval_samples     =      55
 
-现在跑一下结果
-#!/bin/bash
- 
-for i in ./chinese-roberta-wwm-ext-large ./chinese-bert-wwm ./bert-base-chinese ./bert-base-multilingual-cased ;
-do
-echo $i is appoint ;
-python run_qa.py \
-  --model_name_or_path $i \
-  --train_file ./data/VU_squad2.0_train.json \
-  --validation_file ./data/VU_squad2.0_validate.json \
-  --do_train \
-  --do_eval\
-  --per_device_train_batch_size 6 \
-  --learning_rate 3e-5 \
-  --num_train_epochs 2 \
-  --max_seq_length 512 \
-  --doc_stride 128 \
-  --output_dir ./fine_tune_mrc_squad_$i/
-done
+数据指标非常高，也很好看，因此和之前的充分训练以后得到的数据进行对比
+
+指的是？
+
+    ***** eval metrics *****
+      eval_P           = 96.2662
+      eval_R           =  94.317
+      eval_exact_match = 87.2727
+      eval_f1          = 94.0433
+      eval_samples     =      55
 
 
-bert-base-chinese
+###用一些实例去分析：
+用例1：
 
-![img.png](pic/bert-base-chinese.png)
+2019年，华夏幸福销售金额1431.7亿元，产业新城业务园区结算收入额368.4亿元，园区配套住宅业务签约销售额1029.4亿元。营业收入破千亿，实现1052.1亿元，同比增长25.6%。毛利润率43.7%，同比增长2.1百分点。净利润率14%，盈利能力持续提升。公司2020年一季度稳健增长，如果剔除掉报告期内理财收益同比减少1600万元的影响，体现出即使在疫情影响下，公司的经营业绩依旧突出。我们认为，未来受益于军品定价改革及军贸市场拓展，公司盈利水平有望进一步提升。事件：公司发布2020年第一季度报告，报告期内实现营业收入3.66亿元，同比增长9.62%；实现归属于上市公司股东的净利润1.51亿元，同比减少5.13%。
 
-bert-base-multilingual-cased
-![img_1.png](pic/bert-base-multilingual-cased.png)
+<table><tr><td>数值</td><td>指的是？</td><td>score1</td><td>是什事？</td><td>score2</td></tr><tr><td>2019年</td><td>华夏幸福</td><td>0.399066299</td><td>华夏幸福</td><td>0.039663997</td></tr><tr><td>1431.7亿</td><td>销售金额</td><td>0.602821529</td><td>销售金额</td><td>0.808770418</td></tr><tr><td>368.4亿</td><td>产业新城业务园区结算收入额</td><td>0.857612789</td><td>产业新城业务园区结算收入额</td><td>0.842957795</td></tr><tr><td>1029.4亿</td><td>园区配套住宅业务签约销售额</td><td>0.98635906</td><td>园区配套住宅业务签约销售额</td><td>0.977001786</td></tr><tr><td>1052.1亿</td><td>实现1052.1亿元</td><td>0.167815864</td><td>营业收入破千亿</td><td>0.233131021</td></tr><tr><td>0.256</td><td>同比增长</td><td>0.227340564</td><td>同比增长</td><td>0.995192707</td></tr><tr><td>0.437</td><td>毛利润率</td><td>0.998396277</td><td>毛利润率</td><td>0.999723434</td></tr><tr><td>2.1百分点</td><td>毛利润率43.7%</td><td>0.501325607</td><td>毛利润率43.7%</td><td>0.645691633</td></tr><tr><td>0.14</td><td>净利润率</td><td>0.997088909</td><td>净利润率</td><td>0.999571443</td></tr><tr><td>2020年</td><td>第一季度报告</td><td>0.22753343</td><td>公司发布2020年第一季度报告</td><td>0.044446275</td></tr><tr><td>1600万元</td><td>理财收益</td><td>0.391643345</td><td>理财收益</td><td>0.463228166</td></tr><tr><td>2020年</td><td>第一季度报告</td><td>0.22753343</td><td>公司发布2020年第一季度报告</td><td>0.044446275</td></tr><tr><td>3.66亿</td><td>营业收入</td><td>0.702940166</td><td>营业收入</td><td>0.520232558</td></tr><tr><td>0.0962</td><td>同比增长</td><td>0.801968873</td><td>同比增长</td><td>0.960660577</td></tr><tr><td>1.51亿</td><td>实现归属于上市公司股东的净利润</td><td>0.768108368</td><td>实现归属于上市公司股东的净利润</td><td>0.80387938</td></tr><tr><td>0.0513</td><td>同比减少</td><td>0.500079632</td><td>同比减少</td><td>0.91536814</td></tr><tr><td></td></tr></table>
+用例2：
 
-chinese-bert-wwm
-![img_2.png](pic/chinese-bert-wwm.png)
+公司公布未来五年股东回报规划，根据资产负债率调整分红比例，资产负债率大于80%，现金分红不少于可分配利润的35%。分红计划充分体现了公司对投资者长期回报的坚定信心，引导投资者树立长期投资和理性投资的理念，为公司营造了良好的投资环境。
 
-chinese-roberta-wwm-ext-large
-![img_3.png](pic/chinese-roberta-wwm-ext-large.png)
+<table><tr><td>数值</td><td>指的是？</td><td>score1</td><td>是什事？</td><td>score2</td></tr><tr><td>0.8</td><td>资产负债率</td><td>0.785192728</td><td>资产负债率</td><td>0.970654964</td></tr><tr><td>0.35</td><td>现金分红</td><td>0.526358366</td><td>现金分红不少于可分配利润</td><td>0.623749018</td></tr><tr><td></td></tr></table>
+
+整体来说，是什事？ 优于 指的是？
+
+原本unsupervise下，em值，还可以，f值一般
+
+###attention virtualization
+Unsupervise下，是什事？和指的是？差别不是很大
+
+![](prompt_interpretability/pretrain注意力机制/指的是？/指.png)
+
+![](prompt_interpretability/pretrain注意力机制/是什事？/什.png)
+
+但是相对来说，比较关键的问句字符当中，什的attention比指的attention更集中，并且集中在目标上面
 
 
-通过dureader训练以后，使得unsupervise的结果超过了以上3个结果
+supervise下，是什事？和指的是？差别较大
 
-改成jieba分词以后，再重新进行evaluation的计算，F值有所下降
+![](prompt_interpretability/fine-tune以后的注意力机制/指的是？/指.png)
 
+![](prompt_interpretability/fine-tune以后的注意力机制/是什事？/什.jpg)
+
+相对来说，指的attention比较强，但是相对也比较散
+
+而什的attention主要集中在target附近
+###整体来说
+从结果，attention，数据，test结果各方面综合来解释
+
+是什事？的可解释性
+
+是、？这两个相当于做提问的标志位，是--理解为英文中的is或者are，？即问句
+
+什，可以理解为  什么--即提问数值指代的基本语句
+
+事，可以理解为 发生了什么事--隐含数值指代的动态提问，例如说增长、比XXX多，不少于等信息
+
+但是事字的训练，在原始的小样本训练数据里面几乎是没有什么的，这部分可以添加部分样本一起训练。
+
+现在还不足的两个方面
+
+面向领域的数值单位，以及数值模式（抽取阶段）
+
+在理解层面，某个数值为一个动态含义，例如什么比什么多，什么增长，包含比较的一些概念，以及概念跨越span
+
+其他部分基本上没有什么提升了
+
+
+##模型蒸馏
+选取了bert-base-multilingual-cased
+因为它在一开始的表现就比较好
+EM=84.22，F1=87.23
