@@ -1,4 +1,4 @@
-#已申请专利
+# 已申请专利
 
 转载请注明出处，如需合作请联系zengxiaodong@stu.pku.edu.cn
 
@@ -165,12 +165,15 @@ bert-base-chinese
 ![img.png](pic/bert-base-chinese.png)
 
 bert-base-multilingual-cased
+
 ![img_1.png](pic/bert-base-multilingual-cased.png)
 
 chinese-bert-wwm
+
 ![img_2.png](pic/chinese-bert-wwm.png)
 
 chinese-roberta-wwm-ext-large
+
 ![img_3.png](pic/chinese-roberta-wwm-ext-large.png)
 
 以上效果都不佳
