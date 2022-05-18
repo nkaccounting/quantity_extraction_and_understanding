@@ -22,6 +22,8 @@ def removeTime(text: str):
         '\d+年\d+月\d+日',
         '\d+年\d+月',
         '\d+月\d+日',
+        '\d+时\d+分',
+        '\d+:\d+分'
     ]
     pattern = "|".join(mode)
     text = re.sub(pattern, '##', text)
@@ -31,7 +33,7 @@ def removeTime(text: str):
 
 def pre_process(text: str):
     text = removeTime(text)
-    return text + '。'
+    return text + '=。'
 
 
 def after_process(text: str):

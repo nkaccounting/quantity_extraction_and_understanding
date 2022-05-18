@@ -62,10 +62,17 @@ def after_model_process(one_result):
         one_result['单位'] = ''
     if re.match("\d+\.$", one_result['数值']):
         return None
+    if one_result['指标名'] in ['左', '右'] and one_result['单位'] == "":
+        one_result['指标名'] += "眼视力"
+    if one_result['指标名'] == '空腹' and one_result['单位'] == "mmol/L":
+        one_result['指标名'] += "血糖"
+    for prune_name in ["昨日", "今晨", "最高"]:
+        if prune_name in one_result['指标名']:
+            one_result['指标名'] = one_result['指标名'].replace(prune_name, "")
     if (one_result['指标名'] == "BP" or one_result['指标名'] == "血压") and '/' in one_result['数值']:
         systolic_blood_pressure, diastolic_blood_pressure = one_result['数值'].split("/")
         unit = one_result['单位']
-        extra = one_result['额外信息']
+        extra = one_result['可信度']
         time = one_result['时间']
         check = one_result["所属检查项目"]
         one_result = [
@@ -73,7 +80,7 @@ def after_model_process(one_result):
                 '数值': systolic_blood_pressure,
                 '单位': unit,
                 '指标名': '收缩压',
-                "额外信息": extra,
+                "可信度": extra,
                 '时间': time,
                 "所属检查项目": check
             },
@@ -81,7 +88,7 @@ def after_model_process(one_result):
                 '数值': diastolic_blood_pressure,
                 '单位': unit,
                 '指标名': '舒张压',
-                "额外信息": extra,
+                "可信度": extra,
                 '时间': time,
                 "所属检查项目": check
             }
@@ -97,7 +104,7 @@ def extract_one_item(time, context, pipeline, check):
             '数值': quantity[1],
             '单位': '',
             '指标名': quantity[0],
-            "额外信息": "1.0000000000000000",
+            "可信度": "1.0000000000000000",
             "时间": time,
             "所属检查项目": check
         }
@@ -130,7 +137,7 @@ def extract_one_item(time, context, pipeline, check):
             '数值': Quantities[i].num,
             '单位': Quantities[i].unit,
             '指标名': r['answer'],
-            "额外信息": str(r['score']),
+            "可信度": str(r['score']),
             "时间": time,
             "所属检查项目": check
         }
@@ -180,7 +187,8 @@ def extract_one_text(context: str, pipeline):
     context = pre_process(context)
     # 分时间段，分段处理文本
     times = re.findall("\d{4}-\d{2}-\d{2}", context)
-    loc = [context.index(time) for time in times]
+    loc = [i.start() for i in re.finditer("\d{4}-\d{2}-\d{2}", context)]
+
     pre = 0
     queue_content = []
 
