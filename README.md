@@ -351,7 +351,7 @@ chinese-roberta-wwm-ext-large
     eval_f1          = 78.2393
     eval_samples     =      50
 
-##有监督实验总结：
+## 有监督实验总结：
 
 ![](pic/Supervise.jpg)
 
@@ -359,7 +359,7 @@ chinese-roberta-wwm-ext-large
 
 但是单轮训练的表现已经很好了
 
-###future todo list：
+### future todo list：
 
 1.目前的条件还不允许做，不可回答问题，去理解无效数值（可以写成一些思想，如果有更多的数据集，或者在fine-tune结束以后再看看支持2.0的情况
 
@@ -574,7 +574,7 @@ start_point还是一样的
 
 然后把这些拿进去fine-tune ，而不是一股脑都扔进去训练
 
-###基于bart模型的自动填词
+### 基于bart模型的自动填词
 
 [{'generated_text': '83 次 / 分 是 什 么 ？ 心 率 未 闻 及 干 湿 性 啰 音 ， 心 率 83 次 / 分 。'}]
 唯一的prompt：是什么
