@@ -62,6 +62,8 @@ def after_model_process(one_result):
         one_result['单位'] = ''
     if re.match("\d+\.$", one_result['数值']):
         return None
+    if one_result['单位'] == '岁':
+        one_result['指标名'] = '年龄'
     if one_result['指标名'] in ['左', '右'] and one_result['单位'] == "":
         one_result['指标名'] += "眼视力"
     if one_result['指标名'] == '空腹' and one_result['单位'] == "mmol/L":
@@ -69,6 +71,8 @@ def after_model_process(one_result):
     for prune_name in ["昨日", "今晨", "最高"]:
         if prune_name in one_result['指标名']:
             one_result['指标名'] = one_result['指标名'].replace(prune_name, "")
+    if one_result['指标名'] == "P蛋白抗体":
+        one_result['指标名'] = "抗核糖体P蛋白抗体"
     if (one_result['指标名'] == "BP" or one_result['指标名'] == "血压") and '/' in one_result['数值']:
         systolic_blood_pressure, diastolic_blood_pressure = one_result['数值'].split("/")
         unit = one_result['单位']
@@ -157,7 +161,7 @@ def extract_one_time(time, content, pipeline):
     patten_1 = "|".join(checks[0]) + "|" + "|".join(['；', '。', ';'])
     patten_2 = "|".join(checks[0])
 
-    start_indexs = re.finditer(patten_1, content)
+    start_indexs = re.finditer(patten_1+"[\d+项]?", content)
     loc = []
     for start_index in start_indexs:
         start = start_index.start()

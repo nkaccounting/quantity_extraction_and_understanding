@@ -6,7 +6,8 @@ def better_tokenizer_pre_process(text: str):
     ans = ''
     for i in range(len(text) - 1):
         if (text[i + 1].isdigit() and text[i].encode('utf-8').isalpha()) or (
-                text[i].isdigit() and text[i + 1].encode('utf-8').isalpha()):
+                text[i].isdigit() and text[i + 1].encode('utf-8').isalpha()) or (
+                text[i] == "℃" and text[i + 1].encode('utf-8').isalpha()):
             ans += text[i]
             ans += ' '
         else:
@@ -23,7 +24,7 @@ def removeTime(text: str):
         '\d+年\d+月',
         '\d+月\d+日',
         '\d+时\d+分',
-        '\d+:\d+分'
+        '\d+时?[:：]\d+分'
     ]
     pattern = "|".join(mode)
     text = re.sub(pattern, '##', text)
