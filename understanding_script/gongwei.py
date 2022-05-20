@@ -73,6 +73,14 @@ def after_model_process(one_result):
             one_result['指标名'] = one_result['指标名'].replace(prune_name, "")
     if one_result['指标名'] == "P蛋白抗体":
         one_result['指标名'] = "抗核糖体P蛋白抗体"
+    if '血糖' in one_result['指标名'] and one_result['所属检查项目'] == "":
+        one_result['所属检查项目'] = '血糖'
+    if one_result['时间'] != "":
+        locofline = one_result['时间'].rindex("-")
+        num = int(one_result['时间'][locofline + 1:])
+        if num > 31:
+            one_result['时间'] = one_result['时间'][:locofline + 1] + str(num // 10)
+
     if (one_result['指标名'] == "BP" or one_result['指标名'] == "血压") and '/' in one_result['数值']:
         systolic_blood_pressure, diastolic_blood_pressure = one_result['数值'].split("/")
         unit = one_result['单位']
@@ -137,6 +145,19 @@ def extract_one_item(time, context, pipeline, check):
     model_res = [model_res] if isinstance(model_res, dict) else model_res
 
     for i, r in enumerate(model_res):
+        # TODO 临时针对相似度过高造成的类似数值进行处理，重新训练模型后记得删除
+        if r['score'] < 0.5:
+            loc = contexts[i].index(questions[i][:-4])
+            c = contexts[i][loc - 20:loc + 20]
+            q = questions[i]
+            temp_res = pipeline(
+                question=q,
+                context=c,
+            )
+            if temp_res['score'] > 0.9:
+                r['answer'] = temp_res['answer']
+                r['score'] = temp_res['score']
+
         one_result = {
             '数值': Quantities[i].num,
             '单位': Quantities[i].unit,
@@ -161,7 +182,7 @@ def extract_one_time(time, content, pipeline):
     patten_1 = "|".join(checks[0]) + "|" + "|".join(['；', '。', ';'])
     patten_2 = "|".join(checks[0])
 
-    start_indexs = re.finditer(patten_1+"[\d+项]?", content)
+    start_indexs = re.finditer(patten_1, content)
     loc = []
     for start_index in start_indexs:
         start = start_index.start()
@@ -181,7 +202,9 @@ def extract_one_time(time, content, pipeline):
     for one_item in queue_content:
         check_name = re.findall(patten_2, one_item)
         check_name = check_name[0] if check_name else ""
-        for item in extract_one_item(time, one_item, pipeline, check_name):
+        temp_time = re.findall("\d{4}-\d+-\d{2}", one_item)
+        temp_time = temp_time[0] if temp_time else time
+        for item in extract_one_item(temp_time, one_item, pipeline, check_name):
             result.append(item)
     return result
 
@@ -189,23 +212,10 @@ def extract_one_time(time, content, pipeline):
 def extract_one_text(context: str, pipeline):
     # 预处理文本
     context = pre_process(context)
-    # 分时间段，分段处理文本
-    times = re.findall("\d{4}-\d{2}-\d{2}", context)
-    loc = [i.start() for i in re.finditer("\d{4}-\d{2}-\d{2}", context)]
-
-    pre = 0
-    queue_content = []
-
-    for location in loc:
-        queue_content.append(context[pre:location])
-        pre = location
-    queue_content.append(context[pre:])
-
-    times = [""] + times
-    result = []
-    for i, content in enumerate(queue_content):
-        for item in extract_one_time(times[i], content, pipeline):
-            result.append(item)
+    # 初始只取第一个yyyy-mm-dd
+    times = re.findall("\d{4}-\d+-\d{2}", context)
+    time = times[0] if times else ""
+    result = extract_one_time(time, context, pipeline)
     return result
 
 
@@ -234,7 +244,7 @@ def main():
 
 def one_item():
     pipeline = prepareMTP()
-    one_text = "患者今日仍诉乏力、厌油，但精神食欲较前明显好转，未再诉腹胀、恶心，无发热、畏寒，无腹痛、腹泻，大便通畅，小便色黄。查体：精神较前好转，皮肤巩膜重度黄染，双肺呼吸音清，双肺未闻及干湿鸣，心律齐，心音有力，各瓣膜区未闻及病理性杂音，腹软，全腹无明显压痛，肝脾肋下未及，墨菲氏征阴性，肝区叩痛，脾区及双肾区无叩痛，双下肢无浮肿。查尿常规：葡萄糖:+++、蛋白质:+-、胆红素:++、尿胆原:+-、酮体:+-、维生素C:+，提示患者血糖控制差；人免疫缺陷病毒抗原抗体（定量）:0.187、梅毒螺旋体特异抗体（定量）:0.047、快速血浆反应素试验（RPR）:阴性(-)；糖化血红蛋白A1C:6.70%↑、血红蛋白A1:8.40%↑；乙肝两对半：乙肝病毒表面抗体:>960.000mIU/ml↑、乙肝病毒核心抗体:>>13.170PEIU/ml↑，余项阴性；肝纤谱：血清Ⅳ型胶原测定:150.50ng/ml↑、血清Ⅲ型胶原测定:95.28ng/ml↑、血清层粘连蛋白测定:142.50ng/ml↑、血清透明质酸酶测定:218.47ng/ml↑；乙肝病毒DNA定量:"
+    one_text = input('请输入')
     result = extract_one_text(one_text, pipeline)
     for r in result:
         print(r)
