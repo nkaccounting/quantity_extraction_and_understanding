@@ -148,7 +148,8 @@ def extract_one_item(time, context, pipeline, check):
         # TODO 临时针对相似度过高造成的类似数值进行处理，重新训练模型后记得删除
         if r['score'] < 0.5:
             loc = contexts[i].index(questions[i][:-4])
-            c = contexts[i][loc - 20:loc + 20]
+            start = loc - 20 if loc - 20 >= 0 else 0
+            c = contexts[i][start:loc + 20]
             q = questions[i]
             temp_res = pipeline(
                 question=q,
@@ -202,7 +203,7 @@ def extract_one_time(time, content, pipeline):
     for one_item in queue_content:
         check_name = re.findall(patten_2, one_item)
         check_name = check_name[0] if check_name else ""
-        temp_time = re.findall("\d{4}-\d+-\d{2}", one_item)
+        temp_time = re.findall("\d{4}-\d+-\d\d?", one_item)
         temp_time = temp_time[0] if temp_time else time
         for item in extract_one_item(temp_time, one_item, pipeline, check_name):
             result.append(item)
@@ -212,8 +213,8 @@ def extract_one_time(time, content, pipeline):
 def extract_one_text(context: str, pipeline):
     # 预处理文本
     context = pre_process(context)
-    # 初始只取第一个yyyy-mm-dd
-    times = re.findall("\d{4}-\d+-\d{2}", context)
+    # 优先yyyy-mm-dd，如果mm和dd不足两位，就按1位来抽，变成yyyy-m-dd或者yyyy-mm-d或者yyyy-m-d
+    times = re.findall("\d{4}-\d+-\d\d?", context)
     time = times[0] if times else ""
     result = extract_one_time(time, context, pipeline)
     return result
@@ -250,5 +251,6 @@ def one_item():
         print(r)
 
 
-main()
+one_item()
+
 
