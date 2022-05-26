@@ -45,11 +45,11 @@ def deal_context_question(context: str, quantities: list, prompt: str = '{quanti
             index_list = cal_index(context, quantity)
             cur = quantities_loc[quantity]
             if cur == 0:
-                contexts.append(context[:index_list[cur + 1]])
+                contexts.append(context[:index_list[cur + 1]] + "。")
             elif cur == len(index_list) - 1:
-                contexts.append(context[index_list[cur - 1] + len(quantity):])
+                contexts.append(context[index_list[cur - 1] + len(quantity):] + "。")
             else:
-                contexts.append(context[index_list[cur - 1] + len(quantity):index_list[cur + 1]])
+                contexts.append(context[index_list[cur - 1] + len(quantity):index_list[cur + 1]] + "。")
             quantities_loc[quantity] += 1
         else:
             contexts.append(context)
@@ -64,6 +64,13 @@ def after_model_process(one_result):
         return None
     if one_result['单位'] == '岁':
         return None
+    one_result["指标名"] = one_result["指标名"].replace("有", "")
+    if one_result["指标名"] == "每日" and "支" in one_result["单位"]:
+        one_result["指标名"] = "吸烟抽烟"
+        one_result["单位"] = "支/日"
+    if one_result["指标名"] == "平均" and "克/日" in one_result["单位"]:
+        one_result["指标名"] = "饮酒喝酒"
+        one_result["单位"] = "克/日"
     return one_result
 
 
@@ -114,26 +121,23 @@ def extract_quantity_dimension(context, pipeline):
     return result
 
 
-def extract_past_history(context: str):
+def extract_family_history(context: str):
     result = []
-    has_info_remove_set = set()
-    in_table_past_history_remove_set = set()
     past_history = pd.read_csv("../data/past_history.csv", header=None)
-    family = pd.read_csv("../data/family.csv", header=None)
-
     past_history_pattern = "|".join(past_history[0])
+    family = pd.read_csv("../data/family.csv", header=None)
     family_pattern = "|".join(family[0])
-
-    has_info = set(re.findall("有(.*?)[、，]", context))
-    in_table_past_history = set(
-        re.findall(
-            "[^否认|^无]({past_history_pattern})".format(past_history_pattern=past_history_pattern),
-            context
-        )
-    )
     family_history = set(
         re.findall(
-            "({family_pattern})?[及和]?({family_pattern})有({past_history_pattern})".format(
+            "({family_pattern})?[及和]?({family_pattern})[有因]({past_history_pattern})".format(
+                family_pattern=family_pattern,
+                past_history_pattern=past_history_pattern
+            ),
+            context
+        )
+    ) | set(
+        re.findall(
+            "({family_pattern})?[及和]?({family_pattern})死于({past_history_pattern})".format(
                 family_pattern=family_pattern,
                 past_history_pattern=past_history_pattern
             ),
@@ -142,7 +146,6 @@ def extract_past_history(context: str):
     )
     if family_history:
         for item in family_history:
-            in_table_past_history_remove_set.add(item[2])
             if item[0] and item[1]:
                 family_name = item[0] + "和" + item[1]
             else:
@@ -155,6 +158,22 @@ def extract_past_history(context: str):
                 "家人": family_name,
             }
             result.append(one_result)
+    return result
+
+
+def extract_past_history(context: str):
+    result = []
+    has_info_remove_set = set()
+    past_history = pd.read_csv("../data/past_history.csv", header=None)
+    past_history_pattern = "|".join(past_history[0])
+
+    has_info = set(re.findall("有(.*?)[、，。；,]", context))
+    in_table_past_history = set(
+        re.findall(
+            "[^否认|^无]({past_history_pattern})".format(past_history_pattern=past_history_pattern),
+            context
+        )
+    )
     for in_table_past_history_item in in_table_past_history:
         for has_info_item in has_info:
             # 术语表的表述比有XXX抽取出来更规范
@@ -162,8 +181,28 @@ def extract_past_history(context: str):
                 has_info_remove_set.add(has_info_item)
     # 既往史中删除有XXX中表达冗余的部分
     has_info.difference_update(has_info_remove_set)
-    # 既往史中删除家族史
-    past_history_set = (in_table_past_history | has_info).difference(in_table_past_history_remove_set)
+    past_history_set = in_table_past_history | has_info
+
+    # 否认和无的表述
+    no_info = set(re.findall("否认(.*?)[，。；,]", context)) | set(re.findall("无(.*?)[，。；,]", context))
+    no_info_long = set()
+    no_info_set = set()
+    # 将带、的长文本拆解出来并记录，将拆解结果送入集合
+    for no in no_info:
+        if "、" in no:
+            no_info_long.add(no)
+            no_info_set.update(no.split("、"))
+    no_info.difference_update(no_info_long)
+    no_info.update(no_info_set)
+
+    no_remove = set()
+    for has_info_item in past_history_set:
+        for no_info_item in no_info:
+            if has_info_item in no_info_item:
+                no_remove.add(has_info_item)
+
+    past_history_set.difference_update(no_remove)
+
     for item in past_history_set:
         one_result = {
             "类别": "既往史",
@@ -172,42 +211,53 @@ def extract_past_history(context: str):
             "单位": [],
         }
         result.append(one_result)
-
     return result
 
 
 def extract_personal_history(context: str):
     result = []
     personal_history = pd.read_csv("../data/personal_history.csv", header=None)
+    degree_history = pd.read_csv("../data/adv.csv", header=None)
     personal_history_pattern = "|".join(personal_history[0])
+    degree_pattern = "|".join(degree_history[0])
     in_table_personal_history = set(
         re.findall(
             "[^否认|^无]({personal_history_pattern})".format(personal_history_pattern=personal_history_pattern),
             context
         )
     )
-    # print(in_table_personal_history)
-    # ring_name = []
-    # remove_set=set()
-    # for item in in_table_personal_history:
-    #     ring = re.findall("戒(.*)", item)
-    #     if ring:
-    #         ring_name.append(ring[0])
-    # for item in in_table_personal_history:
-    #     if not "戒" in item:
-    #         for ring in ring_name:
-    #             if ring in item:
-    #                 remove_set.add(item)
-    # print(remove_set)
     for item in in_table_personal_history:
+        degree = ""
+        if item in ['吸烟', '抽烟', '饮酒', '喝酒']:
+            degree = re.findall("({degree_pattern}){item}".format(degree_pattern=degree_pattern, item=item), context)
+        degree = degree[0] if degree else ""
         one_result = {
             "类别": "个人史",
             "名称": item,
+            "程度": degree,
             "数值": [],
             "单位": [],
         }
         result.append(one_result)
     return result
+
+
+# def extract_marry_history(context: str):
+#     result = []
+#     menstrual_history = set(re.findall("月经史[：:](.*?)[，,](.*?)[，,](.*?)[，,]", context))
+#     for item in menstrual_history:
+#         one_result = {
+#             "类别": "月经史",
+#             "名称": "月经史",
+#             "数值": [],
+#             "单位": [],
+#             "初潮年龄": item[0],
+#             "经期长度/经期间隔": item[1],
+#             "绝经年龄": item[2]
+#         }
+#         result.append(one_result)
+#
+#     return result
 
 
 def extract_menstrual_history(context: str):
@@ -230,7 +280,6 @@ def extract_menstrual_history(context: str):
 
 # 程序入口，读取文本，然后文本一条一条送入程序
 def main():
-    count = 0
     pipeline = prepareMTP()
     filePath = './data'
     for i, j, k in os.walk(filePath):
@@ -238,25 +287,38 @@ def main():
     for dir in dirs:
         with open(dir, 'r', encoding='utf-8') as f:
             one_text = f.read()
-            if len(one_text) <= 512:
-                count += 1
-                result = extract_quantity_dimension(one_text, pipeline)
-                j = re.findall('\d+', dir)[0]
-                with open('./res/{j}.json'.format(j=j), 'w', encoding='utf-8') as fp:
-                    json.dump({
-                        '原文': one_text,
-                        'result': result
-                    }, fp, ensure_ascii=False, indent=2)
-                if count == 100:
-                    break
+            one_text = "。" + one_text
+            one_text = one_text.replace("\"", "")
+            result = extract_personal_history(one_text)
+            quantity_result = extract_quantity_dimension(one_text, pipeline)
+            for qr in quantity_result:
+                print(qr)
+            for quantity_res in quantity_result:
+                name = quantity_res["指标名"]
+                for res in result:
+                    if res["名称"] in name or name in res["名称"]:
+                        res["数值"].append(quantity_res["数值"])
+                        res["单位"].append(quantity_res["单位"])
+            for r in result:
+                r['名称'] = re.sub("\d+[年月周日]", "", r['名称'])
+            j = re.findall('\d+', dir)[0]
+            with open('./res/{j}.json'.format(j=j), 'w', encoding='utf-8') as fp:
+                json.dump({
+                    '原文': one_text,
+                    'result': result
+                }, fp, ensure_ascii=False, indent=2)
 
 
 def one_item():
     pipeline = prepareMTP()
     one_text = input('请输入')
-    result = extract_past_history(one_text) + extract_personal_history(one_text) + extract_menstrual_history(one_text)
+    # 实际处理的时候把它们划分开来
+    result = extract_past_history(one_text) + extract_personal_history(one_text) + extract_menstrual_history(
+        one_text) + extract_family_history(one_text)
 
     quantity_result = extract_quantity_dimension(one_text, pipeline)
+    for qr in quantity_result:
+        print(qr)
     for quantity_res in quantity_result:
         name = quantity_res["指标名"]
         for res in result:
@@ -264,10 +326,12 @@ def one_item():
                 res["数值"].append(quantity_res["数值"])
                 res["单位"].append(quantity_res["单位"])
     for r in result:
+        r['名称'] = re.sub("\d+[年月周日]", "", r['名称'])
+    for r in result:
         print(r)
 
 
-one_item()
+main()
 
 # {
 #     "类别": "既往史/个人史/婚育史/月经史",

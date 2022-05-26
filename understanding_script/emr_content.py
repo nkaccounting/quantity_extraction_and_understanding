@@ -45,11 +45,11 @@ def deal_context_question(context: str, quantities: list, prompt: str = '{quanti
             index_list = cal_index(context, quantity)
             cur = quantities_loc[quantity]
             if cur == 0:
-                contexts.append(context[:index_list[cur + 1]])
+                contexts.append(context[:index_list[cur + 1]]+"。")
             elif cur == len(index_list) - 1:
-                contexts.append(context[index_list[cur - 1] + len(quantity):])
+                contexts.append(context[index_list[cur - 1] + len(quantity):]+"。")
             else:
-                contexts.append(context[index_list[cur - 1] + len(quantity):index_list[cur + 1]])
+                contexts.append(context[index_list[cur - 1] + len(quantity):index_list[cur + 1]]+"。")
             quantities_loc[quantity] += 1
         else:
             contexts.append(context)
