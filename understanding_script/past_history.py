@@ -62,8 +62,6 @@ def after_model_process(one_result):
         one_result['单位'] = ''
     if re.match("\d+\.$", one_result['数值']):
         return None
-    if one_result['单位'] == '岁':
-        return None
     one_result["指标名"] = one_result["指标名"].replace("有", "")
     if one_result["指标名"] == "每日" and "支" in one_result["单位"]:
         one_result["指标名"] = "吸烟抽烟"
@@ -282,42 +280,6 @@ def extract_personal_history(context: str):
     return result
 
 
-# def extract_marry_history(context: str):
-#     result = []
-#     menstrual_history = set(re.findall("月经史[：:](.*?)[，,](.*?)[，,](.*?)[，,]", context))
-#     for item in menstrual_history:
-#         one_result = {
-#             "类别": "月经史",
-#             "名称": "月经史",
-#             "数值": [],
-#             "单位": [],
-#             "初潮年龄": item[0],
-#             "经期长度/经期间隔": item[1],
-#             "绝经年龄": item[2]
-#         }
-#         result.append(one_result)
-#
-#     return result
-
-
-def extract_menstrual_history(context: str):
-    result = []
-    menstrual_history = set(re.findall("月经史[：:](.*?)[，,](.*?)[，,](.*?)[，,]", context))
-    for item in menstrual_history:
-        one_result = {
-            "类别": "月经史",
-            "名称": "月经史",
-            "数值": [],
-            "单位": [],
-            "初潮年龄": item[0],
-            "经期长度/经期间隔": item[1],
-            "绝经年龄": item[2]
-        }
-        result.append(one_result)
-
-    return result
-
-
 # 程序入口，读取文本，然后文本一条一条送入程序
 def main():
     pipeline = prepareMTP()
@@ -360,8 +322,7 @@ def one_item():
     one_text = "。" + one_text
     one_text = one_text.replace("\"", "")
     # 实际处理的时候把它们划分开来
-    result = extract_past_history(one_text) + extract_personal_history(one_text) + extract_menstrual_history(
-        one_text) + extract_family_history(one_text)
+    result = extract_family_history(one_text)
 
     quantity_result = extract_quantity_dimension(one_text, pipeline)
     for qr in quantity_result:
