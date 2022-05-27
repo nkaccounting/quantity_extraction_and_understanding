@@ -32,7 +32,7 @@ print(quantities)
 
 context = [context] * len(quantities)
 
-questions = ['{quantity}是什事？'.format(quantity=q) for q in quantities]
+questions = ['如果你觉得可能有多个答案的时候找最近的那个，{quantity}是什事？'.format(quantity=q) for q in quantities]
 
 print(questions)
 
