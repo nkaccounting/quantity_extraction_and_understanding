@@ -13,15 +13,15 @@ def extract_menstrual_history(context: str):
     interval = ""
 
     # 找关键词类型
-    age_of_menarche_rule = set(re.findall("初潮[年龄]*(\d+)岁", context)) | set(re.findall("[年龄]*(\d+)岁初潮", context))
+    age_of_menarche_rule = re.findall("初潮[年龄]*(\d+)岁", context) + re.findall("[年龄]*(\d+)岁初潮", context)
     age_of_menopause_rule = re.findall("[绝停]经[年龄]*(\d+)岁", context) + re.findall("[年龄]*(\d+)岁[绝停]经",
                                                                                  context) + re.findall(end_name_pattern,
                                                                                                        context)
     if age_of_menarche_rule:
-        age_of_menarche = list(age_of_menarche_rule)[0]
+        age_of_menarche = age_of_menarche_rule[0]
 
     if age_of_menopause_rule:
-        age_of_menopause = list(age_of_menopause_rule)[0]
+        age_of_menopause = age_of_menopause_rule[0]
 
     # 找日期类型
     menstrual_history = set(re.findall("(\d+)[岁 ,，]*(\d+-\d+|\d+).?/[ ]?(\d+-\d+|\d+).?[ ，,](\d+)?[岁 ,，。]", context))
@@ -49,8 +49,48 @@ def extract_menstrual_history(context: str):
     return result
 
 
+marriage_state = ['离异', '离婚', '丧偶', '未婚', "已婚", "结婚"]
+
+end_state = ['离异', '离婚', '丧偶']
+
+
 def extract_marry_history(context: str):
-    pass
+    state = re.findall("|".join(marriage_state), context)
+
+    if state:
+        # 把离异，离婚，丧偶设置为优先
+        state.sort(key=lambda x: -1 if x in end_state else 1)
+
+    state = state[0] if state else ""
+
+    age = re.findall("结婚[年龄]*(\d+)", context) + re.findall("(\d+)岁结婚", context)
+    age = age[0] if age else ""
+
+    boy = re.findall("([\d一二三四五六七八九十百千]+)[子儿]", context)
+    boy = boy[0] if boy else ""
+
+    girl = re.findall("([\d一二三四五六七八九十百千]+)女", context)
+    girl = girl[0] if girl else ""
+
+    child = re.findall("([\d一二三四五六七八九十百千]+)孩", context)
+    child = child[0] if child else ""
+
+    G = re.findall("[Gg]([\d一二三四五六七八九十百千]+)", context)
+    G = G[0] if G else ""
+
+    P = re.findall("[Pp]([\d一二三四五六七八九十百千]+)", context)
+    P = P[0] if P else ""
+
+    one_result = {
+        "状态": state,
+        "结婚年龄": age,
+        "子": boy,
+        "女": girl,
+        "孩子": child,
+        "G": G,
+        "P": P
+    }
+    return one_result
 
 
 def main():
@@ -63,7 +103,7 @@ def main():
             one_text = "。" + one_text + "。"
             one_text = re.sub("\"|“|”", "", one_text)
             one_text = re.sub("（|）", " ", one_text)
-            result = extract_menstrual_history(one_text)
+            result = extract_marry_history(one_text)
 
             j = re.findall('\d+', dir)[0]
             with open('./res/{j}.json'.format(j=j), 'w', encoding='utf-8') as fp:
@@ -75,11 +115,8 @@ def main():
 
 def one_item():
     one_text = input("请输入")
-    result = extract_menstrual_history(one_text)
+    result = extract_marry_history(one_text)
     print(result)
 
 
-main()
-
-# 月经史：14岁，4-5/28-32，52岁，既往月经较规则，白带无异常，停经后阴道无异常流液。
-# 初潮15岁，绝经50岁，月经正常
+one_item()
