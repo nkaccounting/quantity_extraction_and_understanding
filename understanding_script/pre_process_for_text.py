@@ -33,12 +33,21 @@ def removeTime(text: str):
 
 
 def pre_process(text: str):
+    text = str(text)
     text = removeTime(text)
     return text + '=。'
 
 
 def after_process(text: str):
     text = better_tokenizer_pre_process(text)
+    return text
+
+
+def history_process(text: str):
+    text = str(text)
+    text = "。" + text + "。"
+    text = re.sub("\"|“|”", "", text)
+    text = re.sub("（|）", " ", text)
     return text
 
 

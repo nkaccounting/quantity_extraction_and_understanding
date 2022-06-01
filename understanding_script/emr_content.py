@@ -251,6 +251,5 @@ def one_item():
         print(r)
 
 
-one_item()
-
-
+if __name__ == '__main__':
+    one_item()

@@ -2,13 +2,14 @@
 import json
 import os
 import re
+import uuid
 from collections import Counter, defaultdict
 
 import pandas as pd
 import torch
 from transformers import BertForQuestionAnswering, AutoTokenizer, QuestionAnsweringPipeline
 
-from pre_process_for_text import pre_process, after_process
+from pre_process_for_text import pre_process, after_process, history_process
 from quantity_extraction import extract_quantity
 
 
@@ -63,12 +64,21 @@ def after_model_process(one_result):
     if re.match("\d+\.$", one_result['数值']):
         return None
     one_result["指标名"] = one_result["指标名"].replace("有", "")
-    if one_result["指标名"] == "每日" and "支" in one_result["单位"]:
+
+    if re.findall("[包根支]", one_result["单位"]) and re.findall("每[天日]", one_result["指标名"]):
         one_result["指标名"] = "吸烟抽烟"
-        one_result["单位"] = "支/日"
-    if one_result["指标名"] == "平均" and "克/日" in one_result["单位"]:
+        one_result["单位"] = re.findall("[包根支]", one_result["单位"])[0] + "/日"
+
+    if re.findall("[包根支]/[天日]", one_result["单位"]):
+        one_result["指标名"] = "吸烟抽烟"
+        one_result["单位"] = re.findall("[包根支]", one_result["单位"])[0] + "/日"
+
+    if re.findall("[克斤两瓶g]", one_result["单位"]) and re.findall("每[天日]", one_result["指标名"]):
         one_result["指标名"] = "饮酒喝酒"
-        one_result["单位"] = "克/日"
+        re.findall("[克斤两瓶g]", one_result["单位"])[0] + "/日"
+    if re.findall("[克斤两瓶g]/[天日]", one_result["单位"]):
+        one_result["指标名"] = "饮酒喝酒"
+        one_result["单位"] = re.findall("[克斤两瓶g]", one_result["单位"])[0] + "/日"
     return one_result
 
 
@@ -94,16 +104,15 @@ def extract_quantity_dimension(context, pipeline):
         # TODO 临时针对相似度过高造成的类似数值进行处理，重新训练模型后记得删除
         if r['score'] < 0.5:
             loc = contexts[i].index(questions[i][:-4])
-            start = loc - 20 if loc - 20 >= 0 else 0
-            c = contexts[i][start:loc + 20]
+            start = loc - 10 if loc - 10 >= 0 else 0
+            c = contexts[i][start:loc + 10]
             q = questions[i]
             temp_res = pipeline(
                 question=q,
                 context=c,
             )
-            if temp_res['score'] > 0.9:
-                r['answer'] = temp_res['answer']
-                r['score'] = temp_res['score']
+            r['answer'] = temp_res['answer']
+            r['score'] = temp_res['score']
 
         one_result = {
             '数值': Quantities[i].num,
@@ -124,20 +133,13 @@ def extract_one_family(family_name: str, context: str):
     past_history = pd.read_csv("../data/past_history.csv", header=None)
     past_history_pattern = "|".join(past_history[0])
 
-    family_history_temp = set(re.findall("({past_history_pattern})[及、和]?({past_history_pattern})?".format(
+    family_history = set(re.findall("({past_history_pattern})".format(
         past_history_pattern=past_history_pattern), context))
 
-    family_history = set()
-
-    for f in family_history_temp:
-        if f[1]:
-            family_history.add(f[0] + "和" + f[1])
-        else:
-            family_history.add(f[0])
     no_info = get_no_info(context)
     no_remove = get_remove_set(family_history, no_info)
     family_history.difference_update(no_remove)
-    if family_history:
+    if family_history and family_name:
         for item in family_history:
             one_result = {
                 "类别": "家族史",
@@ -154,8 +156,7 @@ def extract_family_history(context: str):
     result = []
     family = pd.read_csv("../data/family.csv", header=None)
     family_pattern = "|".join(family[0])
-    start_indexs = re.finditer("({family_pattern})?[及和、]?({family_pattern})".format(family_pattern=family_pattern),
-                               context)
+    start_indexs = re.finditer("((({family_pattern})[及和、，,]?)+)".format(family_pattern=family_pattern), context)
     loc = []
     name = [""]
     for start_index in start_indexs:
@@ -177,8 +178,9 @@ def extract_family_history(context: str):
 
 def get_no_info(context: str):
     # 否认和无和不的表述
-    no_info = set(re.findall("否认(.*?)[，。；,有]", context)) | set(re.findall("无(.*?)[，。；,有]", context)) | set(
-        re.findall("不(.*?)[，。；,有]", context))
+    no_info = set(re.findall("否认(.*?)[，。；;,有]", context)) | set(re.findall("[无不莫非未](.*?)[，。；;,有]", context)) | set(
+        re.findall("没有(.*?)[，。；;,有]", context)) | set(re.findall("[无不莫非未][^。；;有]+?等", context)) | set(
+        re.findall("没有[^。；;有]+?等", context)) | set(re.findall("否认[^。；;有]+?等", context))
     no_info_long = set()
     no_info_set = set()
     # 将带、的长文本拆解出来并记录，将拆解结果送入集合
@@ -205,6 +207,7 @@ def extract_past_history(context: str):
     # 抽取出术语表里的表述
     past_history = pd.read_csv("../data/past_history.csv", header=None)
     past_history_pattern = "|".join(past_history[0])
+
     in_table_past_history = set(
         re.findall(
             "({past_history_pattern})".format(past_history_pattern=past_history_pattern),
@@ -258,6 +261,34 @@ def extract_personal_history(context: str):
     no_remove = get_remove_set(in_table_personal_history, no_info)
     in_table_personal_history.difference_update(no_remove)
 
+    stop_names = re.findall("已戒除?\d+余?[年月]", context)
+    if stop_names:
+        pipeline = prepareMTP(model_dir='../whatisit')
+        for stop_name in stop_names:
+            res = pipeline(
+                question=f"往前找，{stop_name}指的是？".format(stop_name=stop_name),
+                context=context
+            )
+            num, unit = re.findall("(\d+)([余年月]+)", stop_name)[0]
+            if "烟" in res['answer'] or "支" in res['answer']:
+                one_result = {
+                    "类别": "个人史",
+                    "名称": "戒烟",
+                    "程度": "",
+                    "数值": [num],
+                    "单位": [unit],
+                }
+                result.append(one_result)
+            elif "酒" in res['answer']:
+                one_result = {
+                    "类别": "个人史",
+                    "名称": "戒酒",
+                    "程度": "",
+                    "数值": [num],
+                    "单位": [unit],
+                }
+                result.append(one_result)
+
     # 获取个人史程度相关表述
     degree_history = pd.read_csv("../data/adv.csv", header=None)
     degree_pattern = "|".join(degree_history[0])
@@ -281,25 +312,20 @@ def extract_personal_history(context: str):
 
 
 # 程序入口，读取文本，然后文本一条一条送入程序
-def main():
+def items_in_dirs(filePath='./个人史', function=extract_personal_history):
     pipeline = prepareMTP()
-    filePath = './data'
     for i, j, k in os.walk(filePath):
         dirs = [os.path.join(filePath, text_dir) for text_dir in k]
-    for dir in dirs:
+    # random.shuffle(dirs)
+    for count, dir in enumerate(dirs):
+        if count == 1000:
+            break
         with open(dir, 'r', encoding='utf-8') as f:
             one_text = f.read()
-            one_text = "。" + one_text
-            one_text = one_text.replace("\"", "")
-            one_text = one_text.replace("“", "")
-            one_text = one_text.replace("”", "")
-            # print(one_text)
-
-            result = extract_family_history(one_text)
+            one_text = history_process(one_text)
+            result = function(one_text)
 
             quantity_result = extract_quantity_dimension(one_text, pipeline)
-            for qr in quantity_result:
-                print(qr)
             for quantity_res in quantity_result:
                 name = quantity_res["指标名"]
                 for res in result:
@@ -308,21 +334,21 @@ def main():
                         res["单位"].append(quantity_res["单位"])
             for r in result:
                 r['名称'] = re.sub("\d+[年月周日]", "", r['名称'])
-            j = re.findall('\d+', dir)[0]
-            with open('./res/{j}.json'.format(j=j), 'w', encoding='utf-8') as fp:
+            # j = re.findall('\d+', dir)[0]
+            j = uuid.uuid1()
+            with open('./个人史_after/{j}.json'.format(j=j), 'w', encoding='utf-8') as fp:
                 json.dump({
                     '原文': one_text,
                     'result': result
                 }, fp, ensure_ascii=False, indent=2)
 
 
-def one_item():
+# 处理单条文本
+def one_item(function=extract_personal_history):
     pipeline = prepareMTP()
     one_text = input('请输入')
-    one_text = "。" + one_text
-    one_text = one_text.replace("\"", "")
-    # 实际处理的时候把它们划分开来
-    result = extract_family_history(one_text)
+    one_text = history_process(one_text)
+    result = function(one_text)
 
     quantity_result = extract_quantity_dimension(one_text, pipeline)
     for qr in quantity_result:
@@ -337,6 +363,3 @@ def one_item():
         r['名称'] = re.sub("\d+[年月周日]", "", r['名称'])
     for r in result:
         print(r)
-
-
-main()
