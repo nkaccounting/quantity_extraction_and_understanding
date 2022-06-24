@@ -81,6 +81,8 @@ file = 0
 adversarial = True
 
 for dir in dirs:
+    if id >= 5000:
+        break
     if "diag" in dir:
         file += 1
         print(file)
@@ -97,7 +99,7 @@ for dir in dirs:
                         'answer_start': [answer_start]
                     }
                     id += 1
-                    if id == 5000:
+                    if id >= 5000:
                         break
                     result = {
                         "id": str(id) + "-hasAns",
