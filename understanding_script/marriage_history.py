@@ -48,6 +48,15 @@ def extract_menstrual_history(context: str):
         interval += first[0] if first else "空"
         interval += "/" + second[0] if second else "/空"
 
+    # 如果初潮和绝经都没有找到，考虑16岁52岁这样的表述是否存在
+    if not age_of_menarche and not age_of_menopause:
+        ages = re.findall("(\d+)岁", context)
+        for age in ages:
+            if int(age) > 0 and int(age) < 20:
+                age_of_menarche = str(age)
+            elif int(age) > 40 and int(age) < 70:
+                age_of_menopause = str(age)
+
     one_result = {
         "类别": "月经史",
         "数值": [],
@@ -136,8 +145,9 @@ def items_in_dirs(filePath='./月经史'):
 def one_item():
     one_text = input("请输入")
     one_text = history_process(one_text)
-    result = extract_marry_history(one_text)
+    result = extract_menstrual_history(one_text)
     print(result)
+
 
 if __name__ == '__main__':
     one_item()

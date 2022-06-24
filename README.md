@@ -1156,3 +1156,9 @@ supervise下，是什事？和指的是？差别较大
 
 四是可以考虑一些生成对抗网络，想办法对抗出embedding不变
 
+### Knowledge Distillation and Unanswerable:
+
+    use the larger wwm mrc model as the teacher to teach a smaller bert-base-multilingual-cased.
+    Data augmentation: because the teacher model failed to distinguish the similar quantity, using negative sampling to generate some quantities which are not in the sentence, but very similar to the quantity in the sentence.
+    The method is try to change one char in the quantity, according to the type of the quantity(int，float，other).
+    And 50% of them change the unit and the other 50% keep the original unit for better distinguishing ability.

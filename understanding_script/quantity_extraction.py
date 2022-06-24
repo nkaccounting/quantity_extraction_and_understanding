@@ -35,6 +35,8 @@ class Quantity:
 
 
 def extract_quantity(text: str):
+    # 纯数字长串，且没有单位，会导致在正则表达式的匹配里面出现阻塞
+    # text = re.sub("\d{20,}", "", text)
     unit_pattern = '(' + '|'.join(unit_list) + ')'
     quantity_pattern = '|'.join(quantity_mode)
     nums = re.findall('(' + quantity_pattern + ')([ ]||\+)' + unit_pattern, text)
