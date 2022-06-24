@@ -6,8 +6,7 @@ from transformers import BertForQuestionAnswering, AutoTokenizer, QuestionAnswer
 from pre_process_for_text import pre_process, after_process
 from quantity_extraction import extract_quantity
 
-model_dir = '../whatisit'
-# model_dir = '../../chinese_pretrain_mrc_roberta_wwm_ext_large'
+model_dir = '../whatisit_KD_UA'
 
 model = BertForQuestionAnswering.from_pretrained(model_dir)
 
@@ -32,7 +31,8 @@ print(quantities)
 
 context = [context] * len(quantities)
 
-questions = ['如果你觉得可能有多个答案的时候找最近的那个，{quantity}是什事？'.format(quantity=q) for q in quantities]
+questions = ['{quantity}是什事？'.format(quantity=q) for q in quantities]
+# questions = ['如果你觉得可能有多个答案的时候找最近的那个，{quantity}是什事？'.format(quantity=q) for q in quantities]
 
 print(questions)
 

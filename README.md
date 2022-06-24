@@ -1158,11 +1158,6 @@ supervise下，是什事？和指的是？差别较大
 
 # Knowledge Distillation and Unanswerable:
 
-    Use the larger wwm mrc model as the teacher to teach a smaller model-- bert-base-multilingual-cased.
-    Data augmentation: because the teacher model failed to distinguish the similar quantities, using negative sampling to generate some quantities which are not in the sentence, but very similar to the quantities in the sentence.
-    The method try to change one char in the quantity, according to the type of the quantity(int，float，other).
-    And 50% of them change the unit and the other 50% keep the original unit for better distinguishing ability.
-
 1) knowledge distillation（KD过程）
 
    现在抽取出来的医学部数据，单从数值理解角度来看，拥有大量的带标注的<CQA>数据。将选取5000条高可信的数据视作标签，将数据送入bert-base-multilingual-cased一个轻量的小模型进行训练。
@@ -1187,7 +1182,7 @@ Unanswerable（UA）的总数据量等于训练hasAns的数据量（5000），1�
 
 result of whatisit_KD_UA vs whatisit
 
-![img.png](pic/result of whatisit_KD_UA vs whatisit.png)
+![](pic/result of whatisit_KD_UA vs whatisit.png)
 
 whatisit_KD_UA:
 
