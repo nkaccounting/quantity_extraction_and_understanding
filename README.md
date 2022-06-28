@@ -180,15 +180,24 @@ A project to extract the meaningful quantity in medical area and understand the 
 
 [bert-base-chinese](https://huggingface.co/bert-base-chinese)
 
-![img.png](pic/bert-base-chinese.png)
+      {
+         "EM": "20.0",
+         "F1": "28.590116197312597"
+      }
 
 [bert-base-multilingual-cased](https://huggingface.co/bert-base-multilingual-cased)
 
-![img_1.png](pic/bert-base-multilingual-cased.png)
+      {
+         "EM": "52.0",
+         "F1": "71.39215686274507"
+      }
 
 [chinese-bert-wwm](https://huggingface.co/hfl/chinese-bert-wwm)
 
-![img_2.png](pic/chinese-bert-wwm.png)
+      {
+         "EM": "48.0",
+         "F1": "61.631987723318986"
+      }
 
 以上效果都不佳，[bert-base-multilingual-cased](https://huggingface.co/bert-base-multilingual-cased)>[chinese-bert-wwm](https://huggingface.co/hfl/chinese-bert-wwm)>[bert-base-chinese](https://huggingface.co/bert-base-chinese)
 
@@ -538,9 +547,11 @@ EM和F值均有大幅度的提升
 
 Unanswerable（UA）的总数据量等于训练hasAns的数据量（5000），1：1采样得到，每个正样本按百分比的概率进行对抗策略选择。
 
-result of whatisit_KD_UA vs whatisit
+result of whatisit_KD_UA vs whatisit：
+
 
 ![](pic/result of whatisit_KD_UA vs whatisit.png)
+
 
 whatisit_KD_UA:
 
@@ -572,7 +583,7 @@ whatisit:
 
 ## 鼓励式AI：
 
-阅读论文：`Large Language Models are Zero-Shot Reasoners` https://arxiv.org/abs/2205.11916
+阅读论文：[Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916)
 
 这篇文章提出了一个观点：
 
